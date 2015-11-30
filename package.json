@@ -1,0 +1,21 @@
+{
+  "name": "valleydesignbuild",
+  "version": "1.0.0",
+  "description": "### Getting Started 1. Install Node.js using [NVM](http://github.com/creationix/nvm) for OSX/Linux or by going to [Nodejs.org](http://nodejs.org) for Windows 2. ```npm install -g zab``` 3. ```zab watch --open``` 4. ```zab --help``` for more info 5. Visit us at [zab.io](http://zab.io)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "zab deploy --key $zab_api_key"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tannerlinsley/valleydesignbuild.git"
+  },
+  "keywords": [],
+  "author": "Tanner Linsley <tannerlinsley@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tannerlinsley/valleydesignbuild/issues"
+  },
+  "homepage": "https://github.com/tannerlinsley/valleydesignbuild#readme"
+}
