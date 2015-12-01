@@ -1,3 +1,6 @@
 {
-  "name": "valleydesignbuild"
+  "name": "valleydesignbuild",
+  "routes": {
+    "/**": "index.html"
+  }
 }
