@@ -4,6 +4,7 @@ node_js:
 
 script:
   - npm install zab/zab-cli -g
+  - ls
   - zab build
   - zab deploy --key zab_api_key
 
