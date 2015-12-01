@@ -9,4 +9,4 @@ script:
   - npm run deploy
 
 after_failure:
-  - cat /home/travis/builds/tannerlinsley/valleydesignbuild/npm-debug.log
+  - cat /home/travis/build/tannerlinsley/valleydesignbuild/npm-debug.log
