@@ -7,6 +7,9 @@ before_script:
 
 script:
   - npm run deploy
+  - npm install zab/zab-cli -g
+  - zab build
+  - zab deploy --key $zab_api_key
 
 after_failure:
   - cat /home/travis/build/tannerlinsley/valleydesignbuild/npm-debug.log
