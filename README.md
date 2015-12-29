@@ -1,4 +1,4 @@
-# valleydesignbuild
+# fake
 
 ### Getting Started
 1. Install Node.js using [NVM](http://github.com/creationix/nvm) for OSX/Linux or by going to [Nodejs.org](http://nodejs.org) for Windows
