@@ -12,7 +12,8 @@
     "imagemin": "imagemin dist/img/* --out-dir=dist/img",
     "watch": "npm run js:watch & npm run css:watch & npm run hugo:watch & butler",
     "build": "npm run js && npm run css && npm run hugo && npm run imagemin",
-    "stats": "browserify src/app.js -c --full-paths | discify --open"
+    "stats": "browserify src/app.js -c --full-paths | discify --open",
+    "deploy": "zab deploy"
   },
   "dependencies": {
     "babel-preset-es2015": "^6.13.2",
