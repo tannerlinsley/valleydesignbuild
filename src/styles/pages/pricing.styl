@@ -1,0 +1,207 @@
+.pricing
+  padding: 80px 20px
+  pad-max()
+  transition: all .3s ease
+
+  $planHeight = 470px
+  $planBorderRadius = 3px
+
+  .intro
+    text-align:center
+    margin: 70px 0 90px
+    h1
+      margin: 0 0 10px
+    p
+
+  .early-adopters
+    width: 80%
+    border-radius: 3px
+    font-weight: 600
+    text-align:center
+    z-index: 0;
+    background: linear-gradient(lighten($colorDanger, 10%), $colorDanger)
+    color: white
+    animation-delay: 2s
+    animation-name: early-adopter-anim
+    animation-duration: 1s
+    animation-timing-function: easeOutQuint
+    animation-fill-mode: forwards
+    opacity: 0
+    // starting animation props
+    margin: 0 auto -270px
+    padding: 20px 20px 120px
+
+    h5
+      margin: 0
+
+  .plans
+    display:flex
+    margin-top:30px
+    flex-wrap: wrap
+
+  .plan
+    display:flex
+    flex-direction: column
+    justify-content: space-between
+    background: darken($colorPrimary, 15%)
+    color:white
+    text-align:center
+    box-shadow: 0 0 30px 0 alpha(black, .2)
+    overflow: hidden
+    transition: all .4s ease
+    align-self: center
+
+    @media screen and (min-width: 761px)
+      &:hover
+        .plan-inner
+          padding-top: 40px
+        .btn
+          padding-top: 25px
+          padding-bottom: 25px
+
+    .btn
+      text-align:center
+      font-size: 1.2em
+      &:hover
+        transform: none
+        box-shadow: none
+
+    &:first-child
+      flex: 1 1 24%
+      min-height: $planHeight
+      border-radius: $planBorderRadius 0 0 $planBorderRadius
+      z-index: 2
+
+    &:nth-child(2)
+      flex: 1 1 27%
+      z-index: 1
+      border-radius: $planBorderRadius
+      background: $colorPrimaryDark
+      min-height: $planHeight + 40
+      z-index: 3
+
+    &:nth-child(3)
+      flex: 1 1 24%
+      min-height: $planHeight
+      border-radius: 0 $planBorderRadius $planBorderRadius 0
+      z-index: 2
+
+    &:nth-child(4)
+      flex: 1 1 22%
+      min-height: $planHeight - 40
+      background: $colorPrimary
+      border-radius: 0 $planBorderRadius $planBorderRadius 0
+      z-index: 1
+      .btn
+        background: darken($colorPrimary, 30%)
+
+    @media screen and (max-width:760px)
+      flex: 1 1 48% !important
+      min-height: auto !important
+      border-radius: 5px !important
+      margin: 0 1% 10px
+
+    @media screen and (max-width:500px)
+      flex: 1 1 100% !important
+      margin: 0 0 10px
+
+    .plan-inner
+      padding: 20px
+      display:flex
+      justify-content: space-between
+      flex-direction: column
+      font-size: .9em
+      transition: all .3s easeOutBack
+
+      h5
+      p
+        margin:0
+
+    .title
+      margin: 30px 0 0
+      padding: 0 20px
+
+    .row
+      padding: 7px 0
+      border-bottom: solid 2px alpha(white, .07)
+
+      &:last-child
+        border-bottom: none
+
+    .price
+      padding-bottom: 10px
+
+    small
+      opacity: .6
+      margin-top:5px
+
+    .strike
+      opacity: .6
+
+  .faq
+    margin-top: 80px
+    .title
+      margin: 0
+      text-align:center
+    .inner
+      margin-top: 10px
+      background: alpha(black, .1)
+      padding: 40px
+
+      > h5:first-child
+        margin:0
+
+  .calculator
+    margin-top: 50px
+    .title
+      text-align:center
+      margin-bottom: 30px
+    .inner
+      display:flex
+      flex-wrap: wrap
+    .left
+    .right
+      flex: 1 1 400px
+      padding: 0 20px
+
+    .left
+      font-size: 1.8em
+      line-height: 2.4em
+      .row
+        display:flex
+        justify-content: space-between
+        align-items: center
+        > div
+          flex: 0 0 50%
+          width:50%
+      input[type="number"]
+        font-size: 1em
+        width:100%
+      .frequency
+        .label
+          align-self: flex-start
+      .radios
+        font-size: .8em
+        line-height: 1.5em
+        margin-top: 17px
+      label
+        display:block
+    .right
+      display: flex
+      justify-content: center
+      align-items: center
+      background: #e7e7e7
+      border-radius: 5px
+      padding: 20px
+      .amount
+        font-size: 3.8em
+        font-weight:900
+
+
+@keyframes early-adopter-anim
+  0%
+    display:block
+  100%
+    opacity: 1
+    margin-bottom: -90px
+    padding-bottom: 80px

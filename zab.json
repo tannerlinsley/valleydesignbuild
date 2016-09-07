@@ -1,3 +1,5 @@
 {
-  "name": "valleydesignbuild"
+  "name": "valleydesignbuild",
+  "root": "dist",
+  "cleanUrls": false
 }

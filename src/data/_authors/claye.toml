@@ -1,0 +1,17 @@
+given_name		= "Claye"
+family_name		= "Stokes"
+display_name	= "Claye Stokes"
+thumbnail		= "img link"
+image				= "img link"
+short_bio		= "super short bio"
+bio				= "Here's Claye's awesome bio"
+email				= "claye@nozzle.io"
+
+[social]
+	facebook		= "https://www.facebook.com/clayestokes"
+	github		= "https://github.com/clayestokes/"
+	twitter		= "https://twitter.com/claye"
+	googleplus	= "https://plus.google.com/+ClayeStokes1"
+
+[params]
+   random		= "whatever you want"

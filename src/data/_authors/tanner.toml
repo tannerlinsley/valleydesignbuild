@@ -1,0 +1,17 @@
+given_name		= "Tanner"
+family_name		= "Linsley"
+display_name	= "Tanner Linsley"
+thumbnail		= "img link"
+image				= "img link"
+short_bio		= "super short bio"
+bio				= "Here's Tanner's awesome bio"
+email				= "tanner@nozzle.io"
+
+[social]
+   facebook		= "https://www.facebook.com/tannerlinsley"
+   github		= "https://github.com/tannerlinsley/"
+   twitter		= "https://twitter.com/tannerlinsley"
+   googleplus	= "https://plus.google.com/+TannerLinsley1"
+
+[params]
+   random		= "whatever you want"

@@ -1,122 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700')
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700')
-@import 'reset'
-@import 'colors'
+/*  overpassfont.org */
+@font-face { src: url("https://overpass-30e2.kxcdn.com/Overpass-Bold.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("https://overpass-30e2.kxcdn.com/Overpass-Bold.woff") format("woff"), url("https://overpass-30e2.kxcdn.com/Overpass-Bold.ttf") format("truetype"), url("https://overpass-30e2.kxcdn.com/Overpass-Bold.svg#Overpass-Bold") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 700; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("https://overpass-30e2.kxcdn.com/Overpass-Regular.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("https://overpass-30e2.kxcdn.com/Overpass-Regular.woff") format("woff"), url("https://overpass-30e2.kxcdn.com/Overpass-Regular.ttf") format("truetype"), url("https://overpass-30e2.kxcdn.com/Overpass-Regular.svg#Overpass-Regular") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 600; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("https://overpass-30e2.kxcdn.com/Overpass-Italic.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("https://overpass-30e2.kxcdn.com/Overpass-Italic.woff") format("woff"), url("https://overpass-30e2.kxcdn.com/Overpass-Italic.ttf") format("truetype"), url("https://overpass-30e2.kxcdn.com/Overpass-Italic.svg#Overpass-Italic") format("svg"); /* Legacy iOS */ font-style: italic; font-weight: 600; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("https://overpass-30e2.kxcdn.com/Overpass-Light.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("https://overpass-30e2.kxcdn.com/Overpass-Light.woff") format("woff"), url("https://overpass-30e2.kxcdn.com/Overpass-Light.ttf") format("truetype"), url("https://overpass-30e2.kxcdn.com/Overpass-Light.svg#Overpass-Light") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 400; text-rendering: optimizeLegibility; ; }
 
-$roboto = 'Roboto', sans-serif
-$lato = 'Lato', sans-serif
+@import 'nib'
+global-reset()
 
+@import './colors'
 
-body
-  font-family: $lato
-  color:white
+@import './general'
+@import './input'
+@import './easing'
+@import './type'
+@import './button'
 
-a
-  text-decoration:none
-  color:white
+@import './layout'
+@import './nav'
 
-nav
-  z-index:1000
-  position:fixed
-  top:0
-  width:100%
-  height:70px
-
-.logo
-  position:absolute
-  left:50%
-  top: 15px
-  width:400px
-  max-width:80%
-  height:auto
-  transform: translate(-50%,0)
-
-.logo-text
-  position:absolute
-  width:100%
-  top: 285px
-  font-family: $roboto
-  text-transform: uppercase
-  text-align:center
-  font-size: 2.4em
-  font-weight: 300
-  white-space:nowrap
-  text-shadow:0 0 30px black
-
-
-section
-  position:relative
-  padding:200px 15%
-  min-height:300px
-  background-image: url('img/test.jpg')
-  background-size: cover
-  background-position:center
-  font-size:1.5em
-  line-height:1.2em
-
-  .content
-    z-index:1
-    position:relative
-
-.bg-fade
-  z-index:0
-  position:absolute
-  top:0
-  left:0
-  width:100%
-  height:100%
-
-.intro
-  padding:400px 20% 0
-  background-image: url('img/intro.jpg')
-  text-align:center
-
-  .bg-fade
-    background: linear-gradient( to bottom, rgba(0,0,0,.5), rgba(0,0,0,.5) 50%, transparent)
-
-.design
-  overflow:hidden
-
-  video
-    position:absolute
-    top:50%
-    left:50%
-    transform: translate(-50%, -50%)
-
-  .bg-fade
-    background: linear-gradient( to bottom, transparent, rgba(0,0,0,.7) 40% ,rgba(0,0,0,.7) 60%, transparent)
-
-  h3
-    font-family: 'Roboto', sans-serif
-    font-size: 1.5em
-    font-weight: 300
-    line-height:1.2em
-    text-transform: uppercase
-    margin-bottom: 2em
-
-.contact
-  text-align:center
-
-  h3
-    font-size:1.3em
-
-  a
-    margin:20px
-    color:white
-    font-size:1.5em
-    line-height:1.3em
-    white-space: nowrap
-    font-weight:bolder
-
-  .bg-fade
-    background: linear-gradient( to top, rgba(0,0,0,.5), transparent)
-
-
-@media all and (max-width: 500px)
-  .logo-text
-    font-size:1.6em
-    font-weight:normal
-
-  .contact
-    a
-      font-size:1em
+@import './pages/**'

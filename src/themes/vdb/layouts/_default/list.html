@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+
+<section class="blog pad-max">
+  <div>
+    <h1 class="article-list-title">{{ .Title }}</h1>
+    <div class="article-list">
+      {{ range .Data.Pages }}
+        <article>
+          <a href="{{ .Permalink }}">
+            <h4 class="article-title">{{ .Title }}</h4>
+            <p>{{ .Summary }}</p>
+            <div class="read-more">
+              <button class="btn btn-primary">
+                Read more
+              </button>
+            </div>
+          </a>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ partial "footer.html" . }}

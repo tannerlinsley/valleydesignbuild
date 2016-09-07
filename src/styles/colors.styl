@@ -1,22 +1,72 @@
-primary = #0092B5
-gradLgt = #171D23
-gradDrk = #0D1115
+$colorPrimary = #0092B5
 
-/* from http://clrs.cc */
-aqua = #7FDBFF
-blue = #0074D9
-navy =  #001F3F
-teal = #39CCCC
-green = #2ECC40
-olive = #3D9970
-lime = #01FF70
-yellow = #FFDC00
-orange = #FF851B
-red = #FF4136
-fuchsia = #F012BE
-purple = #B10DC9
-maroon = #85144B
-white = #ffffff
-silver = #dddddd
-gray = #aaaaaa
-black = #111111
+$colorDefault = $colorPrimary
+$colorPrimaryLight = darken(saturate($colorPrimary, 75), 5%)
+$colorPrimaryLighter = lighten(saturate($colorPrimary, 0), 25%)
+$colorPrimaryDark = #073546
+$colorText = #333
+$colorDanger = #F15854
+$colorSuccess = #60bd68
+$colorWarning = #D6C908
+$colorStable = lighten(black, 60%)
+$colorDark = lighten(black, 40%)
+$colorLight = #EFEFEF
+
+$colorBing = #ffb900
+$colorFacebook = #3B5998
+$colorTwitter = #00A0D1
+$colorGoogle = #4285F4
+$colorPinterest = #910101
+$colorLinkedin = #1884bb
+$colorStumbleupon = #EB4924
+$colorYahoo = #4D1AC2
+
+$colorGolf0 = #5DA5DA
+$colorGolf1 = #60bd68
+$colorGolf2 = #DECF3F
+$colorGolf3 = #FAA43A
+$colorGolf4 = #F15854
+$colorGolf5 = #4E4E4E
+$colorGolf6 = #929292
+
+$colors = {
+	primary: $colorPrimary
+	primaryLight: $colorPrimaryLight
+	primaryDark: $colorPrimaryDark
+	default: $colorDefault
+	success: $colorSuccess
+	warning: $colorWarning
+	danger: $colorDanger
+	stable: $colorStable
+	dark: $colorDark
+	light: $colorLight
+	white: white
+
+
+	bing: $colorBing
+	facebook: $colorFacebook
+	twitter: $colorTwitter
+	google: $colorGoogle
+	pinterest: $colorPinterest
+	linkedin: $colorLinkedin
+	stumbleupon: $colorStumbleupon
+	yahoo: $colorYahoo
+
+
+	golf0: $colorGolf0
+	golf1: $colorGolf1
+	golf2: $colorGolf2
+	golf3: $colorGolf3
+	golf4: $colorGolf4
+	golf5: $colorGolf5
+	golf6: $colorGolf6
+}
+
+for k, v in $colors
+	.color-{k}
+		color: v
+	.background-{k}
+		background-color:v;
+		color: white
+		if k == 'light' or k == 'white'
+			color: $textColor

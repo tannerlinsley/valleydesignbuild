@@ -1,0 +1,15 @@
+{
+	"baseurl": "https://nozzle.io/",
+	"languageCode": "en-us",
+	"title": "Valley Design Build - Custom & Specialized Design + Build Landscapes",
+	"theme": "vdb",
+	"publishdir": "../dist/",
+	"relativeURLs": true,
+	"canonifyurls": false,
+
+	"taxonomies": {
+		"tag": "tags",
+		"series": "series",
+		"persona": "personas"
+	}
+}

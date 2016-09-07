@@ -1,0 +1,64 @@
+<nav>
+  <div class="inner-nav"
+    data-50="@class:inner-nav;"
+    data-51="@class:inner-nav minimize;">
+    <div class="faded-background"></div>
+    <div class="logos">
+      {{ if .IsHome }}<h1>{{ end }}
+      <a class="logo" href="/"><span class="visuallyhidden">{{ .Site.Title }}</span></a>
+      {{ if .IsHome }}</h1>{{ end }}
+    </div>
+    <div class="show-menu">
+      <div class="show-menu-bar-wrap">
+        <div class="show-menu-bar"></div>
+        <div class="show-menu-bar"></div>
+        <div class="show-menu-bar"></div>
+      </div>
+    </div>
+    <ul class="menu">
+      <li>
+        <a href="/#gallery">Gallery</a>
+      </li>
+      <li>
+        <a href="/#design">Design</a>
+      </li>
+      <li>
+        <a href="/#build">Build</a>
+      </li>
+      {{ $currentNode := . }}
+        {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+            <li class="sub-menu{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">
+              <a href="javascript:;" class="">
+                {{ .Pre }}
+                <span>{{ .Name }}</span>
+                <span class="menu-arrow arrow_carrot-right"></span>
+              </a>
+              <ul class="sub">
+                {{ range .Children }}
+                  <li
+                    {{if $currentNode.IsMenuCurrent "main" . }}
+                      class="active"
+                    {{end}}>
+                    <a href="{{.URL}}">{{ .Name }}</a>
+                  </li>
+                {{ end }}
+              </ul>
+            </li>
+          {{else}}
+            <li
+              {{if $currentNode.IsMenuCurrent "main" . }}
+                class="active"
+              {{end}}>
+              <a href="{{.URL}}">
+                <span>{{ .Name }}</span>
+              </a>
+            </li>
+        {{end}}
+      {{end}}
+    </ul>
+    <div class="start-trial">
+      <a href="/#contact">Get A Bid</a>
+    </div>
+  </div>
+</nav>
