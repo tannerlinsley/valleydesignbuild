@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
   <meta name="author" content="{{ with .Site.Params.name }}{{ . }}{{ end }}">
   <meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}"> {{ .Hugo.Generator }}
   <title>{{ .Site.Title }}</title>
@@ -12,58 +12,26 @@
   <link href="/app.css" rel="stylesheet" />
 
   <script>
-    // (function(i, s, o, g, r, a, m) {
-    //   i['GoogleAnalyticsObject'] = r;
-    //   i[r] = i[r] || function() {
-    //     (i[r].q = i[r].q || []).push(arguments)
-    //   }, i[r].l = 1 * new Date();
-    //   a = s.createElement(o),
-    //     m = s.getElementsByTagName(o)[0];
-    //   a.async = 1;
-    //   a.src = g;
-    //   m.parentNode.insertBefore(a, m)
-    // })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    //
-    // ga('create', 'UA-49283770-2', 'auto');
-    // ga('set', 'forceSSL', true);
-    // ga('send', 'pageview');
+    // Google Analytics
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-83864732-1', 'auto');
+    ga('send', 'pageview');
 
+    // Intercom
     // window.intercomSettings = {
-    //   app_id: "p4de71aq"
+    //   app_id: "b2afsaks"
     // };
+    // (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/b2afsaks';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
 
-    // (function() {
-    //   var w = window;
-    //   var ic = w.Intercom;
-    //   if (typeof ic === "function") {
-    //     ic('reattach_activator');
-    //     ic('update', intercomSettings);
-    //   } else {
-    //     var d = document;
-    //     var i = function() {
-    //       i.c(arguments)
-    //     };
-    //     i.q = [];
-    //     i.c = function(args) {
-    //       i.q.push(args)
-    //     };
-    //     w.Intercom = i;
-    //
-    //     function l() {
-    //       var s = d.createElement('script');
-    //       s.type = 'text/javascript';
-    //       s.async = true;
-    //       s.src = 'https://widget.intercom.io/widget/p4de71aq';
-    //       var x = d.getElementsByTagName('script')[0];
-    //       x.parentNode.insertBefore(s, x);
-    //     }
-    //     if (w.attachEvent) {
-    //       w.attachEvent('onload', l);
-    //     } else {
-    //       w.addEventListener('load', l, false);
-    //     }
-    //   }
-    // })()
+    // Zopim
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="//v2.zopim.com/?4CSMNoXfiekcblz9LBBeojRawpdLy7U5";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
   </script>
 
 </head>

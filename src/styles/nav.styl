@@ -157,12 +157,15 @@ nav
         background: $colorSuccess
 
   @media screen and (max-width: $breakpoint)
+    transition: all .3s ease
+
     .inner-nav
       menu-minimized()
 
     .show-menu
       opacity: 1
       pointer-events: all
+      transition: all .3s ease  
 
     .menu
       position: absolute
@@ -175,6 +178,7 @@ nav
       display:block
       margin:0
       font-size: 1.5em
+      transition: all .3s ease
 
       li
         display:block
