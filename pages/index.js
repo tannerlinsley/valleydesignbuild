@@ -2,15 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 
-import hero from '../assets/images/hero.png'
-import waterFeature from '../assets/images/waterFeature.png'
+import hero from '../assets/images/hero.jpg'
+import waterFeature from '../assets/images/waterFeature.jpg'
 import treehouse from '../assets/images/treehouse.jpg'
-import skatepark from '../assets/images/skatepark.png'
-import pumptrack from '../assets/images/pumptrack.png'
-import entertainment from '../assets/images/entertainment.png'
-import landmark from '../assets/images/landmark.png'
+import skatepark from '../assets/images/skatepark.jpg'
+import pumptrack from '../assets/images/pumptrack.jpg'
+import entertainment from '../assets/images/entertainment.jpg'
+import landmark from '../assets/images/landmark.jpg'
 import icerink from '../assets/images/icerink.jpg'
-import plans from '../assets/images/plans.png'
+import plans from '../assets/images/plans.jpg'
 import trees from '../assets/images/trees.svg'
 
 const features = [
@@ -201,7 +201,7 @@ export default function Home() {
             css={`
               position: absolute;
               left: 650px;
-              bottom: 0;
+              bottom: -1px;
               height: 80%;
             `}
           />
