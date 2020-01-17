@@ -194,6 +194,7 @@ export default function Home() {
             padding: 10vh 0;
             width: 940px;
             max-width: 100%;
+            overflow: hidden;
           `}
         >
           <img
