@@ -1,3 +1,5 @@
 node_modules/
 dist/
 media/
+.next
+.DS_Store

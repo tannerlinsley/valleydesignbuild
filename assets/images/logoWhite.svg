@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="303px" height="35px" viewBox="0 0 303 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-21.000000, -20.000000)" fill="#FFFFFF">
+            <g id="Group-9" transform="translate(0.000000, -1.000000)">
+                <g id="Group" transform="translate(21.000000, 13.000000)">
+                    <g id="Group-3">
+                        <text id="VALLEY" font-family="BebasNeue-Regular, Bebas Neue" font-size="46.532518" font-weight="normal" letter-spacing="-0.978859253">
+                            <tspan x="17" y="42">VALLE</tspan>
+                            <tspan x="96.1434312" y="42">Y</tspan>
+                        </text>
+                        <text id="Design" font-family="BebasNeue-Regular, Bebas Neue" font-size="46.532518" font-weight="normal" letter-spacing="-0.978859253">
+                            <tspan x="122" y="42">Desig</tspan>
+                            <tspan x="197.42083" y="42">n</tspan>
+                        </text>
+                        <text id="Build" font-family="BebasNeue-Regular, Bebas Neue" font-size="46.532518" font-weight="normal" letter-spacing="-0.978859253">
+                            <tspan x="227" y="42">Buil</tspan>
+                            <tspan x="285.531202" y="42">d</tspan>
+                        </text>
+                        <path d="M12,42 L8.16961422,31.4498529 L11.5933945,34.351045 L6.59977628,25 L9.50650948,26.786997 L5.09596501,17.641918 L8.29794545,19.5506178 L3.855183,11.8237237 L5.40766798,11.8205616 C3.35517549,9.27352053 2.32892925,8 2.32892925,8 C2.04401779,11.3130506 1.90156205,12.9695759 1.90156205,12.9695759 C2.76813412,12.1376901 3.20142016,11.7217472 3.20142016,11.7217472 C2.3208137,17.2266339 1.88051047,19.9790772 1.88051047,19.9790772 C3.03280111,18.2886915 3.60894643,17.4434986 3.60894643,17.4434986 C2.48091363,24.2516819 1.91689723,27.6557736 1.91689723,27.6557736 C3.37051067,25.8531347 4.09731739,24.9518152 4.09731739,24.9518152 C1.8279801,31.222975 0.693311462,34.3585549 0.693311462,34.3585549 C2.46089249,32.482398 3.344683,31.5443195 3.344683,31.5443195 L0,41.5787285 L12,42 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
