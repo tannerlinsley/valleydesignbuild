@@ -169,7 +169,6 @@ export default function Home() {
         id="about"
         css={`
           position: relative;
-          padding: 0 5vw;
           backfround: white;
           display: flex;
           justify-content: center;
@@ -191,7 +190,7 @@ export default function Home() {
         <div
           css={`
             position: relative;
-            padding: 10vh 0;
+            padding: 10vw 10vw;
             width: 940px;
             max-width: 100%;
             overflow: hidden;
@@ -201,7 +200,7 @@ export default function Home() {
             src={trees}
             css={`
               position: absolute;
-              left: 650px;
+              left: 740px;
               bottom: -1px;
               height: 80%;
             `}
