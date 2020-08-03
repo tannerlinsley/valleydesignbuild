@@ -3,6 +3,10 @@ import styled from 'styled-components'
 import Link from 'next/link'
 
 import hero from '../assets/images/hero.jpg'
+import plans from '../assets/images/plans.jpg'
+import trees from '../assets/images/trees.svg'
+import welder from '../assets/images/welder.jpg'
+
 import waterFeature from '../assets/images/waterFeature.jpg'
 import treehouse from '../assets/images/treehouse.jpg'
 import skatepark from '../assets/images/skatepark.jpg'
@@ -10,8 +14,6 @@ import pumptrack from '../assets/images/pumptrack.jpg'
 import entertainment from '../assets/images/entertainment.jpg'
 import landmark from '../assets/images/landmark.jpg'
 import icerink from '../assets/images/icerink.jpg'
-import plans from '../assets/images/plans.jpg'
-import trees from '../assets/images/trees.svg'
 
 const features = [
   {
@@ -50,9 +52,31 @@ const Button = styled.button`
 
 export default function Home() {
   return (
-    <div css={``}>
+    <div>
+      <div
+        style={{
+          padding: '56.25% 0 0 0',
+          position: 'relative',
+        }}
+      >
+        <iframe
+          title="Promo Video"
+          src="https://player.vimeo.com/video/438344317?autoplay=1&title=0&byline=0&portrait=0"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+          }}
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </div>
       <div
         css={`
+          border-top: solid 0.5rem #001925;
           background: url(${hero});
           background-size: cover;
           background-position: center;
@@ -60,7 +84,7 @@ export default function Home() {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          padding: 30vh 5vw;
+          padding: 25vh 5vw;
           color: white;
           text-align: center;
           text-shadow: 0 5px 20px black, 0 10px 40px black, 0 20px 60px black;
@@ -81,7 +105,7 @@ export default function Home() {
             font-size: 2rem;
           `}
         >
-          For the adventurer, recreater and child in all of us
+          For the adventurer and recreator in all of us
         </p>
       </div>
       <div
@@ -89,20 +113,18 @@ export default function Home() {
         css={`
           border-top: solid 0.5rem #001925;
           background: #001925;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+          grid-gap: 0.5rem;
           font-size: 2.5rem;
           font-weight: bolder;
 
           > * {
             position: relative;
-            flex: 1 0 300px;
             color: white;
             overflow: hidden;
             max-height: 300px;
-            border-bottom: solid 0.5rem #001925;
+            border-radius: 0.2rem;
 
             :before {
               content: '';
@@ -243,7 +265,9 @@ export default function Home() {
         css={`
           padding: calc(12vh + 12vw) 5vw;
           border-top: solid 0.5rem #001925;
-          background-image: linear-gradient(147deg, #004f6f 0%, #002e48 99%);
+          background: url(${welder});
+          background-size: cover;
+          background-position: center;
           color: white;
           display: flex;
           flex-direction: column;

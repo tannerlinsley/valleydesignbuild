@@ -42,6 +42,7 @@ const Styles = styled.nav`
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.5rem;
     color: white;
+    align-items: center;
 
     @media (max-width: 800px) {
       font-size: 1.2rem;

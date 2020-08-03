@@ -58,6 +58,7 @@ export default class MyApp extends App {
             src="https://www.googletagmanager.com/gtag/js?id=UA-83864732-1"
           />
           <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+          <script src="https://player.vimeo.com/api/player.js"></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `
