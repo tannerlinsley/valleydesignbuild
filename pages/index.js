@@ -118,6 +118,7 @@ export default function Home() {
           grid-gap: 0.5rem;
           font-size: 2.5rem;
           font-weight: bolder;
+          overflow: hidden;
 
           > * {
             position: relative;
