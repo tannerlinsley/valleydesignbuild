@@ -11,7 +11,6 @@ import logoWhite from '../assets/images/logoWhite.svg'
 //
 
 const Styles = styled.nav`
-  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -26,6 +25,10 @@ const Styles = styled.nav`
 
   @media (max-width: 800px) {
     flex-direction: column;
+  }
+
+  @media (min-height: 500px) {
+    position: sticky;
   }
 
   .logo {
