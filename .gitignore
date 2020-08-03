@@ -3,3 +3,4 @@ dist/
 media/
 .next
 .DS_Store
+out/

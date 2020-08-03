@@ -11,12 +11,13 @@ import logoWhite from '../assets/images/logoWhite.svg'
 //
 
 const Styles = styled.nav`
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
   background: #001018e0;
+  background: #001925ef;
 
   display: flex;
   flex-wrap: wrap;
