@@ -48,11 +48,16 @@ export default class MyApp extends App {
     return (
       <>
         <Head>
-          <title>
-            Valley Design Build - Custom & Specialized Design + Build Landscapes
-          </title>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title>
+            Valley Design Build - Custom, Specialized & Ambitious Landscape
+            Design/Build
+          </title>
+          <meta
+            name="description"
+            content="Valley Design Build is a high-end Utah-based Landscape Design, Architecture & Build Firm specializing in pump tracks, water features, bike paths, swimming pools, private ice-rinks, and ambitious residential experiences."
+          />
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-83864732-1"
