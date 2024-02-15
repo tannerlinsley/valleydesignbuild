@@ -2,6 +2,7 @@
 // const withOptimizedImages = require('next-optimized-images')
 
 const baseConfig = {
+  output: 'export',
   images: {
     formats: ['image/webp'],
   },
