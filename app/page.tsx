@@ -130,6 +130,8 @@ export default function Home() {
         className="border-t border-[#001925] bg-cover bg-center flex flex-col items-center justify-center py-[12vh] px-[12vw] text-white text-center space-y-6"
         style={{
           background: `url(${welder.src})`,
+          backgroundPosition: 'top center',
+          backgroundSize: 'cover',
         }}
       >
         <div
