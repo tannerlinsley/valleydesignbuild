@@ -1,0 +1,196 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+/* Fonts - PT Sans Narrow for Valley Design Build */
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('https://fonts.gstatic.com/s/ptsansnarrow/v18/BngRUXNadjH0qYEzV7ab-oWlsYCByxyK.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url('https://fonts.gstatic.com/s/ptsansnarrow/v18/BngSUXNadjH0qYEzV7ab-oWlsbg95DiCUfk.woff2') format('woff2');
+}
+
+@theme {
+  --font-heading: 'PT Sans Narrow', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'PT Sans Narrow', ui-sans-serif, system-ui, sans-serif;
+
+  /* Valley Design Build color palette - Navy/Cyan tones */
+  --color-navy-50: #e6f4f7;
+  --color-navy-100: #cce9ef;
+  --color-navy-200: #99d3df;
+  --color-navy-300: #66bdcf;
+  --color-navy-400: #33a7bf;
+  --color-navy-500: #0891af;
+  --color-navy-600: #06748c;
+  --color-navy-700: #055769;
+  --color-navy-800: #033a46;
+  --color-navy-900: #001925;
+  --color-navy-950: #000d13;
+
+  /* Cyan accent colors */
+  --color-cyan-50: #ecfeff;
+  --color-cyan-100: #cffafe;
+  --color-cyan-200: #a5f3fc;
+  --color-cyan-300: #67e8f9;
+  --color-cyan-400: #22d3ee;
+  --color-cyan-500: #06b6d4;
+  --color-cyan-600: #0891b2;
+  --color-cyan-700: #0e7490;
+  --color-cyan-800: #155e75;
+  --color-cyan-900: #164e63;
+  --color-cyan-950: #083344;
+
+  /* Gray scale for UI elements */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --color-gray-950: #030712;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Cross-document View Transitions */
+@view-transition {
+  navigation: auto;
+}
+
+/* Keep header and footer stable during transitions */
+::view-transition-group(header),
+::view-transition-group(footer) {
+  animation-duration: 0s;
+}
+
+/* Subtle fade-slide-up animation for page content */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+}
+
+::view-transition-old(root) {
+  animation-name: fade-out;
+}
+
+::view-transition-new(root) {
+  animation-name: fade-slide-up;
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Main content area transition */
+::view-transition-group(main) {
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+}
+
+::view-transition-old(main) {
+  animation-name: fade-out;
+}
+
+::view-transition-new(main) {
+  animation-name: fade-in;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Service card transitions */
+::view-transition-group(service-pools-spa),
+::view-transition-group(service-water-features),
+::view-transition-group(service-play-houses),
+::view-transition-group(service-skate-bike),
+::view-transition-group(service-pumptracks),
+::view-transition-group(service-entertainment),
+::view-transition-group(service-landmarks),
+::view-transition-group(service-winterscape) {
+  animation-duration: 0.35s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Service card background image transitions */
+::view-transition-group(service-pools-spa-bg),
+::view-transition-group(service-water-features-bg),
+::view-transition-group(service-play-houses-bg),
+::view-transition-group(service-skate-bike-bg),
+::view-transition-group(service-pumptracks-bg),
+::view-transition-group(service-entertainment-bg),
+::view-transition-group(service-landmarks-bg),
+::view-transition-group(service-winterscape-bg) {
+  animation-duration: 0.35s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Logo stays stable */
+::view-transition-group(logo) {
+  animation-duration: 0s;
+}
+
+@layer base {
+  html {
+    color-scheme: light dark;
+  }
+
+  * {
+    @apply border-gray-200 dark:border-gray-800;
+  }
+
+  html,
+  body {
+    @apply text-gray-900 bg-gray-50 dark:bg-navy-900 dark:text-gray-200 font-body text-lg;
+  }
+
+  /* Hide focus outline for mouse users */
+  .using-mouse * {
+    outline: none !important;
+  }
+}
+
+/* Prose customizations for blog content */
+.prose {
+  --tw-prose-links: var(--color-cyan-600);
+  --tw-prose-headings: var(--color-gray-900);
+}
+
+.dark .prose {
+  --tw-prose-links: var(--color-cyan-400);
+  --tw-prose-headings: var(--color-gray-100);
+}

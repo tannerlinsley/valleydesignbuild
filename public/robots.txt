@@ -1,0 +1,12 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+# Sitemap
+Sitemap: https://valleydesignbuild.com/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
+
+# Allow all crawlers to access all content
+Allow: /

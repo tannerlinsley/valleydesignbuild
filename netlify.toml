@@ -1,0 +1,5 @@
+[build]
+  command = "pnpm build"
+
+[images]
+  remote_images = ["https://.*"]
