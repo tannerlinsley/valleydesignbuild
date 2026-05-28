@@ -48,6 +48,14 @@ export function Footer() {
               We are dreamers and builders. Creating custom pools, pumptracks,
               skateparks, entertainment spaces, and ambitious outdoor
               experiences for the adventurer and recreator in all of us.
+              Ongoing pool service is handled by{' '}
+              <a
+                href="https://utahpools.com"
+                className="text-cyan-400 hover:text-cyan-300 transition-colors"
+              >
+                Utah Pools
+              </a>
+              .
             </p>
             <div className="flex gap-4">
               <a
