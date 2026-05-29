@@ -19,7 +19,7 @@ const serviceLinks = [
   { href: '/services/play-houses', label: 'Play Houses' },
   { href: '/services/skate-bike', label: 'Skate + Bike' },
   { href: '/services/pumptracks', label: 'Pumptracks' },
-  { href: '/services/entertainment', label: 'Entertainment' },
+  { href: '/services/entertainment', label: 'Outdoor Living' },
   { href: '/services/landmarks', label: 'Landmarks' },
   { href: '/services/winterscape', label: 'Winterscape' },
 ]

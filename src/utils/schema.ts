@@ -29,7 +29,7 @@ export function localBusinessSchema() {
     url: SITE_URL,
     telephone: BUSINESS_INFO.telephone,
     email: BUSINESS_INFO.email,
-    description: 'Custom pools, pumptracks, skateparks, treehouses, water features, ice rinks, and outdoor entertainment builds for families across Northern Utah.',
+    description: 'Custom pools, pumptracks, skateparks, treehouses, water features, ice rinks, outdoor living spaces, landscaping, and backyard builds for families across Northern Utah.',
     foundingDate: '2018',
     address: {
       '@type': 'PostalAddress',
@@ -131,8 +131,8 @@ export function localBusinessSchema() {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Entertainment Structures',
-            description: 'Outdoor kitchens, pavilions, theaters, shade structures, and gathering areas built for regular use',
+            name: 'Outdoor Living + Landscape',
+            description: 'Patios, planting, shade, kitchens, pavilions, fire features, and landscape gathering areas built for regular use',
           },
         },
         {

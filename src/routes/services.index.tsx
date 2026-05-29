@@ -13,13 +13,15 @@ export const Route = createFileRoute('/services/')({
       ...seo({
         title: 'Services | Valley Design Build Utah',
         description:
-          'Custom pools, pumptracks, private skateparks, treehouses, water features, outdoor kitchens, ice rinks, and backyard builds across Northern Utah.',
+          'Custom pools, pumptracks, private skateparks, treehouses, water features, outdoor living spaces, landscaping, outdoor kitchens, ice rinks, and backyard builds across Northern Utah.',
         path: '/services',
         keywords: [
           'custom pool builder utah',
           'pumptrack construction',
           'private skatepark builder',
           'treehouse builder utah',
+          'outdoor living spaces utah',
+          'landscaping utah',
           'outdoor entertainment spaces',
           'water features utah',
           'ice rink installation',
@@ -35,7 +37,7 @@ export const Route = createFileRoute('/services/')({
             '@context': 'https://schema.org',
             '@type': 'ItemList',
             name: 'Custom Backyard Construction Services',
-            description: 'Custom pools, pumptracks, skateparks, treehouses, ice rinks, and outdoor builds offered by Valley Design Build in Utah',
+            description: 'Custom pools, pumptracks, skateparks, treehouses, ice rinks, outdoor living spaces, landscaping, and outdoor builds offered by Valley Design Build in Utah',
             numberOfItems: SERVICES.length,
             itemListElement: SERVICES.map((service, index) => ({
               '@type': 'ListItem',
@@ -76,8 +78,9 @@ function ServicesIndex() {
             </h1>
             <p className="text-xl text-gray-300 mb-8">
               Custom pools, pumptracks, private skateparks, treehouses, water
-              features, outdoor kitchens, and ice rinks, planned for your site
-              and built by one accountable crew.
+              features, outdoor living spaces, landscaping, outdoor kitchens,
+              and ice rinks, planned for your site and built by one accountable
+              crew.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -145,7 +148,7 @@ function ServicesIndex() {
                 {
                   title: 'Built for Your Yard',
                   description:
-                    'Slope, access, shade, winter, water, and how your family uses the space all shape the final plan.',
+                    'Slope, access, shade, planting, winter, water, and how your family uses the space all shape the final plan.',
                 },
                 {
                   title: 'Made to Be Used',

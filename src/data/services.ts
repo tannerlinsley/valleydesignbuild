@@ -271,16 +271,17 @@ Some tracks are compact loops for young riders. Others are larger asphalt or con
   },
   {
     slug: 'entertainment',
-    title: 'Entertainment Structures',
-    shortTitle: 'Entertainment',
+    title: 'Outdoor Living + Landscape',
+    shortTitle: 'Outdoor Living',
     description:
-      'Outdoor kitchens, pavilions, theaters, shade structures, and gathering areas built for regular use.',
-    longDescription: `Outdoor gathering areas work best when the practical pieces are solved early: shade, wind, seating, utilities, cooking, lighting, sound, storage, and weather protection.
+      'Patios, planting, shade, kitchens, pavilions, fire features, and landscape gathering areas built for regular use.',
+    longDescription: `Outdoor living and landscape work is often what ties the whole yard together. The practical pieces matter early: grading, drainage, shade, wind, planting, seating, utilities, cooking, lighting, sound, storage, and weather protection.
 
-We build outdoor kitchens, bars, pavilions, pergolas, fire features, theaters, and covered rooms that fit the way you actually host. The goal is a space people use often, not a pretty corner that only gets photographed once.`,
+We build patios, landscape gathering areas, outdoor kitchens, bars, pavilions, pergolas, fire features, theaters, and covered rooms that fit the way you actually live outside. The goal is a space people use often, not a pretty corner that only gets photographed once.`,
     icon: Sparkles,
     image: '/images/entertainment.jpg',
     features: [
+      'Patios and landscape gathering areas',
       'Outdoor kitchens and bars',
       'Pizza ovens and smokers',
       'Covered pavilions and pergolas',
@@ -292,7 +293,7 @@ We build outdoor kitchens, bars, pavilions, pergolas, fire features, theaters, a
     ],
     process: [
       'Lifestyle consultation and wish list',
-      'Custom design and layout planning',
+      'Landscape and hardscape layout planning',
       'Material and equipment selection',
       'Foundation and utility preparation',
       'Structure construction',

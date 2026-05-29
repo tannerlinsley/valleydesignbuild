@@ -27,14 +27,16 @@ export const Route = createRootRoute({
         title:
           'Valley Design Build | Custom Pools, Pumptracks & Backyard Builds in Utah',
         description:
-          'Custom pools, pumptracks, skateparks, treehouses, ice rinks, water features, and outdoor entertainment builds for families across Northern Utah. Call (801) 510-7142.',
+          'Custom pools, pumptracks, skateparks, treehouses, ice rinks, water features, outdoor living spaces, landscaping, and backyard builds across Northern Utah.',
         path: '/',
         keywords: [
           'custom pools utah',
           'pumptrack builder utah',
           'backyard skatepark utah',
           'treehouse builder utah',
+          'outdoor living utah',
           'outdoor entertainment utah',
+          'landscaping utah',
           'landscape design build utah',
           'private ice rink utah',
           'water features utah',

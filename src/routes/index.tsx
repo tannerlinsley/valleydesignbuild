@@ -24,7 +24,7 @@ export const Route = createFileRoute('/')({
         title:
           'Valley Design Build | Custom Pools, Pumptracks & Backyard Builds in Utah',
         description:
-          'Custom pools, backyard pumptracks, private skateparks, treehouses, ice rinks, water features, and outdoor entertainment builds across Northern Utah. Call (801) 510-7142.',
+          'Custom pools, backyard pumptracks, private skateparks, treehouses, ice rinks, outdoor living spaces, landscaping, water features, and backyard builds across Northern Utah.',
         path: '/',
         keywords: [
           'custom pool builder utah',
@@ -51,7 +51,7 @@ export const Route = createFileRoute('/')({
           webPageSchema({
             name: 'Valley Design Build | Custom Outdoor Builds',
             description:
-              'Custom pools, pumptracks, skateparks, treehouses, ice rinks, and outdoor entertainment builds in Northern Utah.',
+              'Custom pools, pumptracks, skateparks, treehouses, ice rinks, outdoor living spaces, landscaping, and backyard builds in Northern Utah.',
             url: '/',
           }),
         ]),
@@ -65,7 +65,7 @@ function Home() {
   const valueProps = [
     {
       title: 'Site-shaped design',
-      detail: 'Grade, drainage, shade, access, and how the yard gets used.',
+      detail: 'Grade, drainage, shade, planting, access, and how the yard gets used.',
       icon: Award,
     },
     {
@@ -152,13 +152,15 @@ function Home() {
                 <span className="block">in Utah</span>
               </h1>
               <p className="mt-5 max-w-xl text-xl italic leading-snug text-cyan-700 dark:text-cyan-300 md:text-2xl">
-                Pools, pumptracks, skateparks, treehouses, ice rinks, and
-                gathering spaces for families who like to be outside.
+                Pools, pumptracks, skateparks, treehouses, ice rinks, outdoor
+                living spaces, and landscaping for families who like to be
+                outside.
               </p>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-gray-600 dark:text-gray-300 md:text-xl">
                 We design and build the parts of a property that get used: the
-                pool, the track, the rink, the shade structure, the water, the
-                grading, and the details that make it all work.
+                pool, the patio, the track, the rink, the shade structure, the
+                planting, the water, the grading, and the details that make it
+                all work.
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
