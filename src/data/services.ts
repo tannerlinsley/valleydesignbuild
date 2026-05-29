@@ -1,6 +1,7 @@
 import {
   Waves,
   Droplets,
+  Leaf,
   TreePine,
   Bike,
   CircleDot,
@@ -119,6 +120,55 @@ That might be a boulder waterfall, a short stream, a fountain, a rain curtain, o
         question: 'Do water features use a lot of water?',
         answer:
           'Recirculating systems use the same water continuously with minimal evaporation loss. They\'re more efficient than you might expect.',
+      },
+    ],
+  },
+  {
+    slug: 'outdoor-living-landscaping',
+    title: 'Outdoor Living & Landscaping',
+    shortTitle: 'Outdoor Living',
+    description:
+      'Patios, planting, grading, drainage, shade, and landscape gathering areas planned around how the yard gets used.',
+    longDescription: `Outdoor living and landscaping are often what make the rest of the yard feel finished. We plan patios, planting, grading, drainage, shade, access, and gathering areas around the pool, track, water feature, kitchen, or open space they need to support.
+
+This is not mow-and-blow landscaping. It is site work, hardscape, softscape, circulation, and outdoor rooms designed to make the whole property easier to use.`,
+    icon: Leaf,
+    image: '/images/waterFeature.jpg',
+    features: [
+      'Patio and hardscape layouts',
+      'Landscape planting plans',
+      'Grading and drainage coordination',
+      'Shade and seating areas',
+      'Walkways and circulation',
+      'Boulder, mulch, and finish details',
+      'Lawn and open play areas',
+      'Landscape lighting coordination',
+    ],
+    process: [
+      'Site walk and usage goals',
+      'Grade, drainage, and access review',
+      'Outdoor room and circulation layout',
+      'Planting and material selection',
+      'Hardscape and softscape installation',
+      'Lighting, irrigation, and finish coordination',
+      'Final grading and cleanup',
+      'Walkthrough and care notes',
+    ],
+    faqs: [
+      {
+        question: 'Do you do standalone landscaping projects?',
+        answer:
+          'Yes, when the project needs design-build planning, grading, hardscape, planting, or outdoor living work. We are a better fit for full site improvements than routine maintenance.',
+      },
+      {
+        question: 'Can landscaping be part of a pool or pumptrack project?',
+        answer:
+          'Absolutely. Most larger builds need landscape planning around drainage, planting, shade, circulation, and how people move through the yard.',
+      },
+      {
+        question: 'Do you handle patios and outdoor rooms?',
+        answer:
+          'Yes. We design and build patios, paths, seating areas, shade structures, and gathering spaces that connect the main features of the yard.',
       },
     ],
   },
@@ -271,17 +321,16 @@ Some tracks are compact loops for young riders. Others are larger asphalt or con
   },
   {
     slug: 'entertainment',
-    title: 'Outdoor Living + Landscape',
-    shortTitle: 'Outdoor Living',
+    title: 'Entertainment Structures',
+    shortTitle: 'Entertainment',
     description:
-      'Patios, planting, shade, kitchens, pavilions, fire features, and landscape gathering areas built for regular use.',
-    longDescription: `Outdoor living and landscape work is often what ties the whole yard together. The practical pieces matter early: grading, drainage, shade, wind, planting, seating, utilities, cooking, lighting, sound, storage, and weather protection.
+      'Outdoor kitchens, pavilions, theaters, shade structures, and gathering areas built for regular use.',
+    longDescription: `Outdoor gathering areas work best when the practical pieces are solved early: shade, wind, seating, utilities, cooking, lighting, sound, storage, and weather protection.
 
-We build patios, landscape gathering areas, outdoor kitchens, bars, pavilions, pergolas, fire features, theaters, and covered rooms that fit the way you actually live outside. The goal is a space people use often, not a pretty corner that only gets photographed once.`,
+We build outdoor kitchens, bars, pavilions, pergolas, fire features, theaters, and covered rooms that fit the way you actually host. The goal is a space people use often, not a pretty corner that only gets photographed once.`,
     icon: Sparkles,
     image: '/images/entertainment.jpg',
     features: [
-      'Patios and landscape gathering areas',
       'Outdoor kitchens and bars',
       'Pizza ovens and smokers',
       'Covered pavilions and pergolas',
@@ -293,7 +342,7 @@ We build patios, landscape gathering areas, outdoor kitchens, bars, pavilions, p
     ],
     process: [
       'Lifestyle consultation and wish list',
-      'Landscape and hardscape layout planning',
+      'Custom design and layout planning',
       'Material and equipment selection',
       'Foundation and utility preparation',
       'Structure construction',

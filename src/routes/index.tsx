@@ -271,7 +271,7 @@ function Home() {
             </div>
           </div>
 
-          <div className="grid gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
             {SERVICES.map((service, index) => (
               <div key={service.slug}>
                 <span className="mb-2 block text-xs font-bold uppercase text-gray-400 dark:text-gray-500">

@@ -131,8 +131,16 @@ export function localBusinessSchema() {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Outdoor Living + Landscape',
-            description: 'Patios, planting, shade, kitchens, pavilions, fire features, and landscape gathering areas built for regular use',
+            name: 'Outdoor Living & Landscaping',
+            description: 'Patios, planting, grading, drainage, shade, and landscape gathering areas planned around how the yard gets used',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Entertainment Structures',
+            description: 'Outdoor kitchens, pavilions, theaters, shade structures, and gathering areas built for regular use',
           },
         },
         {
