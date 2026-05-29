@@ -29,10 +29,10 @@ export const SERVICES: Service[] = [
     title: 'Custom Pools & Spa',
     shortTitle: 'Pools + Spa',
     description:
-      'Luxury custom swimming pools and spas designed as the centerpiece of your backyard paradise.',
-    longDescription: `At Valley Design Build, we believe a pool should be more than just a place to swim—it should be a destination. Our custom pools are designed to integrate seamlessly with your landscape, creating a cohesive outdoor living experience that reflects your personal style and lifestyle needs.
+      'Custom swimming pools and spas planned around grade, equipment, access, and how your family wants to swim.',
+    longDescription: `A pool has to fit the yard before it can become the favorite part of it. We plan custom pools around grade, equipment access, drainage, shade, views, and the way people will move between the house, patio, spa, and water.
 
-From infinity edges that blend into the horizon to naturalistic lagoon pools surrounded by boulder waterfalls, we bring imagination and engineering together. Our spa designs complement your pool or stand alone as intimate retreats for relaxation and rejuvenation.`,
+That can mean a clean modern pool, a natural boulder edge, a spa tucked close to the house, or a full pool and patio layout. The goal is simple: make the water look right, work right, and hold up in Utah weather.`,
     icon: Waves,
     image: '/images/pools.jpg',
     features: [
@@ -46,8 +46,8 @@ From infinity edges that blend into the horizon to naturalistic lagoon pools sur
       'Natural and saltwater options',
     ],
     process: [
-      'Initial consultation to understand your vision',
-      'Custom design development with 3D visualization',
+      'Site walk and project goals',
+      'Layout, grades, equipment, and finish planning',
       'Engineering and permit coordination',
       'Excavation and structural installation',
       'Plumbing, electrical, and equipment setup',
@@ -78,10 +78,10 @@ From infinity edges that blend into the horizon to naturalistic lagoon pools sur
     title: 'Water Features',
     shortTitle: 'Water Features',
     description:
-      'Dramatic waterfalls, streams, fountains, and water walls that bring movement and sound to your landscape.',
-    longDescription: `Water has a transformative power unlike any other landscape element. The sound of flowing water creates instant tranquility, while dramatic waterfalls and cascades add visual excitement. At Valley Design Build, we design water features that become the soul of your outdoor space.
+      'Waterfalls, streams, fountains, and water walls built for movement, sound, service access, and Utah winters.',
+    longDescription: `Moving water changes how a yard feels, but it also has to be engineered correctly. We build water features with the right basin, pump, filtration, stone, grade, and winter plan so they do not become a maintenance headache.
 
-From natural boulder waterfalls that look carved by nature to sleek modern water walls and rain curtains, we engineer each feature for reliability and impact. Our systems are designed for Utah's climate with proper circulation, filtration, and winterization capabilities.`,
+That might be a boulder waterfall, a short stream, a fountain, a rain curtain, or a modern water wall. We focus on the sound, the view from the house, the service access, and the way the feature will age outside.`,
     icon: Droplets,
     image: '/images/waterFeature.jpg',
     features: [
@@ -127,10 +127,10 @@ From natural boulder waterfalls that look carved by nature to sleek modern water
     title: 'Custom Play Houses',
     shortTitle: 'Play Houses',
     description:
-      'Imaginative treehouses and play structures that create magical spaces for adventure and creativity.',
-    longDescription: `Every child deserves a space where imagination runs wild. Our custom playhouses and treehouses go far beyond prefab structures—they're architectural adventures designed to inspire creativity, encourage outdoor play, and create lasting memories.
+      'Treehouses and play structures built to be sturdy, safe, and worth exploring.',
+    longDescription: `A good playhouse has to feel fun without feeling flimsy. We build treehouses and play structures with real framing, safe access, durable materials, and enough detail to keep kids coming back.
 
-From rustic treehouse retreats nestled in mature trees to elaborate multi-level play complexes with bridges, slides, and climbing walls, we design and build structures that become the backdrop for childhood adventures. Each build is engineered for safety while maximizing fun.`,
+Some projects tie into mature trees. Others are freestanding structures with bridges, slides, climbing walls, lookout platforms, and covered areas. We design them around the yard, the age range, and the way the family wants to use the space.`,
     icon: TreePine,
     image: '/images/treehouse.jpg',
     features: [
@@ -144,7 +144,7 @@ From rustic treehouse retreats nestled in mature trees to elaborate multi-level 
       'Lighting and electrical options',
     ],
     process: [
-      'Dream session with the whole family',
+      'Family wish list and site walk',
       'Site evaluation and tree assessment',
       'Custom design development',
       'Engineering for safety and longevity',
@@ -176,10 +176,10 @@ From rustic treehouse retreats nestled in mature trees to elaborate multi-level 
     title: 'Skate & Bike Parks',
     shortTitle: 'Skate + Bike',
     description:
-      'Private skateparks and bike courses that bring world-class action sports to your backyard.',
-    longDescription: `Why travel to the skatepark when the skatepark can come to you? Valley Design Build creates private skateparks and bike facilities that rival public parks in quality and creativity. Whether you're raising the next X Games champion or just want a place to enjoy your passion, we build it.
+      'Private skateparks and bike courses shaped around rider skill, flow, drainage, and available space.',
+    longDescription: `A backyard skatepark has to ride well, drain well, and fit the people who will use it. We lay out private skateparks and bike features around skill level, speed, progression, sight lines, and the space available.
 
-From smooth concrete bowls and half-pipes to street-style plazas with rails, stairs, and ledges, our skateparks are designed by riders for riders. We also build MTB dirt jump lines, pump tracks, and BMX facilities—all engineered for proper flow and progression.`,
+That can include concrete bowls, half-pipes, quarter pipes, ledges, rails, stairs, pump lines, dirt jumps, or BMX features. We care about the transitions, the approach, the landing, and whether it still feels good after the first week.`,
     icon: Bike,
     image: '/images/skatepark.jpg',
     features: [
@@ -193,7 +193,7 @@ From smooth concrete bowls and half-pipes to street-style plazas with rails, sta
       'Night lighting systems',
     ],
     process: [
-      'Rider consultation and vision session',
+      'Rider consultation and site walk',
       'Site survey and design development',
       'Engineering and flow analysis',
       'Excavation and base preparation',
@@ -225,10 +225,10 @@ From smooth concrete bowls and half-pipes to street-style plazas with rails, sta
     title: 'Pump Tracks',
     shortTitle: 'Pumptracks',
     description:
-      'Professional pump track circuits for bikes, skates, and scooters—endless laps of pure fun.',
-    longDescription: `Pump tracks are the ultimate backyard feature for action sports enthusiasts of all ages. These continuous loop circuits of rollers and berms can be ridden without pedaling—using body pumping motions to generate speed through physics and flow.
+      'Backyard pumptrack circuits for bikes, scooters, skates, and repeat laps without leaving home.',
+    longDescription: `Pumptracks look simple until you ride one that does not flow. The shape of every roller, berm, transition, and straightaway matters. We build residential pumptracks that work for bikes, scooters, skateboards, and different rider levels.
 
-Valley Design Build creates world-class pump tracks for private properties, from compact residential loops to competition-grade facilities. Our tracks work for bikes, skateboards, scooters, and even rollerblades. They're the perfect family investment for active outdoor play.`,
+Some tracks are compact loops for young riders. Others are larger asphalt or concrete layouts with multiple lines and faster rhythm. We plan for drainage, maintenance, surfacing, and the room riders need to keep coming back.`,
     icon: CircleDot,
     image: '/images/pumptrack.jpg',
     features: [
@@ -274,10 +274,10 @@ Valley Design Build creates world-class pump tracks for private properties, from
     title: 'Entertainment Structures',
     shortTitle: 'Entertainment',
     description:
-      'Outdoor kitchens, pavilions, theaters, and gathering spaces that elevate outdoor living.',
-    longDescription: `The best memories are made outdoors. Valley Design Build creates entertainment structures that transform your property into the ultimate destination for family gatherings, parties, and everyday enjoyment. These aren't just structures—they're stages for life's best moments.
+      'Outdoor kitchens, pavilions, theaters, shade structures, and gathering areas built for regular use.',
+    longDescription: `Outdoor gathering areas work best when the practical pieces are solved early: shade, wind, seating, utilities, cooking, lighting, sound, storage, and weather protection.
 
-From fully-equipped outdoor kitchens with pizza ovens and smokers to covered pavilions with sound systems and outdoor theaters, we design and build spaces that bring people together. Every detail is considered, from lighting to seating to weatherproofing.`,
+We build outdoor kitchens, bars, pavilions, pergolas, fire features, theaters, and covered rooms that fit the way you actually host. The goal is a space people use often, not a pretty corner that only gets photographed once.`,
     icon: Sparkles,
     image: '/images/entertainment.jpg',
     features: [
@@ -323,10 +323,10 @@ From fully-equipped outdoor kitchens with pizza ovens and smokers to covered pav
     title: 'Landmark Features',
     shortTitle: 'Landmarks',
     description:
-      'Sculptural elements, artistic features, and architectural statements that define your landscape.',
-    longDescription: `Some features become the defining element of a property—a signature piece that sets your landscape apart. Valley Design Build creates landmark features that serve as focal points, conversation starters, and expressions of personal style.
+      'Custom site features, sculptural elements, and one-off builds that need design, fabrication, and installation.',
+    longDescription: `Some projects do not fit a normal service category. They might be a sculptural water feature, a custom entry, a small folly, a themed environment, or a one-off structure that needs design, fabrication, and careful installation.
 
-From dramatic sculptural elements and artistic water features to architectural follies and themed environments, we bring bold visions to life. These aren't catalog pieces—they're custom creations born from collaboration between our designers and your imagination.`,
+We help turn those ideas into something buildable. That means sketches, materials, engineering, site prep, fabrication, lighting, and enough restraint to make the feature feel intentional instead of random.`,
     icon: Landmark,
     image: '/images/landmark.jpg',
     features: [
@@ -340,20 +340,20 @@ From dramatic sculptural elements and artistic water features to architectural f
       'Branded or personal elements',
     ],
     process: [
-      'Creative consultation and vision exploration',
+      'Idea review and site walk',
       'Concept sketches and development',
       'Engineering and fabrication planning',
       'Material sourcing and procurement',
       'Site preparation',
       'Installation and construction',
       'Lighting and finishing',
-      'Reveal and documentation',
+      'Final walkthrough and documentation',
     ],
     faqs: [
       {
         question: 'Can you bring my specific idea to life?',
         answer:
-          'That\'s exactly what we do. Our process starts with your vision—whether it\'s a rough sketch, a photo inspiration, or just an idea in your head.',
+          'That is exactly the kind of work we take on. Bring a rough sketch, a reference photo, or even a loose idea and we will help turn it into a buildable plan.',
       },
       {
         question: 'What materials can be used for landmark features?',
@@ -372,10 +372,10 @@ From dramatic sculptural elements and artistic water features to architectural f
     title: 'Winterscape & Ice Rinks',
     shortTitle: 'Winterscape',
     description:
-      'Private ice rinks, winter sports features, and year-round outdoor enjoyment solutions.',
-    longDescription: `Why should outdoor fun end when the snow flies? Valley Design Build creates winterscape features that embrace Utah's cold season, from private ice rinks for skating and hockey to snow-making systems and winter sports facilities.
+      'Private ice rinks, winter sports features, and cold-weather outdoor spaces built for Utah winters.',
+    longDescription: `Utah winter can be part of the backyard instead of the season that shuts it down. We build private ice rinks, hockey setups, warming areas, snow features, and cold-weather layouts that make sense for the site.
 
-Our residential ice rinks range from simple seasonal installations to elaborate refrigerated rinks with boards and lighting. We also design landscapes that shine in winter—features that look beautiful under snow and invite outdoor enjoyment when the temperature drops.`,
+Some rinks are seasonal natural-freeze installations. Others use refrigeration, boards, lighting, and more permanent infrastructure. We plan the base, drainage, summer use, winter operations, and the handoff so the system is practical to run.`,
     icon: Snowflake,
     image: '/images/icerink.jpg',
     features: [

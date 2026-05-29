@@ -41,13 +41,12 @@ export function Footer() {
                 className="h-8 mb-2"
               />
               <div className="text-[10px] text-gray-500 tracking-[0.2em] uppercase">
-                Ambitious Experiences
+                Custom Backyard Builds
               </div>
             </div>
             <p className="text-gray-400 mb-4 text-sm leading-relaxed">
-              We are dreamers and builders. Creating custom pools, pumptracks,
-              skateparks, entertainment spaces, and ambitious outdoor
-              experiences for the adventurer and recreator in all of us.
+              Custom pools, pumptracks, skateparks, treehouses, water features,
+              ice rinks, and outdoor rooms built by one Utah design-build crew.
               Ongoing pool service is handled by{' '}
               <a
                 href="https://utahpools.com"

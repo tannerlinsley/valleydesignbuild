@@ -1,16 +1,16 @@
 ---
-title: "Playhouses That Inspire Adventure"
-description: "Today's playhouses go far beyond basic backyard structures. Explore the possibilities for custom play spaces that spark imagination and encourage outdoor adventure."
+title: "Custom Playhouses and Treehouses Built to Last"
+description: "Custom playhouses and treehouses can be sturdy, safe, and specific to the kids, the yard, and the way the structure will be used."
 date: "2025-10-25"
 author: "Valley Design Build"
-image: "/images/blog/custom-playhouse.jpg"
+image: "/images/treehouse.jpg"
 imageAlt: "Custom treehouse with rope bridge and slide"
 tags: ["Playhouses", "Kids Spaces", "Custom Design"]
 ---
 
-Remember the clubhouse you wished you had as a kid? The tree fort in the woods, the secret hideaway, the castle you imagined?
+Remember the clubhouse you wished you had as a kid? The tree fort in the woods, the secret hideaway, the place that felt like yours?
 
-Today's custom playhouses make those dreams real—and they're designed to last until your grandkids are climbing them.
+Today's custom playhouses can be built with real structure, safe access, durable materials, and enough detail to stay interesting for years.
 
 ## Beyond the Plastic Castle
 
@@ -94,7 +94,7 @@ The best playhouses offer variety:
 
 ## Tree Integration
 
-For many families, the dream is a treehouse:
+For many families, the goal is a treehouse:
 
 **Working with Living Trees**
 Trees grow and move. Proper treehouse design accounts for:
@@ -104,7 +104,7 @@ Trees grow and move. Proper treehouse design accounts for:
 - Impact on the tree's wellbeing
 
 **Freestanding "Treehouses"**
-When trees aren't available or suitable, we build structures that capture the treehouse experience through elevation, integration with landscape, and design that feels nestled rather than placed.
+When trees are not available or suitable, we build freestanding structures with elevation, shade, and placement that still feel tucked into the yard.
 
 **Hybrid Approaches**
 Sometimes the best solution combines tree support with ground-based structure, taking advantage of trees without depending entirely on them.

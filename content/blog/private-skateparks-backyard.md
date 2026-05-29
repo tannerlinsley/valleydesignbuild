@@ -1,16 +1,16 @@
 ---
-title: "Private Skateparks: Bringing Pro-Level Riding to Your Backyard"
+title: "Private Skateparks for Utah Backyards"
 description: "Backyard skateparks are the ultimate investment for skating families. Learn about design options, construction methods, costs, and why Utah families are building private skate features at home."
 date: "2025-02-10"
 author: "Valley Design Build"
-image: "/images/blog/private-skatepark.jpg"
+image: "/images/skatepark.jpg"
 imageAlt: "Custom concrete backyard skatepark with bowl and street elements"
 tags: ["Skateparks", "Action Sports", "Custom Design", "Outdoor Recreation"]
 ---
 
 There's a moment every skating parent knows: watching your kid finally land a trick they've been working on for months. Now imagine that moment happening in your backyard, any day of the week, without driving to a crowded park.
 
-Private skateparks were once the exclusive domain of professional athletes. Today, more Utah families are discovering that bringing pro-level features home is not only possible—it's becoming the ultimate backyard upgrade.
+Private skateparks were once mostly for professional athletes. Today, more Utah families are finding out that a real skate feature at home is possible when the site, drainage, concrete, and rider needs are handled correctly.
 
 ## Why Private Skateparks Are Trending
 
@@ -26,7 +26,7 @@ Public parks are designed for everyone, which means they're optimized for no one
 When the park is at home, skating becomes a family activity. Parents who never touched a board find themselves trying. Siblings push each other to learn. The backyard becomes a gathering place.
 
 **Property Value**
-High-end outdoor recreation features are increasingly seen as property assets. A well-designed skate feature attracts the right buyer when the time comes—and makes your home memorable in the market.
+High-end outdoor recreation features can be real property assets. A well-designed skate feature attracts the right buyer when the time comes and makes the home easier to remember.
 
 **Safety Control**
 You know the surface condition. You control who rides. You can add padding, lighting, and features at the appropriate pace for developing skaters.
@@ -129,7 +129,7 @@ Multiple elements or a complete mini ramp with landing area. Room for variety an
 Full bowl or multiple zones. Space for different skill levels to ride simultaneously.
 
 **Large Park (3,000+ sq ft):**
-Complete park with multiple zones, flow lines, and room for spectators. The full experience.
+Complete park with multiple zones, flow lines, and room for spectators.
 
 We've built impressive features in surprisingly compact spaces. Creativity with design maximizes what's possible.
 
@@ -158,7 +158,7 @@ Coping material, color treatments, and decorative elements add to the investment
 - Medium concrete park: $40,000-$80,000
 - Large custom park: $80,000-$150,000+
 
-Every project is custom. We provide detailed estimates after understanding your vision and site.
+Every project is custom. We provide detailed estimates after understanding the riders, the site, and the scope.
 
 ## The Design Process
 
@@ -171,7 +171,7 @@ We learn how you and your family skate. What do you love? What are you working t
 We evaluate your property for optimal placement considering drainage, access, visibility, noise, and integration with existing features.
 
 **3. Concept Development**
-Initial designs explore what's possible. We sketch options, discuss tradeoffs, and refine the vision.
+Initial designs explore what is possible. We sketch options, discuss tradeoffs, and refine the layout.
 
 **4. Detailed Design**
 Engineering drawings specify every curve, every transition, every detail. Nothing is left to chance in construction.
@@ -221,7 +221,7 @@ You decide who rides. No unpredictable strangers, no skill-level conflicts durin
 
 Ready to bring skating home? Here's how we begin:
 
-1. **Initial consultation** - We discuss your vision, riders, and property
+1. **Initial consultation** - We discuss the riders, goals, and property
 2. **Site assessment** - Evaluating possibilities and constraints
 3. **Concept design** - Options that fit your space and goals
 4. **Detailed proposal** - Complete scope, timeline, and investment

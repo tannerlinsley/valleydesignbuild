@@ -87,11 +87,11 @@ function Contact() {
                 headingFont,
               )}
             >
-              Let's Build Something Amazing
+              Tell Us What You Want to Build
             </h1>
             <p className="text-xl text-gray-300">
-              Ready to turn your backyard into a destination? Get in touch for
-              a free consultation. We typically respond within 24 hours.
+              Send the rough idea, the address, and what you already know about
+              the site. We typically respond within 24 hours.
             </p>
           </div>
         </div>
@@ -114,8 +114,9 @@ function Contact() {
                     Get In Touch
                   </h2>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Whether you're dreaming of a pool, pumptrack, treehouse, or
-                    something we haven't built yet—we're ready to make it happen.
+                    Whether you are planning a pool, pumptrack, treehouse, or
+                    something harder to categorize, we can help you sort out the
+                    next step.
                   </p>
                 </div>
 

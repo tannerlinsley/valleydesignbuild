@@ -3,7 +3,7 @@ title: "Creating Year-Round Entertainment Spaces"
 description: "Utah's four seasons don't have to limit your outdoor entertaining. Learn how to design spaces that work beautifully from January through December."
 date: "2025-09-22"
 author: "Valley Design Build"
-image: "/images/blog/year-round-entertainment.jpg"
+image: "/images/entertainment.jpg"
 imageAlt: "Outdoor living space with fire pit and covered pavilion"
 tags: ["Entertainment", "Outdoor Living", "Four Seasons"]
 ---

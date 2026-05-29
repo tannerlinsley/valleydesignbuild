@@ -1,14 +1,14 @@
 ---
 title: "Water Features: More Than Just Fountains"
-description: "Water features transform outdoor spaces in unexpected ways. Explore the possibilities beyond simple fountains, from natural streams to dramatic waterfalls."
+description: "Water features can add sound, movement, cooling, and a strong focal point when the basin, pump, stone, and winter plan are handled correctly."
 date: "2025-08-20"
 author: "Valley Design Build"
-image: "/images/blog/water-features.jpg"
+image: "/images/waterFeature.jpg"
 imageAlt: "Natural boulder waterfall cascading into pond"
 tags: ["Water Features", "Landscape Design", "Outdoor Living"]
 ---
 
-The sound of moving water does something to us. It masks noise. It calms nerves. It draws attention and creates focus. Adding water to your outdoor space transforms the experience—and the possibilities extend far beyond a simple fountain.
+The sound of moving water does something to us. It masks noise. It calms nerves. It draws attention and creates focus. A good water feature also needs the practical parts solved: basin, pump, power, stone, service access, and winterization.
 
 ## The Psychology of Water
 
@@ -30,8 +30,8 @@ Understanding these effects helps design features that serve specific purposes i
 
 A constructed stream mimics nature's waterways:
 
-**The Experience**
-Imagine stepping outside to the gentle sound of water flowing over rocks, pooling in small eddies, then continuing downstream. The stream edge becomes a destination—a place to sit, listen, and watch.
+**How it feels**
+Imagine stepping outside to the sound of water moving over rocks, pooling in small eddies, then continuing downstream. The stream edge becomes a place to sit, listen, and watch.
 
 **Design Elements**
 - Recirculating pumps move water from a catch basin to the headwaters
@@ -41,7 +41,7 @@ Imagine stepping outside to the gentle sound of water flowing over rocks, poolin
 - Lighting extends enjoyment into evening hours
 
 **Best Applications**
-Streams work beautifully in larger properties with natural grade changes, but creative design can bring the stream experience to flat suburban lots as well.
+Streams work beautifully in larger properties with natural grade changes, but careful grading can bring moving water to flatter suburban lots as well.
 
 ## Dramatic Waterfalls
 
@@ -70,7 +70,7 @@ Still water offers different benefits:
 Living water gardens with fish that become family members. Koi can live decades and grow remarkably large, creating an evolving feature that rewards attention.
 
 **Naturalistic Ponds**
-Ecosystem ponds with plants, fish, and natural filtration create backyard wildlife habitats. The pond becomes a destination for observation and relaxation.
+Ecosystem ponds with plants, fish, and natural filtration create backyard wildlife habitats. The pond becomes a place people naturally check on and gather around.
 
 **Reflecting Pools**
 Formal features that mirror the sky, adjacent architecture, or landscape. Clean lines and still water create sophisticated calm.
@@ -147,8 +147,8 @@ The right water feature depends on:
 
 We start by understanding your goals, then explore options that fit your specific situation.
 
-## Beyond Decoration
+## More Than Decoration
 
-Water features do more than look nice. They create experiences. They become destinations within your property. They change how you feel in your outdoor space.
+Water features do more than look nice. They add sound, movement, cooling, and a reason to slow down in one part of the yard.
 
-Contact Valley Design Build to explore water feature possibilities. Let's bring the transformative power of water to your backyard.
+Contact Valley Design Build to explore water feature possibilities. We can help you figure out the right scale, sound, and maintenance plan for your site.

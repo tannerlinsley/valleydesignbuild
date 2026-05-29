@@ -15,6 +15,11 @@ export function optimizeImage(src: string, options: ImageOptions = {}): string {
     return src
   }
 
+  // The Netlify image endpoint is not available in the local Vite dev server.
+  if (import.meta.env.DEV) {
+    return src
+  }
+
   const params = new URLSearchParams()
   params.set('url', src)
 

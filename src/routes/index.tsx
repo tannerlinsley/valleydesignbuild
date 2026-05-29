@@ -9,7 +9,6 @@ import {
   ArrowRight,
   Star,
   Hammer,
-  ChevronDown,
 } from 'lucide-react'
 import { headingFont, bodyFont } from '~/styles/typography'
 import { SERVICES } from '~/data/services'
@@ -22,8 +21,10 @@ export const Route = createFileRoute('/')({
   head: () => ({
     meta: [
       ...seo({
-        title: 'Valley Design Build | Custom Pools, Pumptracks & Outdoor Experiences in Utah',
-        description: 'Utah\'s premier design-build firm for custom pools, backyard pumptracks, private skateparks, treehouses, ice rinks, and luxury outdoor entertainment spaces. Serving Northern Utah families who demand extraordinary. Call (801) 510-7142.',
+        title:
+          'Valley Design Build | Custom Pools, Pumptracks & Backyard Builds in Utah',
+        description:
+          'Custom pools, backyard pumptracks, private skateparks, treehouses, ice rinks, water features, and outdoor entertainment builds across Northern Utah. Call (801) 510-7142.',
         path: '/',
         keywords: [
           'custom pool builder utah',
@@ -36,7 +37,7 @@ export const Route = createFileRoute('/')({
           'outdoor entertainment spaces',
           'custom water features utah',
           'residential pumptrack cost',
-          'backyard transformation utah',
+          'backyard design build utah',
           'year round outdoor living',
         ],
       }),
@@ -48,8 +49,9 @@ export const Route = createFileRoute('/')({
         children: schemaToScript([
           localBusinessSchema(),
           webPageSchema({
-            name: 'Valley Design Build | Custom Outdoor Experiences',
-            description: 'Utah\'s premier design-build firm for custom pools, pumptracks, skateparks, and luxury outdoor entertainment spaces.',
+            name: 'Valley Design Build | Custom Outdoor Builds',
+            description:
+              'Custom pools, pumptracks, skateparks, treehouses, ice rinks, and outdoor entertainment builds in Northern Utah.',
             url: '/',
           }),
         ]),
@@ -61,10 +63,26 @@ export const Route = createFileRoute('/')({
 
 function Home() {
   const valueProps = [
-    { title: 'Custom Design', icon: Award },
-    { title: 'Expert Craftsmanship', icon: Hammer },
-    { title: 'Free Consultations', icon: CheckCircle },
-    { title: 'Serving 80+ Mile Radius', icon: MapPin },
+    {
+      title: 'Site-shaped design',
+      detail: 'Grade, drainage, shade, access, and how the yard gets used.',
+      icon: Award,
+    },
+    {
+      title: 'Hands-on craft',
+      detail: 'Concrete, steel, water, woodwork, and finishing under one roof.',
+      icon: Hammer,
+    },
+    {
+      title: 'Built for seasons',
+      detail: 'Summer water, winter ice, and outdoor rooms that earn their keep.',
+      icon: CheckCircle,
+    },
+    {
+      title: 'Northern Utah range',
+      detail: 'Based in Farr West and building across an 80-mile radius.',
+      icon: MapPin,
+    },
   ]
 
   const testimonials = [
@@ -77,7 +95,7 @@ function Home() {
     {
       name: 'Mike & Sarah T.',
       location: 'Layton, UT',
-      text: "Our custom pool and spa have become the heart of our home. The design team understood exactly what we wanted and delivered beyond our dreams. Worth every penny.",
+      text: 'Our pool and spa are where everyone ends up in the evening. The team listened, worked through the slope on our lot, and got the details right.',
       rating: 5,
     },
     {
@@ -88,296 +106,438 @@ function Home() {
     },
   ]
 
+  const serviceAreas = [
+    'Weber County',
+    'Davis County',
+    'Salt Lake County',
+    'Cache County',
+    'Box Elder County',
+    'Morgan County',
+  ]
+
   return (
-    <div className={twMerge('min-h-screen bg-gray-50 dark:bg-navy-900', bodyFont)}>
-      {/* Split Hero Section */}
-      <section className="bg-gray-50 dark:bg-gray-950 py-8 md:py-12 lg:py-16 min-h-[calc(100dvh-4rem)] flex items-center relative">
-        <div className="container mx-auto px-6 md:px-10 lg:px-16">
-          <div className="grid lg:grid-cols-5 gap-6 lg:gap-8 items-center">
-            {/* Left - Content (2/5) */}
-            <div className="flex flex-col justify-center order-2 lg:order-1 lg:col-span-2">
+    <div
+      className={twMerge(
+        'vdb-page min-h-screen bg-[#f7faf8] text-gray-900 dark:bg-navy-950 dark:text-gray-100',
+        bodyFont,
+      )}
+    >
+      <section className="relative overflow-hidden bg-[#f7faf8] dark:bg-navy-950">
+        <div
+          className="architectural-mark architectural-mark-hero"
+          aria-hidden="true"
+        />
+        <div className="container relative mx-auto px-5 py-10 sm:px-6 md:px-10 lg:px-16 lg:py-16">
+          <div className="grid gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:items-start xl:grid-cols-[0.9fr_1.35fr] xl:items-center xl:gap-14">
+            <div className="order-2 lg:order-1">
+              <div className="mb-5 flex flex-wrap items-center gap-2 text-xs font-bold uppercase text-cyan-700 dark:text-cyan-300">
+                <span className="border border-cyan-700/30 px-2.5 py-1 dark:border-cyan-300/30">
+                  Farr West, Utah
+                </span>
+                <span className="border border-gray-900/15 px-2.5 py-1 text-gray-600 dark:border-white/20 dark:text-gray-300">
+                  Design + Build
+                </span>
+              </div>
               <h1
                 className={twMerge(
-                  'text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6 tracking-tight uppercase',
+                  'max-w-[11ch] text-5xl font-bold uppercase leading-[0.92] text-gray-950 sm:text-6xl lg:text-7xl xl:text-8xl dark:text-white',
+                  'lg:max-w-[14ch] xl:max-w-[11ch]',
                   headingFont,
                 )}
               >
-                Ambitious Experiences
+                Custom Outdoor{' '}
+                <span className="block text-cyan-700 dark:text-cyan-300">
+                  Builds{' '}
+                </span>
+                <span className="block">in Utah</span>
               </h1>
-              <p className="text-lg sm:text-xl md:text-2xl text-cyan-600 dark:text-cyan-400 mb-4 md:mb-6 italic">
-                For the adventurer and recreator in all of us
+              <p className="mt-5 max-w-xl text-xl italic leading-snug text-cyan-700 dark:text-cyan-300 md:text-2xl">
+                Pools, pumptracks, skateparks, treehouses, ice rinks, and
+                gathering spaces for families who like to be outside.
               </p>
-              <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 md:mb-10">
-                Custom pools, pumptracks, skateparks, treehouses, ice rinks, and
-                beyond. We build the backyard of your dreams.
+              <p className="mt-5 max-w-xl text-lg leading-relaxed text-gray-600 dark:text-gray-300 md:text-xl">
+                We design and build the parts of a property that get used: the
+                pool, the track, the rink, the shade structure, the water, the
+                grading, and the details that make it all work.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-3 mb-8 md:mb-10">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="tel:+18015107142"
-                  className="bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white px-5 py-3 sm:px-6 sm:py-3 rounded-md font-semibold hover:bg-gray-300 dark:hover:bg-gray-700 transition-all flex items-center justify-center gap-2 text-base whitespace-nowrap"
+                  className="inline-flex items-center justify-center gap-2 border border-gray-900/15 bg-white px-5 py-3 font-semibold text-gray-950 shadow-sm transition-all hover:-translate-y-0.5 hover:border-cyan-700/40 hover:text-cyan-700 dark:border-white/15 dark:bg-white/5 dark:text-white dark:hover:border-cyan-300/40 dark:hover:text-cyan-300"
                 >
-                  <Phone className="w-5 h-5 flex-shrink-0" />
+                  <Phone className="h-5 w-5 flex-shrink-0" />
                   <span>(801) 510-7142</span>
                 </a>
                 <Link
                   to="/contact"
-                  className="bg-cyan-700 text-white px-5 py-3 sm:px-6 sm:py-3 rounded-md font-semibold hover:bg-cyan-600 transition-all flex items-center justify-center gap-2 shadow-lg text-base whitespace-nowrap"
+                  className="inline-flex items-center justify-center gap-2 bg-cyan-700 px-5 py-3 font-semibold text-white shadow-lg shadow-cyan-900/10 transition-all hover:-translate-y-0.5 hover:bg-cyan-600 dark:bg-cyan-400 dark:text-gray-950 dark:hover:bg-cyan-300"
                 >
-                  <Calendar className="w-5 h-5 flex-shrink-0" />
+                  <Calendar className="h-5 w-5 flex-shrink-0" />
                   <span>Start Your Project</span>
                 </Link>
               </div>
 
-              {/* Value Props */}
-              <div className="grid grid-cols-2 gap-3">
-                {valueProps.map((prop, index) => {
-                  const IconComponent = prop.icon
-                  return (
-                    <div
-                      key={index}
-                      className="flex items-center gap-2 text-gray-600 dark:text-gray-300"
-                    >
-                      <IconComponent className="w-5 h-5 text-cyan-600 dark:text-cyan-400 flex-shrink-0" />
-                      <span className="text-sm font-medium">{prop.title}</span>
-                    </div>
-                  )
-                })}
+            </div>
+
+            <div className="order-1 lg:order-2 lg:pt-12 xl:pt-0">
+              <div className="relative mx-auto max-w-3xl">
+                <div className="hero-video-shell relative aspect-video overflow-hidden bg-gray-900 shadow-2xl shadow-gray-900/20 dark:shadow-black/40">
+                  <img
+                    src="/images/pumptrack.jpg"
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 h-full w-full object-cover opacity-80"
+                  />
+                  <iframe
+                    src="https://player.vimeo.com/video/438344317?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1&autopause=0&playsinline=1"
+                    className="absolute inset-0 h-full w-full"
+                    title="Valley Design Build project reel"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                  />
+                  <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-navy-900/45 to-transparent pointer-events-none" />
+                </div>
+                <div className="field-note -bottom-6 left-4 max-w-[17rem] bg-white/90 text-gray-800 shadow-lg backdrop-blur dark:bg-navy-900/90 dark:text-gray-200">
+                  Build reel: water, concrete, steel, timber, grade.
+                </div>
+                <div
+                  className="absolute -right-8 top-8 hidden origin-center rotate-90 border-y border-gray-900/20 px-3 py-1 text-[11px] font-bold uppercase text-gray-600 dark:border-white/20 dark:text-gray-400 lg:block"
+                  aria-hidden="true"
+                >
+                  80 mile radius
+                </div>
               </div>
             </div>
 
-            {/* Right - Video (3/5) */}
-            <div className="lg:col-span-3 order-1 lg:order-2">
-              <div className="relative aspect-video max-w-sm sm:max-w-md md:max-w-full mx-auto rounded-lg overflow-hidden shadow-2xl">
-                <iframe
-                  src="https://player.vimeo.com/video/438344317?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
-                  className="absolute inset-0 w-full h-full"
-                  allow="autoplay; fullscreen"
-                  allowFullScreen
-                />
-              </div>
+            <div className="order-3 grid gap-4 border-t border-gray-900/10 pt-6 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4 xl:col-span-1 xl:grid-cols-2 dark:border-white/10">
+              {valueProps.map((prop, index) => {
+                const IconComponent = prop.icon
+
+                return (
+                  <div
+                    key={prop.title}
+                    className="relative pl-7 text-gray-700 dark:text-gray-300"
+                  >
+                    <IconComponent className="absolute left-0 top-1 h-4 w-4 text-cyan-700 dark:text-cyan-300" />
+                    <span className="block text-[11px] font-bold uppercase text-gray-500 dark:text-gray-400">
+                      0{index + 1}
+                    </span>
+                    <span className="block font-bold text-gray-950 dark:text-white">
+                      {prop.title}
+                    </span>
+                    <span className="block text-sm leading-snug">
+                      {prop.detail}
+                    </span>
+                  </div>
+                )
+              })}
             </div>
           </div>
-
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-1 text-gray-400 dark:text-gray-500">
-          <span className="text-xs uppercase tracking-widest">Scroll</span>
-          <ChevronDown className="w-5 h-5 animate-bounce" />
-        </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-20 bg-white dark:bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2
-              className={twMerge(
-                'text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white uppercase',
-                headingFont,
-              )}
-            >
-              What We Build
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              From custom pools to private skateparks, we create extraordinary
-              outdoor experiences that turn your property into a destination.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            {SERVICES.map((service) => (
-              <ServiceCard
-                key={service.slug}
-                title={service.shortTitle}
-                description={service.description}
-                icon={service.icon}
-                slug={service.slug}
-                image={service.image}
-                viewTransitionName={`service-${service.slug}`}
-              />
-            ))}
-          </div>
-
-          <div className="text-center mt-10">
-            <Link
-              to="/services"
-              className="inline-flex items-center gap-2 bg-cyan-700 text-white px-6 py-3 rounded-md font-semibold hover:bg-cyan-600 transition-colors"
-            >
-              Explore All Services
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* About Snippet - Dreamers and Builders */}
-      <section className="py-20 bg-gray-100 dark:bg-gray-800">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+      <section className="relative overflow-hidden bg-white py-16 dark:bg-gray-950 md:py-24">
+        <div className="container relative mx-auto px-5 sm:px-6 md:px-10 lg:px-16">
+          <div className="mb-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
             <div>
+              <p className="section-label">01 / What we build</p>
               <h2
                 className={twMerge(
-                  'text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white uppercase',
+                  'mt-3 max-w-lg text-4xl font-bold uppercase leading-none text-gray-950 md:text-5xl dark:text-white',
                   headingFont,
                 )}
               >
-                We Are Dreamers & Builders
+                The jobs people call us for.
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                At Valley Design Build, we believe that a home is more than just
-                a house and that our greatest moments of adventure, recreation,
-                entertainment, and escape can happen in our own backyards.
+              <p className="mt-5 max-w-md text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                Pools, pumptracks, private skateparks, treehouses, and ice rinks
+                all need more than a nice rendering. They need layout, drainage,
+                concrete, carpentry, equipment, and a crew that can solve things
+                on site.
               </p>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                We're not just contractors—we're craftsmen who pour passion into
-                every project. From the first sketch to the final detail, we
-                build experiences that bring families together and create
-                memories that last a lifetime.
-              </p>
+            </div>
+            <div className="lg:justify-self-end">
               <Link
-                to="/about"
-                className="inline-flex items-center gap-2 text-cyan-600 dark:text-cyan-400 font-semibold hover:gap-3 transition-all"
+                to="/services"
+                className="inline-flex items-center gap-2 border-b border-current pb-1 font-bold text-cyan-700 transition-colors hover:text-cyan-600 dark:text-cyan-300 dark:hover:text-cyan-200"
               >
-                Learn More About Us
-                <ArrowRight className="w-4 h-4" />
+                Explore all services
+                <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
-            <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl">
-              <img
-                src="/images/welder.jpg"
-                alt="Craftsman at work"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/50 to-transparent" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-20 bg-gray-100 dark:bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2
-              className={twMerge(
-                'text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white uppercase',
-                headingFont,
-              )}
-            >
-              What Our Clients Say
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
-              We're proud of the relationships we build with every family.
-            </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="p-6 bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm"
-              >
-                <div className="flex gap-1 mb-4">
-                  {Array.from({ length: testimonial.rating }).map((_, i) => (
-                    <Star
-                      key={i}
-                      className="w-5 h-5 fill-cyan-500 text-cyan-500 dark:fill-cyan-400 dark:text-cyan-400"
-                    />
-                  ))}
-                </div>
-                <p className="text-gray-600 dark:text-gray-300 mb-4 italic leading-relaxed">
-                  "{testimonial.text}"
-                </p>
-                <div>
-                  <p className="font-semibold text-gray-900 dark:text-white">{testimonial.name}</p>
-                  <p className="text-sm text-gray-500">{testimonial.location}</p>
-                </div>
+          <div className="grid gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+            {SERVICES.map((service, index) => (
+              <div key={service.slug}>
+                <span className="mb-2 block text-xs font-bold uppercase text-gray-400 dark:text-gray-500">
+                  Terrain 0{index + 1}
+                </span>
+                <ServiceCard
+                  title={service.shortTitle}
+                  description={service.description}
+                  icon={service.icon}
+                  slug={service.slug}
+                  image={service.image}
+                  viewTransitionName={`service-${service.slug}`}
+                />
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Service Area Preview */}
-      <section className="py-20 bg-white dark:bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2
-              className={twMerge(
-                'text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white uppercase',
-                headingFont,
-              )}
-            >
-              Serving Northern Utah & Beyond
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-              Based in Farr West, we serve an 80-mile radius covering all of
-              Northern Utah and surrounding areas.
-            </p>
-            <div className="flex flex-wrap justify-center gap-3 mb-8">
-              {[
-                'Weber County',
-                'Davis County',
-                'Salt Lake County',
-                'Cache County',
-                'Box Elder County',
-                'Morgan County',
-              ].map((area) => (
-                <span
-                  key={area}
-                  className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-md text-gray-700 dark:text-gray-300 text-sm font-medium"
-                >
-                  {area}
-                </span>
-              ))}
+      <section className="terrain-strata relative overflow-hidden bg-[#e9f0ed] py-16 dark:bg-navy-900 md:py-24">
+        <div className="container relative mx-auto px-5 sm:px-6 md:px-10 lg:px-16">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+            <div className="relative order-2 lg:order-1">
+              <div className="relative aspect-[4/3] overflow-hidden bg-gray-900 shadow-2xl shadow-gray-900/15">
+                <img
+                  src="/images/welder.jpg"
+                  alt="Craftsman welding custom outdoor project details"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-900/70 via-navy-900/10 to-transparent" />
+                <div className="absolute bottom-5 left-5 right-5 text-white">
+                  <span className="text-xs font-bold uppercase text-cyan-200">
+                    Shop note
+                  </span>
+                  <p className="max-w-sm text-2xl font-bold leading-none">
+                    The drawing only matters if the build holds up.
+                  </p>
+                </div>
+              </div>
+              <div className="field-note -right-4 -top-5 hidden max-w-[13rem] bg-navy-900 text-white shadow-xl md:block">
+                Corners, welds, edges, drainage, and finish all show up later.
+              </div>
             </div>
-            <Link
-              to="/service-area"
-              className="inline-flex items-center gap-2 text-cyan-600 dark:text-cyan-400 font-semibold hover:gap-3 transition-all"
-            >
-              View Our Full Service Area
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+
+            <div className="order-1 lg:order-2">
+              <p className="section-label">02 / Dreamers and builders</p>
+              <h2
+                className={twMerge(
+                  'mt-3 text-4xl font-bold uppercase leading-none text-gray-950 md:text-5xl dark:text-white',
+                  headingFont,
+                )}
+              >
+                Good plans. Better follow-through.
+              </h2>
+              <p className="mt-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+                A backyard project can sound simple until the grade changes, the
+                equipment needs access, or the finish has to survive another
+                Utah winter.
+              </p>
+              <p className="mt-4 text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+                We like the unusual jobs: the pool tied into the slope, the
+                pumptrack that actually flows, the treehouse that feels sturdy,
+                the rink that drains right when spring shows up.
+              </p>
+              <div className="mt-8 grid gap-4 border-y border-gray-900/10 py-6 sm:grid-cols-3 dark:border-white/10">
+                {['Sketch', 'Shape', 'Finish'].map((word, index) => (
+                  <div key={word}>
+                    <span className="text-xs font-bold uppercase text-cyan-700 dark:text-cyan-300">
+                      0{index + 1}
+                    </span>
+                    <span className="block text-2xl font-bold text-gray-950 dark:text-white">
+                      {word}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <Link
+                to="/about"
+                className="mt-7 inline-flex items-center gap-2 border-b border-current pb-1 font-bold text-cyan-700 transition-colors hover:text-cyan-600 dark:text-cyan-300 dark:hover:text-cyan-200"
+              >
+                Learn more about us
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section className="py-20 bg-gradient-to-b from-cyan-50 to-white dark:from-gray-900 dark:to-gray-800">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-white dark:bg-gray-800 p-8 md:p-10 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700">
-              <div className="text-center mb-8">
+      <section className="relative bg-white py-16 dark:bg-gray-950 md:py-24">
+        <div className="container mx-auto px-5 sm:px-6 md:px-10 lg:px-16">
+          <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
+            <div>
+              <p className="section-label">03 / Field reports</p>
+              <h2
+                className={twMerge(
+                  'mt-3 text-4xl font-bold uppercase leading-none text-gray-950 md:text-5xl dark:text-white',
+                  headingFont,
+                )}
+              >
+                The proof is whether people use it.
+              </h2>
+              <p className="mt-5 max-w-md text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                A good build is easy to spot a year later: kids still ride it,
+                people still gather around it, and nobody is babying the
+                materials.
+              </p>
+            </div>
+
+            <div className="grid gap-5">
+              {testimonials.map((testimonial, index) => (
+                <figure
+                  key={testimonial.name}
+                  className={twMerge(
+                    'relative border-l-2 border-cyan-700 bg-[#f7faf8] p-6 shadow-sm dark:border-cyan-300 dark:bg-white/5 md:p-7',
+                    index === 0 && 'md:ml-10',
+                    index === 1 && 'md:mr-16',
+                    index === 2 && 'md:ml-24',
+                  )}
+                >
+                  <div className="mb-4 flex gap-1">
+                    {Array.from({ length: testimonial.rating }).map((_, i) => (
+                      <Star
+                        key={i}
+                        className="h-4 w-4 fill-cyan-600 text-cyan-600 dark:fill-cyan-300 dark:text-cyan-300"
+                      />
+                    ))}
+                  </div>
+                  <blockquote className="text-xl italic leading-relaxed text-gray-800 dark:text-gray-200">
+                    "{testimonial.text}"
+                  </blockquote>
+                  <figcaption className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
+                    <span className="font-bold text-gray-950 dark:text-white">
+                      {testimonial.name}
+                    </span>
+                    <span className="text-gray-500 dark:text-gray-400">
+                      {testimonial.location}
+                    </span>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden bg-[#f7faf8] py-16 dark:bg-navy-900 md:py-24">
+        <div className="container relative mx-auto px-5 sm:px-6 md:px-10 lg:px-16">
+          <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+            <div>
+              <p className="section-label">04 / Service area</p>
+              <h2
+                className={twMerge(
+                  'mt-3 text-4xl font-bold uppercase leading-none text-gray-950 md:text-5xl dark:text-white',
+                  headingFont,
+                )}
+              >
+                Based in Farr West. Built across Northern Utah.
+              </h2>
+              <p className="mt-5 max-w-xl text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                We serve an 80-mile radius covering the Wasatch Front, Cache
+                Valley, and the surrounding counties. If the site is a fit, we
+                will come walk it before guessing from a screen.
+              </p>
+              <div className="mt-7 flex flex-wrap gap-2">
+                {serviceAreas.map((area) => (
+                  <span
+                    key={area}
+                    className="border border-gray-900/15 bg-white/60 px-3 py-1.5 text-sm font-bold text-gray-700 dark:border-white/15 dark:bg-white/5 dark:text-gray-300"
+                  >
+                    {area}
+                  </span>
+                ))}
+              </div>
+              <Link
+                to="/service-area"
+                className="mt-8 inline-flex items-center gap-2 border-b border-current pb-1 font-bold text-cyan-700 transition-colors hover:text-cyan-600 dark:text-cyan-300 dark:hover:text-cyan-200"
+              >
+                View full service area
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+
+            <div className="relative overflow-hidden border border-gray-900/10 bg-white shadow-xl shadow-gray-900/5 dark:border-white/10 dark:bg-white/5 dark:shadow-black/20">
+              <div className="relative aspect-[4/3] overflow-hidden bg-gray-900">
+                <img
+                  src="/images/waterFeature.jpg"
+                  alt="Custom water feature in a Northern Utah outdoor landscape"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-900/75 via-navy-900/15 to-transparent" />
+                <div className="absolute bottom-5 left-5 right-5 text-white">
+                  <span className="text-xs font-bold uppercase text-cyan-200">
+                    Farr West base
+                  </span>
+                  <p className="max-w-sm text-3xl font-bold uppercase leading-none">
+                    Built for Utah weather and grade.
+                  </p>
+                </div>
+              </div>
+              <div className="grid gap-4 p-6 sm:grid-cols-3">
+                {[
+                  ['80-mile', 'service radius'],
+                  ['6+', 'county core'],
+                  ['Site-first', 'design visits'],
+                ].map(([stat, label]) => (
+                  <div
+                    key={stat}
+                    className="border-l border-cyan-700/40 pl-3 dark:border-cyan-300/40"
+                  >
+                    <span className="block text-2xl font-bold text-gray-950 dark:text-white">
+                      {stat}
+                    </span>
+                    <span className="text-sm font-bold uppercase text-gray-500 dark:text-gray-400">
+                      {label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="blueprint-grid relative overflow-hidden bg-navy-900 py-16 text-white md:py-24">
+        <div className="container relative mx-auto px-5 sm:px-6 md:px-10 lg:px-16">
+          <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+            <div>
+              <p className="section-label text-cyan-200">05 / Start here</p>
+              <h2
+                className={twMerge(
+                  'mt-3 max-w-lg text-4xl font-bold uppercase leading-none text-white md:text-5xl',
+                  headingFont,
+                )}
+              >
+                Bring us the part you are trying to figure out.
+              </h2>
+              <p className="mt-5 max-w-md text-lg leading-relaxed text-gray-300">
+                Tell us what you want to build, where it needs to go, and what
+                has made it hard to solve so far. We typically respond within 24
+                hours.
+              </p>
+              <a
+                href="tel:+18015107142"
+                className={twMerge(
+                  'mt-8 inline-flex items-center gap-2 text-3xl font-bold text-cyan-200 transition-colors hover:text-white',
+                  headingFont,
+                )}
+              >
+                <Phone className="h-6 w-6" />
+                (801) 510-7142
+              </a>
+            </div>
+
+            <div className="bg-white p-6 shadow-2xl shadow-black/25 dark:bg-gray-950 md:p-8">
+              <div className="mb-7 border-b border-gray-200 pb-5 dark:border-gray-800">
                 <h2
                   className={twMerge(
-                    'text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white uppercase',
+                    'text-3xl font-bold uppercase leading-none text-gray-950 dark:text-white',
                     headingFont,
                   )}
                 >
-                  Ready to Build Something Amazing?
+                  Project Notes
                 </h2>
-                <p className="text-gray-600 dark:text-gray-400">
-                  Tell us about your dream project. We typically respond within
-                  24 hours.
+                <p className="mt-2 text-gray-600 dark:text-gray-400">
+                  A few details are enough to start the conversation.
                 </p>
               </div>
               <ContactForm variant="compact" />
-              <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700 text-center">
-                <p className="text-gray-600 dark:text-gray-400 mb-2">
-                  Or call us directly:
-                </p>
-                <a
-                  href="tel:+18015107142"
-                  className={twMerge(
-                    'text-2xl font-bold text-cyan-600 dark:text-cyan-400 hover:text-cyan-700 dark:hover:text-cyan-300',
-                    headingFont,
-                  )}
-                >
-                  (801) 510-7142
-                </a>
-              </div>
             </div>
           </div>
         </div>

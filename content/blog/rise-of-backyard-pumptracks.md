@@ -3,7 +3,7 @@ title: "The Rise of Backyard Pumptracks"
 description: "Pumptracks are becoming the must-have backyard feature for active families. Learn what they are, why they're perfect for Utah families, and what goes into building one at home."
 date: "2025-07-18"
 author: "Valley Design Build"
-image: "/images/blog/backyard-pumptrack.jpg"
+image: "/images/pumptrack.jpg"
 imageAlt: "Kids riding bikes on custom backyard pumptrack"
 tags: ["Pumptracks", "Active Living", "Family Recreation"]
 ---
@@ -106,7 +106,7 @@ Every pumptrack starts with understanding:
 - What skill levels need accommodation?
 - What sports will be practiced?
 - How does the track relate to other backyard features?
-- What's the long-term vision?
+- What should the track be able to handle long term?
 
 We then develop a design that fits your space and goals, with features sized appropriately for your family.
 

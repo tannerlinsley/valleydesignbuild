@@ -6,6 +6,7 @@ import {
 } from '@tanstack/react-router'
 import { Header } from '~/components/Header'
 import { Footer } from '~/components/Footer'
+import { MotionController } from '~/components/MotionController'
 import { DefaultCatchBoundary } from '~/components/DefaultCatchBoundary'
 import { NotFound } from '~/components/NotFound'
 import appCss from '~/styles/app.css?url'
@@ -17,16 +18,16 @@ export const Route = createRootRoute({
     meta: [
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'theme-color', content: '#001925' },
+      { name: 'theme-color', content: '#f7faf8' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
       { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
       { name: 'apple-mobile-web-app-title', content: 'Valley Design Build' },
       ...seo({
         title:
-          'Valley Design Build | Custom Pools, Pumptracks & Outdoor Experiences in Utah',
+          'Valley Design Build | Custom Pools, Pumptracks & Backyard Builds in Utah',
         description:
-          'Custom pools, pumptracks, skateparks, treehouses, and outdoor entertainment spaces. Building ambitious experiences for families across Northern Utah. Call (801) 510-7142.',
+          'Custom pools, pumptracks, skateparks, treehouses, ice rinks, water features, and outdoor entertainment builds for families across Northern Utah. Call (801) 510-7142.',
         path: '/',
         keywords: [
           'custom pools utah',
@@ -60,6 +61,7 @@ export const Route = createRootRoute({
 function RootComponent() {
   return (
     <>
+      <MotionController />
       <Header />
       <main style={{ viewTransitionName: 'main' }}>
         <Outlet />
@@ -71,7 +73,7 @@ function RootComponent() {
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <HeadContent />
 
@@ -101,12 +103,25 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           }}
         />
 
-        {/* Dark mode based on system preference */}
+        {/* Theme preference: auto, light, or dark */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.documentElement.classList.add('dark')
+              try {
+                var storedTheme = localStorage.getItem('valley-theme');
+                var preference = storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'auto' ? storedTheme : 'auto';
+                var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                var resolvedTheme = preference === 'auto' ? (systemDark ? 'dark' : 'light') : preference;
+                var root = document.documentElement;
+                root.classList.toggle('dark', resolvedTheme === 'dark');
+                root.dataset.themePreference = preference;
+                root.style.colorScheme = resolvedTheme;
+                var themeColor = document.querySelector('meta[name="theme-color"]');
+                if (themeColor) {
+                  themeColor.setAttribute('content', resolvedTheme === 'dark' ? '#001925' : '#f7faf8');
+                }
+              } catch (error) {
+                document.documentElement.style.colorScheme = 'light';
               }
             `,
           }}

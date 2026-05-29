@@ -1,16 +1,16 @@
 ---
-title: "Why Custom Pool Design Transforms Your Backyard"
-description: "Discover how a custom-designed pool can completely transform your outdoor living experience. Learn about design considerations, material choices, and why custom always beats cookie-cutter."
+title: "Why Custom Pool Design Works Better in Utah Backyards"
+description: "A custom pool fits the grade, views, equipment, materials, and daily use of your yard better than a standard rectangle."
 date: "2025-06-15"
 author: "Valley Design Build"
-image: "/images/blog/custom-pool-design.jpg"
+image: "/images/pools.jpg"
 imageAlt: "Custom designed infinity edge pool overlooking mountain views"
 tags: ["Pools", "Custom Design", "Outdoor Living"]
 ---
 
-When most people think about adding a pool to their backyard, they picture the standard rectangle. Blue water, concrete deck, maybe a diving board. But what if your backyard could become something extraordinary?
+When most people think about adding a pool to their backyard, they picture the standard rectangle. Blue water, concrete deck, maybe a diving board. Sometimes that works. Often, the yard is asking for something more specific.
 
-At Valley Design Build, we've seen firsthand how custom pool design transforms not just backyards, but the way families live and connect. Here's why custom matters.
+At Valley Design Build, we have seen how much better a pool works when it is planned around the site instead of forced onto it. Here is why custom matters.
 
 ## Beyond the Rectangle
 
@@ -23,7 +23,7 @@ Your backyard has unique characteristics:
 - **Views** - Sightlines to mountains or gardens worth framing
 - **Existing features** - Mature trees, rock formations, or structures to work around
 
-A custom design starts with your property's story and writes the pool into it naturally.
+A custom design starts with the property: grade, sun, views, access, equipment, drainage, and how people will get from the house to the water.
 
 ## The Experience You Actually Want
 
@@ -55,7 +55,7 @@ Custom design extends beyond shape:
 - Rock grottos
 - Spillover spas
 
-Each choice contributes to an experience unique to your family.
+Each choice changes how the pool looks, feels, and holds up over time.
 
 ## Designed for Utah's Climate
 
@@ -79,13 +79,13 @@ Custom design considers:
 - Connection to patios, outdoor kitchens, and fire features
 - Landscaping that frames and enhances the pool
 
-When everything works together, your backyard becomes a destination rather than just a yard with a pool in it.
+When everything works together, the pool feels like it was planned with the yard from the start.
 
 ## Investment in Living
 
 Yes, custom costs more than a standard pool. But consider what you're actually buying:
 
-- **Years of family memories** - Birthdays, summer days, evening swims
+- **Years of use** - Birthdays, summer days, evening swims
 - **Property value** - Well-designed pools are significant value-adds
 - **Quality time** - A reason to stay home and enjoy your space
 - **Daily joy** - Looking out at something beautiful you created
@@ -96,6 +96,6 @@ The families we work with don't regret the investment. They regret waiting so lo
 
 Ready to explore what's possible? The design process begins with a conversation about how you want to live, followed by a site visit to understand your property's potential.
 
-We'll share ideas you haven't considered. We'll help you prioritize features within your budget. And we'll create something that's yours—not a catalog option, but a custom experience designed specifically for your family.
+We will share ideas you may not have considered, help prioritize features within your budget, and turn the pool into a plan that fits your yard instead of a catalog page.
 
-Contact Valley Design Build to schedule your consultation. Let's discover what your backyard could become.
+Contact Valley Design Build to schedule your consultation. We can walk the site and talk through what makes sense.

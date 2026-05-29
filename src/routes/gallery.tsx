@@ -11,7 +11,7 @@ export const Route = createFileRoute('/gallery')({
       ...seo({
         title: 'Project Gallery | Valley Design Build Utah',
         description:
-          'See our latest projects on social media. Custom pools, pumptracks, skateparks, treehouses, water features, and outdoor entertainment spaces in Utah.',
+          'See recent Valley Design Build projects, including custom pools, pumptracks, skateparks, treehouses, water features, and outdoor builds in Utah.',
         path: '/gallery',
         keywords: [
           'custom pool portfolio utah',
@@ -54,9 +54,9 @@ function Gallery() {
               Our Projects
             </h1>
             <p className="text-xl text-gray-300 mb-8">
-              Check out our latest work on social media. We regularly share photos
-              and videos of the ambitious experiences we create for families across
-              Northern Utah.
+              We post recent site work, finished builds, and in-progress details
+              on social. It is the easiest place to see what we are building
+              around Northern Utah.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -160,11 +160,11 @@ function Gallery() {
               headingFont,
             )}
           >
-            Ready to Start Your Project?
+            Want to Talk Through a Project?
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
-            Contact us today for a free consultation. We'll help you design and
-            build the outdoor experience you've always dreamed of.
+            Send us the site, the rough idea, and anything you already know you
+            want. We will help you figure out what is realistic.
           </p>
           <Link
             to="/contact"

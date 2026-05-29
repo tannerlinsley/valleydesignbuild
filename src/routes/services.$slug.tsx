@@ -43,7 +43,7 @@ export const Route = createFileRoute('/services/$slug')({
       loaderData?.shortTitle?.toLowerCase(),
       'utah',
       'custom builder',
-      'outdoor experiences',
+      'custom backyard builds',
       'northern utah',
       loaderData?.title?.toLowerCase(),
     ].filter(Boolean) as string[]
@@ -302,8 +302,8 @@ function ServicePage() {
                   Start Your {service.shortTitle} Project
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400">
-                  Tell us about your vision and we'll get back to you within 24
-                  hours.
+                  Tell us what you want to build and what is already on the
+                  site. We will get back to you within 24 hours.
                 </p>
               </div>
               <ContactForm

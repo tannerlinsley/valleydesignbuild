@@ -1,18 +1,18 @@
 ---
-title: "The Valley Design Build Process: From Dream to Reality"
-description: "What does it actually look like to work with a design-build firm on a custom outdoor project? We walk through every phase from first conversation to final reveal."
+title: "The Valley Design Build Process, From First Call to Final Walkthrough"
+description: "What it looks like to work with a design-build firm on a custom outdoor project, from site visit and design to permitting, construction, and handoff."
 date: "2025-06-10"
 author: "Valley Design Build"
-image: "/images/blog/design-process.jpg"
+image: "/images/welder.jpg"
 imageAlt: "Design rendering compared to completed custom pool project"
 tags: ["Design Process", "Project Planning", "Custom Design", "How We Work"]
 ---
 
-You have an idea. Maybe it's a pool that disappears into the landscape. A pumptrack your kids will ride every day. A backyard transformation that makes your property the destination you've always imagined.
+You have an idea. Maybe it is a pool that fits into a sloped yard. A pumptrack your kids will ride every day. A backyard project that needs grading, concrete, equipment, and a better plan than a quick sketch.
 
-How does that idea become reality?
+How does that idea become something you can actually build?
 
-The gap between vision and completion is where design-build happens. It's not magic, but it is a process that requires experience, communication, and craftsmanship at every stage.
+The gap between idea and completion is where design-build matters. It is a practical process that needs experience, communication, and good trade work at every stage.
 
 Here's what working with Valley Design Build actually looks like.
 
@@ -24,7 +24,7 @@ Every project starts with talking.
 
 Our first conversation explores the basics:
 
-- What do you want to create? (Even vague answers work—"something amazing for the kids" tells us plenty)
+- What do you want to create? Even vague answers work at the start.
 - Who will use it? (Ages, abilities, interests)
 - What's the property like? (Existing features, constraints, opportunities)
 - What's the timeline? (Some projects have hard deadlines; others are open-ended)
@@ -78,7 +78,7 @@ If yes, we move to design.
 
 ## Phase 3: Design Development
 
-This is where vision takes shape.
+This is where the idea gets tested.
 
 **Concept Design**
 
@@ -96,7 +96,7 @@ Concept design is exploratory. Some ideas won't work. Others will spark "yes, th
 Focused direction gets detailed:
 
 - Scaled drawings of the preferred approach
-- 3D renderings showing the experience (when helpful)
+- 3D renderings showing scale and layout when helpful
 - Material selections and options
 - Feature specifications
 - Integration with existing landscape
@@ -110,7 +110,7 @@ We present the design for approval:
 - Walking through every element
 - Explaining construction approaches
 - Discussing alternatives where options exist
-- Confirming the vision matches what you imagined
+- Confirming the plan matches what you asked for
 
 Design approval means we share an understanding of what's being built.
 
@@ -219,7 +219,7 @@ The details that matter:
 - Lighting fine-tuning
 - Equipment startup and programming
 
-Finishing transforms construction into completed spaces.
+Finishing is where construction starts to feel complete.
 
 ## Phase 7: Quality Review
 
@@ -311,7 +311,7 @@ Depends on project complexity and decision speed. Simple projects move faster. C
 Varies by municipality and project type. Some permits take days; others take months.
 
 **Construction:** 4-16 weeks
-A simple pumptrack: 3-4 weeks. A complete backyard transformation with pool, features, and structures: 12-16 weeks.
+A simple pumptrack: 3-4 weeks. A full backyard build with pool, features, and structures: 12-16 weeks.
 
 **Total Timeline:** 3-6 months typical
 From first conversation to project completion. Complex projects or permitting delays can extend this.
@@ -324,13 +324,13 @@ Projects span a wide range:
 
 - **Single feature** (pumptrack, mini ramp, water feature): $25,000-$75,000
 - **Pool with basic landscape**: $80,000-$150,000
-- **Complete backyard transformation**: $150,000-$400,000
+- **Full backyard build**: $150,000-$400,000
 - **Estate-level projects**: $400,000+
 
-We work with various budgets. The key is alignment between vision and investment from the start.
+We work with various budgets. The key is alignment between scope and investment from the start.
 
 ## Ready to Start?
 
-The process begins with a conversation. No pressure, no obligation—just a discussion about what's possible.
+The process begins with a conversation. No pressure, no obligation, just a discussion about the site and what might be possible.
 
-Call Valley Design Build at (801) 510-7142 or reach out through our contact form. Let's talk about turning your vision into the backyard you've always imagined.
+Call Valley Design Build at (801) 510-7142 or reach out through our contact form. We can talk through the project, the site, and the next practical step.

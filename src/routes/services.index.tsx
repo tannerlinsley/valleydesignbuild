@@ -13,7 +13,7 @@ export const Route = createFileRoute('/services/')({
       ...seo({
         title: 'Services | Valley Design Build Utah',
         description:
-          'Custom pools, pumptracks, skateparks, treehouses, water features, entertainment spaces, and more. Valley Design Build creates ambitious outdoor experiences across Northern Utah.',
+          'Custom pools, pumptracks, private skateparks, treehouses, water features, outdoor kitchens, ice rinks, and backyard builds across Northern Utah.',
         path: '/services',
         keywords: [
           'custom pool builder utah',
@@ -34,8 +34,8 @@ export const Route = createFileRoute('/services/')({
           {
             '@context': 'https://schema.org',
             '@type': 'ItemList',
-            name: 'Outdoor Experience Services',
-            description: 'Custom outdoor experiences offered by Valley Design Build in Utah',
+            name: 'Custom Backyard Construction Services',
+            description: 'Custom pools, pumptracks, skateparks, treehouses, ice rinks, and outdoor builds offered by Valley Design Build in Utah',
             numberOfItems: SERVICES.length,
             itemListElement: SERVICES.map((service, index) => ({
               '@type': 'ListItem',
@@ -75,9 +75,9 @@ function ServicesIndex() {
               What We Build
             </h1>
             <p className="text-xl text-gray-300 mb-8">
-              From custom pools to private skateparks, we create extraordinary
-              outdoor experiences that transform your property into a destination
-              for adventure and recreation.
+              Custom pools, pumptracks, private skateparks, treehouses, water
+              features, outdoor kitchens, and ice rinks, planned for your site
+              and built by one accountable crew.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -128,29 +128,29 @@ function ServicesIndex() {
                 headingFont,
               )}
             >
-              Why Choose Valley Design Build?
+              Why Hire One Design-Build Crew?
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {[
                 {
-                  title: 'Specialized Expertise',
+                  title: 'Unusual Work',
                   description:
-                    'We specialize in features most companies won\'t touch—pumptracks, skateparks, treehouses, and ice rinks require skills we\'ve spent years developing.',
+                    'Pumptracks, skateparks, treehouses, and ice rinks require layout, shaping, structure, drainage, and finish skills that most crews do not keep in house.',
                 },
                 {
-                  title: 'End-to-End Service',
+                  title: 'One Accountable Team',
                   description:
-                    'From initial design to final walkthrough, we handle everything. No subcontractor confusion, no finger-pointing—just one team committed to your vision.',
+                    'The people drawing the plan stay connected to the people building it. That makes the work cleaner when field decisions come up.',
                 },
                 {
-                  title: 'Custom Everything',
+                  title: 'Built for Your Yard',
                   description:
-                    'Every project is designed specifically for your property, your family, and your dreams. No cookie-cutter solutions.',
+                    'Slope, access, shade, winter, water, and how your family uses the space all shape the final plan.',
                 },
                 {
-                  title: 'Family-Focused',
+                  title: 'Made to Be Used',
                   description:
-                    'We build spaces where families come together. Every project is designed to create lasting memories for generations.',
+                    'A backyard should hold up to kids, friends, weather, gear, and repeat use. Pretty only matters if it keeps working.',
                 },
               ].map((item) => (
                 <div
@@ -184,11 +184,11 @@ function ServicesIndex() {
               headingFont,
             )}
           >
-            Ready to Build Something Amazing?
+            Ready to Price the Real Thing?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Contact us today for a free consultation. Let's turn your backyard
-            into the destination you've always dreamed of.
+            Tell us what you want to build and what is already on the property.
+            We will help you understand scope, site work, and next steps.
           </p>
           <Link
             to="/contact"

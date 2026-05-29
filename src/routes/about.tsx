@@ -17,16 +17,16 @@ export const Route = createFileRoute('/about')({
   head: () => ({
     meta: [
       ...seo({
-        title: 'About Valley Design Build | Custom Outdoor Experiences Utah',
+        title: 'About Valley Design Build | Custom Backyard Builds Utah',
         description:
-          'Learn about Valley Design Build. We are dreamers and builders creating custom pools, pumptracks, skateparks, treehouses, and ambitious outdoor experiences across Northern Utah.',
+          'Meet Valley Design Build, a Farr West design-build crew for custom pools, pumptracks, private skateparks, treehouses, ice rinks, and outdoor builds across Northern Utah.',
         path: '/about',
         keywords: [
           'about valley design build',
           'utah custom pool builder',
           'pumptrack builder utah',
           'skatepark contractor utah',
-          'custom outdoor experiences',
+          'custom backyard builds',
         ],
       }),
     ],
@@ -39,7 +39,7 @@ export const Route = createFileRoute('/about')({
             '@context': 'https://schema.org',
             '@type': 'AboutPage',
             name: 'About Valley Design Build',
-            description: 'Learn about our company and our passion for building ambitious outdoor experiences',
+            description: 'Learn about the Valley Design Build crew and the custom backyard projects we build across Northern Utah',
             url: 'https://valleydesignbuild.com/about',
             mainEntity: {
               '@type': 'HomeAndConstructionBusiness',
@@ -61,27 +61,27 @@ function About() {
   const values = [
     {
       icon: Award,
-      title: 'Ambitious Vision',
+      title: 'Hard Projects',
       description:
-        'We don\'t just build—we dream big. From backyard pumptracks to professional skateparks, we turn your wildest ideas into reality.',
+        'Pumptracks, skateparks, pools, and ice rinks all have details most crews avoid. That is the work we are set up to take on.',
     },
     {
       icon: Users,
-      title: 'Family-Focused',
+      title: 'Built for Families',
       description:
-        'We build spaces where families come together. Every project is designed to create lasting memories for generations.',
+        'We care about how the project will be used after school, on weekends, in winter, and when everyone ends up outside.',
     },
     {
       icon: Sparkles,
-      title: 'Expert Craftsmanship',
+      title: 'Trade Work',
       description:
-        'From custom metalwork to precision concrete finishing, we bring master-level skills to every element of your project.',
+        'Concrete, metalwork, carpentry, equipment, drainage, and finish details all have to line up for the final build to feel right.',
     },
     {
       icon: Clock,
-      title: 'Dedicated Service',
+      title: 'Straight Communication',
       description:
-        'We treat every project as if it were our own home. Clear communication, reliable timelines, and exceptional results.',
+        'You should know what is happening, what changed, and what comes next. We keep the job moving without hiding the hard parts.',
     },
   ]
 
@@ -106,12 +106,12 @@ function About() {
                 headingFont,
               )}
             >
-              We Are Dreamers & Builders
+              A Utah Crew for Hard Backyard Projects
             </h1>
             <p className="text-xl text-gray-300">
-              At Valley Design Build, we believe that our greatest moments of
-              adventure, recreation, entertainment, and escape can happen in
-              our own backyards.
+              We design and build pools, pumptracks, skateparks, treehouses,
+              ice rinks, and outdoor rooms that need more than a standard
+              landscape plan.
             </p>
           </div>
         </div>
@@ -133,23 +133,21 @@ function About() {
                 </h2>
                 <div className="space-y-4 text-gray-600 dark:text-gray-300">
                   <p>
-                    Valley Design Build was born from a simple belief: a home
-                    is more than just a house. Your backyard should be a
-                    destination—a place for adventure, relaxation, and making
-                    memories with the people you love.
+                    Valley Design Build started in Farr West with a practical
+                    idea: the best backyard projects need the design and the
+                    build team working together from the first site walk.
                   </p>
                   <p>
-                    We're not your typical landscaping company. We're dreamers
-                    and builders who specialize in the extraordinary—custom
-                    pools, pumptracks, skateparks, treehouses, entertainment
-                    spaces, and features that turn ordinary properties into
-                    amazing experiences.
+                    We are not a typical landscaping company. We take on custom
+                    pools, pumptracks, private skateparks, treehouses, outdoor
+                    kitchens, water features, and winter builds where grade,
+                    drainage, concrete, steel, and finish details all matter.
                   </p>
                   <p>
-                    Every project starts with a vision. Whether you're building
-                    a place for your kids to ride, a pool to gather around, or
-                    an ice rink for winter fun—we bring the expertise,
-                    craftsmanship, and passion to make it real.
+                    Some clients come with a clean drawing. Some come with a
+                    wild idea and a hard site. Either way, we help figure out
+                    what can be built, what it will take, and how to make it
+                    hold up.
                   </p>
                 </div>
               </div>
@@ -163,10 +161,10 @@ function About() {
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-900/60 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
                     <div className="text-4xl font-bold text-white mb-1">
-                      All Rolled Into One
+                      Design + Build + Site Work
                     </div>
                     <div className="text-lg text-gray-300">
-                      Design + Build + Dreams
+                      One crew from layout to finish
                     </div>
                   </div>
                 </div>
@@ -186,7 +184,7 @@ function About() {
                 headingFont,
               )}
             >
-              What Drives Us
+              How We Work
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               {values.map((value) => {
@@ -226,7 +224,7 @@ function About() {
                 headingFont,
               )}
             >
-              Our Journey
+              Company Timeline
             </h2>
             <div className="relative">
               <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-cyan-200 dark:bg-cyan-800 md:-translate-x-1/2" />
@@ -276,7 +274,7 @@ function About() {
                 headingFont,
               )}
             >
-              What Sets Us Apart
+              Why People Call Us
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-8 bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
@@ -285,9 +283,9 @@ function About() {
                   Specialized Expertise
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  We specialize in features most companies won't touch—pumptracks,
-                  skateparks, treehouses, and ice rinks require specialized skills
-                  we've spent years developing.
+                  Pumptracks, skateparks, treehouses, and ice rinks take
+                  different skills than a patio or planting plan. We have spent
+                  years building those details.
                 </p>
               </div>
               <div className="p-8 bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
@@ -296,9 +294,9 @@ function About() {
                   End-to-End Service
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  From initial design to final walkthrough, we handle everything.
-                  No subcontractor confusion, no finger-pointing—just one team
-                  committed to your vision.
+                  From the first layout to the final walkthrough, one team is
+                  responsible for the result. That keeps decisions clear when
+                  the site changes.
                 </p>
               </div>
             </div>
@@ -315,11 +313,11 @@ function About() {
               headingFont,
             )}
           >
-            Ready to Build Something Amazing?
+            Ready to Talk Through the Site?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Let's create something extraordinary together. Contact us for a free
-            consultation and see why families across Utah trust Valley Design Build.
+            Tell us what you want to build and where it needs to go. We can
+            help you sort out scope, site constraints, and next steps.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

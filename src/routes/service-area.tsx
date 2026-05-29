@@ -12,7 +12,7 @@ export const Route = createFileRoute('/service-area')({
       ...seo({
         title: 'Service Area | Valley Design Build Utah',
         description:
-          'Valley Design Build serves Northern Utah including Weber County, Davis County, Salt Lake County, Cache County, Box Elder County, and Morgan County. Custom pools, pumptracks, and outdoor experiences within 80 miles of Farr West, UT.',
+          'Valley Design Build serves Northern Utah including Weber County, Davis County, Salt Lake County, Cache County, Box Elder County, and Morgan County. Custom pools, pumptracks, skateparks, and backyard builds within 80 miles of Farr West, UT.',
         path: '/service-area',
         keywords: [
           'custom pool builder weber county',
@@ -158,8 +158,9 @@ function ServiceArea() {
               Serving Northern Utah & Beyond
             </h1>
             <p className="text-xl text-gray-300 mb-8">
-              From Logan to Salt Lake City, we bring ambitious outdoor experiences
-              to families across the Wasatch Front and beyond.
+              From Logan to Salt Lake City, we build custom pools, pumptracks,
+              skateparks, treehouses, water features, and ice rinks across the
+              Wasatch Front.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -267,29 +268,29 @@ function ServiceArea() {
                 headingFont,
               )}
             >
-              Local Expertise Matters
+              Local Site Knowledge Helps
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {[
                 {
-                  title: 'Climate Knowledge',
+                  title: 'Utah Weather',
                   description:
-                    "We understand Northern Utah's unique climate, including harsh winters, hot summers, and everything in between.",
+                    "We plan for Northern Utah's hot summers, freeze-thaw winters, snow loads, drainage, and seasonal use.",
                 },
                 {
-                  title: 'Terrain Expertise',
+                  title: 'Real Terrain',
                   description:
-                    'From mountain properties to valley lots, we design and build features that work with your specific terrain.',
+                    'Mountain properties, valley lots, tight access, and slope all change the way a backyard build should be laid out.',
                 },
                 {
-                  title: 'Local Relationships',
+                  title: 'Local Materials',
                   description:
-                    'We have established relationships with local suppliers and know the best materials for our region.',
+                    'We know the suppliers, equipment constraints, and materials that tend to perform well in this region.',
                 },
                 {
-                  title: 'Quick Response',
+                  title: 'Close Enough to Show Up',
                   description:
-                    'Being locally based means we can respond quickly to questions, concerns, and ongoing project needs.',
+                    'Being based in Farr West makes site walks, follow-up, and project communication much more practical.',
                 },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4">
@@ -326,8 +327,8 @@ function ServiceArea() {
             Not Sure If We Serve Your Area?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Give us a call! We may be able to accommodate projects outside our
-            standard service area for the right opportunity.
+            Give us a call and tell us where the project is. If the site and
+            scope make sense, we can talk it through.
           </p>
           <a
             href="tel:+18015107142"

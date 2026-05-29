@@ -13,7 +13,7 @@ export const Route = createFileRoute('/blog/')({
       ...seo({
         title: 'Blog | Valley Design Build Utah',
         description:
-          'Expert tips on custom pools, pumptracks, skateparks, and outdoor entertainment. Inspiration and advice for creating ambitious backyard experiences in Northern Utah.',
+          'Practical notes on custom pools, pumptracks, skateparks, treehouses, water features, ice rinks, and outdoor builds in Northern Utah.',
         path: '/blog',
         keywords: [
           'custom pool tips utah',
@@ -32,7 +32,7 @@ export const Route = createFileRoute('/blog/')({
         children: schemaToScript([
           webPageSchema({
             name: 'Valley Design Build Blog',
-            description: 'Expert tips and inspiration for custom outdoor experiences in Utah',
+            description: 'Practical project notes for custom pools, pumptracks, skateparks, and outdoor builds in Utah',
             url: '/blog',
           }),
           breadcrumbSchema([
@@ -67,11 +67,11 @@ function BlogIndex() {
                 headingFont,
               )}
             >
-              Insights & Inspiration
+              Project Notes & Backyard Build Guides
             </h1>
             <p className="text-xl text-gray-300">
-              Expert tips and creative ideas for building ambitious outdoor
-              experiences in Northern Utah.
+              Practical notes on pools, pumptracks, skateparks, water features,
+              treehouses, ice rinks, and the site work behind them.
             </p>
           </div>
         </div>
@@ -166,8 +166,8 @@ function BlogIndex() {
               Have a Project in Mind?
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-6">
-              Our team is ready to help you create the outdoor experience of your
-              dreams. Reach out anytime!
+              Tell us what you want to build and what makes the site tricky. We
+              will help you sort through the next step.
             </p>
             <Link
               to="/contact"

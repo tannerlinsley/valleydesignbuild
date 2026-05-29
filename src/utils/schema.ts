@@ -29,7 +29,7 @@ export function localBusinessSchema() {
     url: SITE_URL,
     telephone: BUSINESS_INFO.telephone,
     email: BUSINESS_INFO.email,
-    description: 'Custom pools, pumptracks, skateparks, treehouses, water features, and outdoor entertainment spaces. Building ambitious experiences for families across Northern Utah.',
+    description: 'Custom pools, pumptracks, skateparks, treehouses, water features, ice rinks, and outdoor entertainment builds for families across Northern Utah.',
     foundingDate: '2018',
     address: {
       '@type': 'PostalAddress',
@@ -85,14 +85,14 @@ export function localBusinessSchema() {
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Outdoor Experience Services',
+      name: 'Custom Backyard Construction Services',
       itemListElement: [
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
             name: 'Custom Pools & Spas',
-            description: 'Luxury custom swimming pools and spas designed as the centerpiece of your backyard paradise',
+            description: 'Custom swimming pools and spas planned around the site, equipment, grade, and everyday use',
           },
         },
         {
@@ -108,7 +108,7 @@ export function localBusinessSchema() {
           itemOffered: {
             '@type': 'Service',
             name: 'Custom Play Houses & Treehouses',
-            description: 'Imaginative treehouses and play structures that create magical spaces for adventure and creativity',
+            description: 'Custom treehouses and play structures built for safe climbing, exploring, and outdoor play',
           },
         },
         {
@@ -116,7 +116,7 @@ export function localBusinessSchema() {
           itemOffered: {
             '@type': 'Service',
             name: 'Private Skateparks',
-            description: 'Private skateparks and bike courses that bring world-class action sports to your backyard',
+            description: 'Private skateparks and bike courses built around rider skill, flow, drainage, and available space',
           },
         },
         {
@@ -124,7 +124,7 @@ export function localBusinessSchema() {
           itemOffered: {
             '@type': 'Service',
             name: 'Backyard Pumptracks',
-            description: 'Professional pump track circuits for bikes, skates, and scooters—endless laps of pure fun',
+            description: 'Backyard pumptrack circuits for bikes, scooters, skates, and repeat laps without leaving home',
           },
         },
         {
@@ -132,7 +132,7 @@ export function localBusinessSchema() {
           itemOffered: {
             '@type': 'Service',
             name: 'Entertainment Structures',
-            description: 'Outdoor kitchens, pavilions, theaters, and gathering spaces that elevate outdoor living',
+            description: 'Outdoor kitchens, pavilions, theaters, shade structures, and gathering areas built for regular use',
           },
         },
         {
@@ -253,7 +253,7 @@ export function articleSchema({
       name: BUSINESS_INFO.name,
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_URL}/images/logo.png`,
+        url: `${SITE_URL}/images/logo-white.svg`,
       },
     },
     mainEntityOfPage: {

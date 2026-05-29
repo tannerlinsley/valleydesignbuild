@@ -1,6 +1,6 @@
 const SITE_URL = 'https://valleydesignbuild.com'
 const SITE_NAME = 'Valley Design Build'
-const DEFAULT_IMAGE = `${SITE_URL}/images/og-default.jpg`
+const DEFAULT_IMAGE = `${SITE_URL}/images/pumptrack.jpg`
 
 export const seo = ({
   title,
