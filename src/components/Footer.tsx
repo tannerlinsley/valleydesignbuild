@@ -48,9 +48,20 @@ export function Footer() {
             <p className="text-gray-400 mb-4 text-sm leading-relaxed">
               Custom pools, pumptracks, skateparks, treehouses, water features,
               ice rinks, and outdoor rooms built by one Utah design-build crew.
-              Ongoing pool service is handled by{' '}
+              For dedicated pool, spa, and sauna help, visit{' '}
+              <a
+                href="https://poolsbydip.com"
+                target="_blank"
+                rel="noopener"
+                className="text-cyan-400 hover:text-cyan-300 transition-colors"
+              >
+                Pools by Dip
+              </a>
+              ; ongoing pool service is handled by{' '}
               <a
                 href="https://utahpools.com"
+                target="_blank"
+                rel="noopener"
                 className="text-cyan-400 hover:text-cyan-300 transition-colors"
               >
                 Utah Pools

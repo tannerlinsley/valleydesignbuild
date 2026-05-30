@@ -21,6 +21,12 @@ export interface Service {
   image: string
   features: string[]
   process: string[]
+  resourceLinks?: {
+    title: string
+    href: string
+    label: string
+    description: string
+  }[]
   faqs: { question: string; answer: string }[]
 }
 
@@ -55,6 +61,22 @@ That can mean a clean modern pool, a natural boulder edge, a spa tucked close to
       'Finish selection and application',
       'Landscaping integration and final details',
       'System training and handoff',
+    ],
+    resourceLinks: [
+      {
+        title: 'Pools by Dip',
+        href: 'https://poolsbydip.com',
+        label: 'Northern Utah pool, spa, and sauna experts',
+        description:
+          'A dedicated pool, spa, hot tub, and sauna resource for homeowners comparing backyard water and wellness options.',
+      },
+      {
+        title: 'Utah Pools',
+        href: 'https://utahpools.com',
+        label: 'Utah pool service and maintenance',
+        description:
+          'A practical resource for ongoing pool cleaning, seasonal care, repairs, and equipment support after a pool is built.',
+      },
     ],
     faqs: [
       {
