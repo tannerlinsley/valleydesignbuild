@@ -1,11 +1,16 @@
+import { brandAssetPath } from './brandAssets'
+
 const SITE_URL = 'https://valleydesignbuild.com'
 const SITE_NAME = 'Valley Design Build'
-const DEFAULT_IMAGE = `${SITE_URL}/images/pumptrack.jpg`
+const DEFAULT_IMAGE = `${SITE_URL}${brandAssetPath('/og-image.png')}`
+const DEFAULT_IMAGE_ALT =
+  'Valley Design Build social preview for Utah outdoor design-build services.'
 
 export const seo = ({
   title,
   description,
   image,
+  imageAlt = DEFAULT_IMAGE_ALT,
   path = '',
   type = 'website',
   keywords,
@@ -15,6 +20,7 @@ export const seo = ({
   title: string
   description: string
   image?: string
+  imageAlt?: string
   path?: string
   type?: 'website' | 'article' | 'profile'
   keywords?: string[]
@@ -41,8 +47,10 @@ export const seo = ({
     { property: 'og:description', content: description },
     { property: 'og:url', content: canonicalUrl },
     { property: 'og:image', content: ogImage },
+    { property: 'og:image:type', content: 'image/png' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
+    { property: 'og:image:alt', content: imageAlt },
     { property: 'og:locale', content: 'en_US' },
 
     // Twitter
@@ -52,6 +60,7 @@ export const seo = ({
     { name: 'twitter:title', content: title },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: ogImage },
+    { name: 'twitter:image:alt', content: imageAlt },
 
     // Geo tags for local SEO
     { name: 'geo.region', content: 'US-UT' },
