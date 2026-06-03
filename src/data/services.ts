@@ -155,7 +155,7 @@ That might be a boulder waterfall, a short stream, a fountain, a rain curtain, o
 
 This is not mow-and-blow landscaping. It is site work, hardscape, softscape, circulation, and outdoor rooms designed to make the whole property easier to use.`,
     icon: Leaf,
-    image: '/images/waterFeature.jpg',
+    image: '/images/outdoorLiving.jpg',
     features: [
       'Patio and hardscape layouts',
       'Landscape planting plans',
