@@ -138,7 +138,7 @@ function ServicePage() {
             viewTransitionName: `service-${service.slug}-bg`,
           }}
         />
-        <div className="absolute inset-0 bg-gray-900/80" />
+        <div className="absolute inset-0 bg-gray-950/45" />
 
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl mx-auto text-center">

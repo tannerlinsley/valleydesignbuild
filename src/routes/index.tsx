@@ -198,7 +198,7 @@ function Home() {
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
                   />
-                  <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-navy-900/45 to-transparent pointer-events-none" />
+                  <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-gray-950/35 to-transparent pointer-events-none" />
                 </div>
                 <div className="field-note -bottom-6 left-4 max-w-[17rem] bg-white/90 text-gray-800 shadow-lg backdrop-blur dark:bg-navy-900/90 dark:text-gray-200">
                   Build reel: water, concrete, steel, timber, grade.
@@ -301,7 +301,7 @@ function Home() {
                   alt="Craftsman welding custom outdoor project details"
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-900/70 via-navy-900/10 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-950/58 via-gray-950/5 to-transparent" />
                 <div className="absolute bottom-5 left-5 right-5 text-white">
                   <span className="text-xs font-bold uppercase text-cyan-200">
                     Shop note
@@ -461,7 +461,7 @@ function Home() {
                   alt="Custom water feature in a Northern Utah outdoor landscape"
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-900/75 via-navy-900/15 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-950/60 via-gray-950/5 to-transparent" />
                 <div className="absolute bottom-5 left-5 right-5 text-white">
                   <span className="text-xs font-bold uppercase text-cyan-200">
                     Farr West base
