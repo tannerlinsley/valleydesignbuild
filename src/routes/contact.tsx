@@ -103,7 +103,7 @@ function Contact() {
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-5 gap-12">
               {/* Contact Info */}
-              <div className="lg:col-span-2 space-y-8">
+              <div className="order-2 lg:order-1 lg:col-span-2 space-y-8">
                 <div>
                   <h2
                     className={twMerge(
@@ -193,7 +193,7 @@ function Contact() {
               </div>
 
               {/* Contact Form */}
-              <div className="lg:col-span-3">
+              <div className="order-1 lg:order-2 lg:col-span-3">
                 <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
                   <h2
                     className={twMerge(
@@ -201,7 +201,7 @@ function Contact() {
                       headingFont,
                     )}
                   >
-                    Start Your Project
+                    Request a Site Walk
                   </h2>
                   <ContactForm />
                 </div>

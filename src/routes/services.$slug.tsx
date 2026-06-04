@@ -168,7 +168,7 @@ function ServicePage() {
                 className="bg-cyan-700 text-white px-6 py-3 rounded-md font-semibold hover:bg-cyan-600 transition-all flex items-center justify-center gap-2"
               >
                 <Calendar className="w-5 h-5" />
-                Start Your Project
+                Request a Site Walk
               </Link>
             </div>
           </div>
@@ -339,7 +339,7 @@ function ServicePage() {
                     headingFont,
                   )}
                 >
-                  Start Your {service.shortTitle} Project
+                  Talk Through Your {service.shortTitle} Project
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400">
                   Tell us what you want to build and what is already on the

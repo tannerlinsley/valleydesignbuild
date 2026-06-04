@@ -167,7 +167,7 @@ function BlogPost() {
               <h2
                 className={twMerge('text-2xl font-bold text-white mb-2 uppercase', headingFont)}
               >
-                Ready to Start Your Project?
+                Ready to Talk Through the Site?
               </h2>
               <p className="text-white/90">
                 Get a free consultation from Valley Design Build.
@@ -179,13 +179,13 @@ function BlogPost() {
                 className="bg-white/20 backdrop-blur-md border border-white/30 text-white px-5 py-3 rounded-md font-semibold hover:bg-white/30 transition-all flex items-center gap-2"
               >
                 <Phone className="w-4 h-4" />
-                Call Now
+                Call (801) 510-7142
               </a>
               <Link
                 to="/contact"
                 className="bg-white text-cyan-700 px-5 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors"
               >
-                Get Free Consultation
+                Request a Site Walk
               </Link>
             </div>
           </div>

@@ -175,7 +175,7 @@ function ServiceArea() {
                 className="bg-cyan-700 text-white px-6 py-3 rounded-md font-semibold hover:bg-cyan-600 transition-all flex items-center justify-center gap-2"
               >
                 <Calendar className="w-5 h-5" />
-                Start Your Project
+                Request a Site Walk
               </Link>
             </div>
           </div>
@@ -330,13 +330,22 @@ function ServiceArea() {
             Give us a call and tell us where the project is. If the site and
             scope make sense, we can talk it through.
           </p>
-          <a
-            href="tel:+18015107142"
-            className="inline-flex items-center gap-2 bg-white text-cyan-700 px-8 py-4 rounded-md font-bold hover:bg-gray-100 transition-colors text-lg"
-          >
-            <Phone className="w-5 h-5" />
-            Call (801) 510-7142
-          </a>
+          <div className="flex flex-col justify-center gap-4 sm:flex-row">
+            <a
+              href="tel:+18015107142"
+              className="inline-flex items-center justify-center gap-2 bg-white/20 text-white px-8 py-4 rounded-md font-bold hover:bg-white/30 transition-colors text-lg"
+            >
+              <Phone className="w-5 h-5" />
+              Call (801) 510-7142
+            </a>
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-white text-cyan-700 px-8 py-4 rounded-md font-bold hover:bg-gray-100 transition-colors text-lg"
+            >
+              <Calendar className="w-5 h-5" />
+              Request a Site Walk
+            </Link>
+          </div>
         </div>
       </section>
     </div>

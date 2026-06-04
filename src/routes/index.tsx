@@ -9,6 +9,7 @@ import {
   ArrowRight,
   Star,
   Hammer,
+  ShieldCheck,
 } from 'lucide-react'
 import { headingFont, bodyFont } from '~/styles/typography'
 import { SERVICES } from '~/data/services'
@@ -115,6 +116,12 @@ function Home() {
     'Morgan County',
   ]
 
+  const proofPoints = [
+    'Site walk before a real scope',
+    'Design, grade, drainage, and build under one crew',
+    'Pool, concrete, steel, timber, water, and finish details',
+  ]
+
   return (
     <div
       className={twMerge(
@@ -128,8 +135,8 @@ function Home() {
           aria-hidden="true"
         />
         <div className="container relative mx-auto px-5 py-10 sm:px-6 md:px-10 lg:px-16 lg:py-16">
-          <div className="grid gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:items-start xl:grid-cols-[0.9fr_1.35fr] xl:items-center xl:gap-14">
-            <div className="order-2 lg:order-1">
+          <div className="grid gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:items-start xl:grid-cols-[0.95fr_1.05fr] xl:items-center xl:gap-14">
+            <div className="order-1">
               <div className="mb-5 flex flex-wrap items-center gap-2 text-xs font-bold uppercase text-cyan-700 dark:text-cyan-300">
                 <span className="border border-cyan-700/30 px-2.5 py-1 dark:border-cyan-300/30">
                   Farr West, Utah
@@ -140,30 +147,24 @@ function Home() {
               </div>
               <h1
                 className={twMerge(
-                  'max-w-[11ch] text-5xl font-bold uppercase leading-[0.92] text-gray-950 sm:text-6xl lg:text-7xl xl:text-8xl dark:text-white',
-                  'lg:max-w-[14ch] xl:max-w-[11ch]',
+                  'max-w-[11ch] text-5xl font-bold uppercase leading-[0.92] text-gray-950 sm:text-6xl lg:text-6xl xl:text-7xl dark:text-white',
+                  'lg:max-w-[13ch]',
                   headingFont,
                 )}
               >
-                Custom Outdoor{' '}
+                Hard Backyard{' '}
                 <span className="block text-cyan-700 dark:text-cyan-300">
-                  Builds{' '}
+                  Projects{' '}
                 </span>
-                <span className="block">in Utah</span>
+                <span className="block">Built for Utah</span>
               </h1>
               <p className="mt-5 max-w-xl text-xl italic leading-snug text-cyan-700 dark:text-cyan-300 md:text-2xl">
-                Pools, pumptracks, skateparks, treehouses, ice rinks, outdoor
-                living spaces, and landscaping for families who like to be
-                outside.
-              </p>
-              <p className="mt-5 max-w-xl text-lg leading-relaxed text-gray-600 dark:text-gray-300 md:text-xl">
-                We design and build the parts of a property that get used: the
-                pool, the patio, the track, the rink, the shade structure, the
-                planting, the water, the grading, and the details that make it
-                all work.
+                Pools, pumptracks, skateparks, treehouses, ice rinks, water
+                features, and outdoor rooms planned around grade, drainage,
+                access, weather, and how your family will actually use the space.
               </p>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="tel:+18015107142"
                   className="inline-flex items-center justify-center gap-2 border border-gray-900/15 bg-white px-5 py-3 font-semibold text-gray-950 shadow-sm transition-all hover:-translate-y-0.5 hover:border-cyan-700/40 hover:text-cyan-700 dark:border-white/15 dark:bg-white/5 dark:text-white dark:hover:border-cyan-300/40 dark:hover:text-cyan-300"
@@ -176,32 +177,40 @@ function Home() {
                   className="inline-flex items-center justify-center gap-2 bg-cyan-700 px-5 py-3 font-semibold text-white shadow-lg shadow-cyan-900/10 transition-all hover:-translate-y-0.5 hover:bg-cyan-600 dark:bg-cyan-400 dark:text-gray-950 dark:hover:bg-cyan-300"
                 >
                   <Calendar className="h-5 w-5 flex-shrink-0" />
-                  <span>Start Your Project</span>
+                  <span>Request a Site Walk</span>
                 </Link>
               </div>
 
+              <div className="mt-6 grid gap-3 text-sm text-gray-700 dark:text-gray-300">
+                {proofPoints.map((point) => (
+                  <div key={point} className="flex items-start gap-2">
+                    <ShieldCheck className="mt-0.5 h-4 w-4 flex-shrink-0 text-cyan-700 dark:text-cyan-300" />
+                    <span>{point}</span>
+                  </div>
+                ))}
+              </div>
             </div>
 
-            <div className="order-1 lg:order-2 lg:pt-12 xl:pt-0">
+            <div className="order-2 lg:pt-8 xl:pt-0">
               <div className="relative mx-auto max-w-3xl">
                 <div className="hero-video-shell relative aspect-video overflow-hidden bg-gray-900 shadow-2xl shadow-gray-900/20 dark:shadow-black/40">
                   <img
                     src="/images/pumptrack.jpg"
-                    alt=""
-                    aria-hidden="true"
-                    className="absolute inset-0 h-full w-full object-cover opacity-80"
+                    alt="Backyard pumptrack and outdoor project built by Valley Design Build"
+                    className="absolute inset-0 h-full w-full object-cover"
                   />
-                  <iframe
-                    src="https://player.vimeo.com/video/438344317?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1&autopause=0&playsinline=1"
-                    className="absolute inset-0 h-full w-full"
-                    title="Valley Design Build project reel"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowFullScreen
-                  />
-                  <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-gray-950/35 to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950/72 via-gray-950/8 to-transparent pointer-events-none" />
+                  <div className="absolute bottom-5 left-5 right-5 text-white">
+                    <span className="text-xs font-bold uppercase text-cyan-200">
+                      Residential pumptrack
+                    </span>
+                    <p className="max-w-sm text-2xl font-bold leading-none">
+                      Built for flow, drainage, and repeat laps.
+                    </p>
+                  </div>
                 </div>
-                <div className="field-note -bottom-6 left-4 max-w-[17rem] bg-white/90 text-gray-800 shadow-lg backdrop-blur dark:bg-navy-900/90 dark:text-gray-200">
-                  Build reel: water, concrete, steel, timber, grade.
+                <div className="field-note left-4 top-full mt-3 max-w-[17rem] bg-white/90 text-gray-800 shadow-lg backdrop-blur dark:bg-navy-900/90 dark:text-gray-200">
+                  Recent work: water, concrete, steel, timber, grade.
                 </div>
                 <div
                   className="absolute -right-8 top-8 hidden origin-center rotate-90 border-y border-gray-900/20 px-3 py-1 text-[11px] font-bold uppercase text-gray-600 dark:border-white/20 dark:text-gray-400 lg:block"

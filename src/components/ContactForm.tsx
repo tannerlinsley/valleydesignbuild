@@ -124,7 +124,7 @@ export function ContactForm({ className = '', variant = 'default', defaultServic
           headingFont,
         )}
       >
-        Get Your Free Consultation
+        Request a Site Walk
       </button>
 
       <p className="text-xs text-gray-500 dark:text-gray-400 text-center">

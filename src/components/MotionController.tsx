@@ -1,13 +1,5 @@
 import { useEffect } from 'react'
 
-const REVEAL_SELECTOR = [
-  '[data-reveal]',
-  'main section > .container',
-  '.tactile-card',
-  'main article',
-  'main figure',
-].join(', ')
-
 export function MotionController() {
   useEffect(() => {
     const reduceMotion = window.matchMedia(
@@ -30,49 +22,6 @@ export function MotionController() {
     }
 
     document.documentElement.classList.add('motion-ready')
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible')
-            observer.unobserve(entry.target)
-          }
-        })
-      },
-      {
-        rootMargin: '0px 0px -12% 0px',
-        threshold: 0.12,
-      },
-    )
-
-    const observedElements = new WeakSet<HTMLElement>()
-    let revealIndex = 0
-
-    const observeReveals = () => {
-      const revealElements = Array.from(
-        document.querySelectorAll<HTMLElement>(REVEAL_SELECTOR),
-      ).filter((element) => !element.closest('[data-no-reveal]'))
-
-      revealElements.forEach((element) => {
-        if (observedElements.has(element)) return
-
-        if (!element.dataset.reveal) {
-          element.dataset.reveal = 'up'
-        }
-
-        if (!element.style.getPropertyValue('--reveal-delay')) {
-          element.style.setProperty(
-            '--reveal-delay',
-            `${Math.min((revealIndex % 5) * 45, 180)}ms`,
-          )
-        }
-
-        revealIndex += 1
-        observedElements.add(element)
-        observer.observe(element)
-      })
-    }
 
     const tactileCleanups = new WeakMap<HTMLElement, () => void>()
 
@@ -128,14 +77,14 @@ export function MotionController() {
         .forEach(attachTactileCard)
     }
 
-    observeReveals()
-    attachTactileCards()
+    const startupFrame = window.requestAnimationFrame(() => {
+      attachTactileCards()
+    })
 
     let mutationFrame = 0
     const mutationObserver = new MutationObserver(() => {
       if (mutationFrame) window.cancelAnimationFrame(mutationFrame)
       mutationFrame = window.requestAnimationFrame(() => {
-        observeReveals()
         attachTactileCards()
       })
     })
@@ -146,8 +95,8 @@ export function MotionController() {
     })
 
     return () => {
-      observer.disconnect()
       mutationObserver.disconnect()
+      window.cancelAnimationFrame(startupFrame)
       if (mutationFrame) window.cancelAnimationFrame(mutationFrame)
       document
         .querySelectorAll<HTMLElement>('.tactile-card')
