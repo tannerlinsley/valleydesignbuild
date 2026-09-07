@@ -1,13 +1,17 @@
 import { BUSINESS_LOCATION } from '~/data/location'
+import { brandAssetPath } from './brandAssets'
 
 const SITE_URL = 'https://valleydesignbuild.com'
 const SITE_NAME = 'Valley Design Build'
-const DEFAULT_IMAGE = `${SITE_URL}/images/pumptrack.jpg`
+const DEFAULT_IMAGE = `${SITE_URL}${brandAssetPath('/og-image.png')}`
+const DEFAULT_IMAGE_ALT =
+  'Valley Design Build social preview for Utah outdoor design-build services.'
 
 export const seo = ({
   title,
   description,
   image,
+  imageAlt,
   path = '',
   type = 'website',
   keywords,
@@ -17,6 +21,7 @@ export const seo = ({
   title: string
   description: string
   image?: string
+  imageAlt?: string
   path?: string
   type?: 'website' | 'article' | 'profile'
   keywords?: string[]
@@ -28,6 +33,7 @@ export const seo = ({
     tags?: string[]
   }
 }) => {
+  const resolvedImageAlt = imageAlt ?? (image ? title : DEFAULT_IMAGE_ALT)
   const canonicalUrl = `${SITE_URL}${path}`
   const ogImage = image ? (image.startsWith('http') ? image : `${SITE_URL}${image}`) : DEFAULT_IMAGE
 
@@ -43,6 +49,7 @@ export const seo = ({
     { property: 'og:description', content: description },
     { property: 'og:url', content: canonicalUrl },
     { property: 'og:image', content: ogImage },
+    { property: 'og:image:alt', content: resolvedImageAlt },
     { property: 'og:locale', content: 'en_US' },
 
     // Twitter
@@ -50,6 +57,7 @@ export const seo = ({
     { name: 'twitter:title', content: title },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: ogImage },
+    { name: 'twitter:image:alt', content: resolvedImageAlt },
 
     // Geo tags for local SEO
     { name: 'geo.region', content: 'US-UT' },
@@ -57,6 +65,14 @@ export const seo = ({
     { name: 'geo.position', content: `${BUSINESS_LOCATION.latitude};${BUSINESS_LOCATION.longitude}` },
     { name: 'ICBM', content: `${BUSINESS_LOCATION.latitude}, ${BUSINESS_LOCATION.longitude}` },
   ]
+
+  if (!image) {
+    tags.push(
+      { property: 'og:image:type', content: 'image/png' },
+      { property: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', content: '630' },
+    )
+  }
 
   // Add keywords if provided
   if (keywords && keywords.length > 0) {

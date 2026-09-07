@@ -95,7 +95,7 @@ function ServicesIndex() {
                 className="bg-cyan-700 text-white px-6 py-3 rounded-md font-semibold hover:bg-cyan-600 transition-all flex items-center justify-center gap-2"
               >
                 <Calendar className="w-5 h-5" />
-                Start Your Project
+                Request a Site Walk
               </Link>
             </div>
           </div>
@@ -197,7 +197,7 @@ function ServicesIndex() {
             to="/contact"
             className="inline-flex items-center gap-2 bg-white text-cyan-700 px-8 py-4 rounded-md font-bold hover:bg-gray-100 transition-colors text-lg"
           >
-            Get Your Free Consultation
+            Request a Site Walk
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>

@@ -32,6 +32,7 @@ export const Route = createFileRoute('/services/$slug')({
       longDescription: service.longDescription,
       features: service.features,
       process: service.process,
+      resourceLinks: service.resourceLinks,
       faqs: service.faqs,
       image: service.image,
     }
@@ -122,7 +123,7 @@ function ServicePage() {
             viewTransitionName: `service-${service.slug}-bg`,
           }}
         />
-        <div className="absolute inset-0 bg-gray-900/80" />
+        <div className="absolute inset-0 bg-gray-950/45" />
 
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl mx-auto text-center">
@@ -152,7 +153,7 @@ function ServicePage() {
                 className="bg-cyan-700 text-white px-6 py-3 rounded-md font-semibold hover:bg-cyan-600 transition-all flex items-center justify-center gap-2"
               >
                 <Calendar className="w-5 h-5" />
-                Start Your Project
+                Request a Site Walk
               </Link>
             </div>
           </div>
@@ -193,6 +194,45 @@ function ServicePage() {
                 {service.longDescription}
               </p>
             </div>
+
+            {service.resourceLinks && service.resourceLinks.length > 0 && (
+              <div className="mb-12 border-y border-gray-200 py-8 dark:border-gray-700">
+                <div className="mb-5">
+                  <p className="text-xs font-bold uppercase text-cyan-700 dark:text-cyan-300">
+                    Pool owner resources
+                  </p>
+                  <h2
+                    className={twMerge(
+                      'mt-2 text-2xl font-bold text-gray-900 dark:text-white uppercase',
+                      headingFont,
+                    )}
+                  >
+                    Helpful Utah pool links
+                  </h2>
+                </div>
+                <div className="grid gap-4 md:grid-cols-2">
+                  {service.resourceLinks.map((resource) => (
+                    <a
+                      key={resource.href}
+                      href={resource.href}
+                      target="_blank"
+                      rel="noopener"
+                      className="group block rounded-lg border border-gray-200 bg-gray-50 p-5 transition-all hover:-translate-y-0.5 hover:border-cyan-500 hover:bg-white hover:shadow-md dark:border-gray-700 dark:bg-gray-800 dark:hover:border-cyan-400 dark:hover:bg-gray-800/80"
+                    >
+                      <span className="block text-lg font-bold text-gray-900 group-hover:text-cyan-700 dark:text-white dark:group-hover:text-cyan-300">
+                        {resource.title}
+                      </span>
+                      <span className="mt-1 block font-semibold text-cyan-700 dark:text-cyan-300">
+                        {resource.label}
+                      </span>
+                      <span className="mt-3 block text-gray-600 dark:text-gray-300">
+                        {resource.description}
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Features */}
             <div className="mb-12">
@@ -284,7 +324,7 @@ function ServicePage() {
                     headingFont,
                   )}
                 >
-                  Start Your {service.shortTitle} Project
+                  Talk Through Your {service.shortTitle} Project
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400">
                   Tell us what you want to build and what is already on the

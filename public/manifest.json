@@ -1,32 +1,53 @@
 {
-  "short_name": "Valley Design Build",
   "name": "Valley Design Build",
+  "short_name": "Valley",
   "description": "Custom pools, pumptracks, skateparks, treehouses, ice rinks, water features, and outdoor builds in Northern Utah.",
+  "id": "/",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "/favicon.svg?v=valley-20260529-redesign-2",
+      "sizes": "any",
+      "type": "image/svg+xml"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
+      "src": "/favicon-32x32.png?v=valley-20260529-redesign-2",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-192.png?v=valley-20260529-redesign-2",
       "sizes": "192x192",
-      "purpose": "any maskable"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
+      "src": "/icon-512.png?v=valley-20260529-redesign-2",
       "sizes": "512x512",
-      "purpose": "any maskable"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-192.png?v=valley-20260529-redesign-2",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-maskable-512.png?v=valley-20260529-redesign-2",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "theme_color": "#0e7490",
-  "background_color": "#f9fafb",
+  "theme_color": "#001925",
+  "background_color": "#030712",
   "orientation": "portrait-primary",
-  "categories": ["business", "lifestyle"],
+  "categories": [
+    "business",
+    "lifestyle"
+  ],
   "lang": "en-US"
 }

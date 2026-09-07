@@ -273,7 +273,7 @@ function About() {
               className="bg-white text-cyan-700 px-8 py-3 rounded-md font-bold hover:bg-gray-100 transition-colors flex items-center justify-center gap-2"
             >
               <Calendar className="w-5 h-5" />
-              Start Your Project
+              Request a Site Walk
             </Link>
           </div>
         </div>

@@ -91,10 +91,10 @@ export function Header() {
             <Link
               to="/contact"
               className="tactile-control flex h-10 w-10 items-center justify-center rounded-md bg-cyan-700 text-white transition-colors hover:bg-cyan-600"
-              aria-label="Start your project"
+              aria-label="Request a site walk"
             >
               <Calendar className="h-5 w-5" />
-              <span className="sr-only">Start your project</span>
+              <span className="sr-only">Request a site walk</span>
             </Link>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

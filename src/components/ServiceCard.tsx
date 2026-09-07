@@ -46,7 +46,7 @@ export function ServiceCard({
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(to top, rgba(0,25,37,0.95) 0%, rgba(0,25,37,0.45) 58%, rgba(0,25,37,0.08) 100%)',
+              'linear-gradient(to top, rgba(3,7,18,0.72) 0%, rgba(3,7,18,0.24) 58%, rgba(3,7,18,0.02) 100%)',
           }}
         />
         {/* Icon in top-left corner */}

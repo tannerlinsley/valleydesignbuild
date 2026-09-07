@@ -53,8 +53,10 @@ function getResolvedTheme(preference: ThemePreference) {
 
 export function ThemeModeToggle({ className = '' }: { className?: string }) {
   const [preference, setPreference] = useState<ThemePreference>('auto')
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
     const storedPreference = localStorage.getItem(THEME_STORAGE_KEY)
     const initialPreference = isThemePreference(storedPreference)
       ? storedPreference
@@ -96,7 +98,7 @@ export function ThemeModeToggle({ className = '' }: { className?: string }) {
 
   const activeMode = modes.find((mode) => mode.value === preference) || modes[0]
   const Icon = activeMode.icon
-  const resolvedTheme = getResolvedTheme(preference)
+  const resolvedTheme = mounted ? getResolvedTheme(preference) : 'light'
   const nextTheme =
     preference === 'auto'
       ? resolvedTheme === 'dark'

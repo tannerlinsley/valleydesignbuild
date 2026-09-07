@@ -3,7 +3,7 @@ Website review, September 7, 2026
 Implemented in the working copy:
 
 - Reworked the homepage around the offer, project imagery, services, and an inquiry form. Removed repeated service lists, numbered decorations, filler captions, and unsourced testimonials.
-- Replaced the gallery's social-link landing page with eight existing site photos, full-photo links, and links to the matching services.
+- Replaced the gallery's social-link landing page with the existing site photos, full-photo links, and links to the matching services.
 - Made the project reel play on request. The initial page no longer loads Vimeo. Service card images now load lazily, and text stays visible while fonts load.
 - Removed automatic page-wide reveal effects and pointer-tracking code. Content stays visible without waiting for animation observers.
 - Added form progress, success, and error states. Failed requests preserve entered details. Added a project city field, autocomplete, unique field IDs, and optional phone number. Moved the form above contact information on mobile.
@@ -29,6 +29,6 @@ Still needs business or deployment evidence:
 - Supply attributable customer reviews and confirmed company history before restoring testimonials or dates. No replacement reviews or milestones were invented.
 - Add project-specific photos, locations, constraints, and outcomes for case studies. The gallery currently uses the site's existing assets and service labels.
 - Confirm Netlify form detection is enabled, then verify a real submission reaches the intended recipient after deployment. Local tests cannot establish live delivery.
-- Search results show that the published site differs from this checkout. Reconcile the deployment branch before publishing these changes.
+- Merged the seven newer commits from the default branch, including the updated photography, brand assets, pool partner links, and service content.
 
-Changes are local and uncommitted. No deployment was made, and no conversion or ranking gains have been measured.
+The changes are prepared for the default branch. Live form delivery and conversion or ranking gains have not been verified.

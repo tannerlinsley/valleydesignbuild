@@ -92,6 +92,10 @@ Yes, custom costs more than a standard pool. But consider what you're actually b
 
 The families we work with don't regret the investment. They regret waiting so long to make it.
 
+## Related Utah Pool Resources
+
+If you are comparing dedicated pool, spa, hot tub, and sauna options, [Pools by Dip](https://poolsbydip.com) is a useful Northern Utah pool resource. Once the pool is built, ongoing water care matters too; [Utah pool service and maintenance](https://utahpools.com) can help with cleaning, seasonal support, repairs, and equipment.
+
 ## Starting the Conversation
 
 Ready to explore what's possible? The design process begins with a conversation about how you want to live, followed by a site visit to understand your property's potential.

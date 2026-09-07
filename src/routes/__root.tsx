@@ -12,6 +12,7 @@ import { NotFound } from '~/components/NotFound'
 import appCss from '~/styles/app.css?url'
 import { seo } from '~/utils/seo'
 import { localBusinessSchema, schemaToScript } from '~/utils/schema'
+import { brandAssetPath } from '~/utils/brandAssets'
 
 export const Route = createRootRoute({
   head: () => ({
@@ -48,9 +49,13 @@ export const Route = createRootRoute({
       { rel: 'preload', href: 'https://fonts.gstatic.com/s/ptsansnarrow/v18/BngRUXNadjH0qYEzV7ab-oWlsYCByxyK.woff2', as: 'font', type: 'font/woff2', crossOrigin: 'anonymous' },
       { rel: 'preload', href: 'https://fonts.gstatic.com/s/ptsansnarrow/v18/BngSUXNadjH0qYEzV7ab-oWlsbg95DiCUfk.woff2', as: 'font', type: 'font/woff2', crossOrigin: 'anonymous' },
       { rel: 'stylesheet', href: appCss },
-      { rel: 'icon', href: '/favicon.ico' },
-      { rel: 'apple-touch-icon', href: '/logo192.png' },
-      { rel: 'manifest', href: '/manifest.json' },
+      { rel: 'icon', href: brandAssetPath('/favicon.ico'), sizes: 'any' },
+      { rel: 'icon', type: 'image/svg+xml', href: brandAssetPath('/favicon.svg') },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: brandAssetPath('/favicon-32x32.png') },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: brandAssetPath('/favicon-16x16.png') },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: brandAssetPath('/apple-touch-icon.png') },
+      { rel: 'mask-icon', href: brandAssetPath('/mask-icon.svg'), color: '#0e7490' },
+      { rel: 'manifest', href: brandAssetPath('/manifest.json') },
     ],
   }),
   component: RootComponent,

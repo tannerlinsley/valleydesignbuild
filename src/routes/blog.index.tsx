@@ -174,7 +174,7 @@ function BlogIndex() {
               to="/contact"
               className="inline-flex items-center gap-2 bg-cyan-700 text-white px-6 py-3 rounded-md font-semibold hover:bg-cyan-600 transition-colors"
             >
-              Contact Us
+              Request a Site Walk
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
