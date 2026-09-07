@@ -10,7 +10,7 @@ tags: ["Entertainment", "Outdoor Living", "Four Seasons"]
 
 Utah gives us real seasons. Snow-covered winters, pleasant springs, hot summers, and crisp autumns. Most outdoor spaces get abandoned for half the year. But they don't have to.
 
-The secret to year-round outdoor entertainment isn't fighting Utah's climate—it's designing for it.
+The secret to year-round outdoor entertainment isn't fighting Utah's climate, it's designing for it.
 
 ## The Problem with Summer-Only Thinking
 

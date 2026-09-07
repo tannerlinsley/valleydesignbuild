@@ -1,20 +1,31 @@
 import { Calendar, Phone, Menu, X } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { ThemeModeToggle } from './ThemeModeToggle'
 
 const navItems = [
-  { path: '/', label: 'Home' },
   { path: '/about', label: 'About' },
   { path: '/services', label: 'Services' },
   { path: '/gallery', label: 'Gallery' },
   { path: '/service-area', label: 'Service Area' },
   { path: '/blog', label: 'Blog' },
-  { path: '/contact', label: 'Contact' },
 ]
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  const menuButton = useRef<HTMLButtonElement>(null)
+  useEffect(() => {
+    if (!mobileMenuOpen) return
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setMobileMenuOpen(false)
+        menuButton.current?.focus()
+      }
+    }
+    document.addEventListener('keydown', closeOnEscape)
+    return () => document.removeEventListener('keydown', closeOnEscape)
+  }, [mobileMenuOpen])
 
   return (
     <header
@@ -35,7 +46,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden xl:flex items-center gap-6">
+          <nav aria-label="Main navigation" className="hidden xl:flex items-center gap-4">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -45,7 +56,7 @@ export function Header() {
                   className: 'nav-link text-cyan-400 font-medium text-lg',
                 }}
                 activeOptions={{
-                  exact: item.path === '/',
+                  exact: false,
                 }}
               >
                 {item.label}
@@ -61,9 +72,9 @@ export function Header() {
             <ThemeModeToggle />
             <Link
               to="/contact"
-              className="tactile-control bg-cyan-700 text-white px-5 py-2.5 rounded-md hover:bg-cyan-600 transition-colors font-semibold text-lg"
+              className="tactile-control whitespace-nowrap bg-cyan-700 text-white px-5 py-2.5 rounded-md hover:bg-cyan-600 transition-colors font-semibold text-lg"
             >
-              Get Started
+              Start a project
             </Link>
           </nav>
 
@@ -71,7 +82,8 @@ export function Header() {
           <div className="xl:hidden flex items-center gap-3">
             <a
               href="tel:+18015107142"
-              className="nav-link flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition-colors"
+              aria-label="Call (801) 510-7142"
+              className="nav-link flex h-11 w-11 items-center justify-center gap-2 text-gray-300 hover:text-cyan-400 transition-colors"
             >
               <Phone className="w-5 h-5" />
             </a>
@@ -86,8 +98,11 @@ export function Header() {
             </Link>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-gray-300 hover:text-cyan-400 transition-colors p-1"
-              aria-label="Toggle menu"
+              className="text-gray-300 hover:text-cyan-400 transition-colors h-11 w-11 flex items-center justify-center"
+              ref={menuButton}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-navigation"
+              aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             >
               {mobileMenuOpen ? (
                 <X className="w-6 h-6" />
@@ -100,7 +115,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <nav className="xl:hidden mt-4 pb-4 border-t border-white/10 pt-4">
+          <nav id="mobile-navigation" aria-label="Mobile navigation" className="xl:hidden mt-4 pb-4 border-t border-white/10 pt-4">
             <div className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <Link
@@ -112,7 +127,7 @@ export function Header() {
                       'nav-link text-cyan-400 font-medium py-2 px-3 rounded-md bg-white/[0.07]',
                   }}
                   activeOptions={{
-                    exact: item.path === '/',
+                    exact: false,
                   }}
                   onClick={() => setMobileMenuOpen(false)}
                 >

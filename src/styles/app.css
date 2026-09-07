@@ -12,7 +12,7 @@
   font-family: 'PT Sans Narrow';
   font-style: normal;
   font-weight: 400;
-  font-display: block;
+  font-display: swap;
   src: url('https://fonts.gstatic.com/s/ptsansnarrow/v18/BngRUXNadjH0qYEzV7ab-oWlsYCByxyK.woff2') format('woff2');
 }
 
@@ -20,7 +20,7 @@
   font-family: 'PT Sans Narrow';
   font-style: normal;
   font-weight: 700;
-  font-display: block;
+  font-display: swap;
   src: url('https://fonts.gstatic.com/s/ptsansnarrow/v18/BngSUXNadjH0qYEzV7ab-oWlsbg95DiCUfk.woff2') format('woff2');
 }
 
@@ -184,9 +184,9 @@ html {
     @apply text-gray-900 bg-gray-50 dark:bg-navy-900 dark:text-gray-200 font-body text-lg;
   }
 
-  /* Hide focus outline for mouse users */
-  .using-mouse * {
-    outline: none !important;
+  :focus-visible {
+    outline: 2px solid var(--color-cyan-600);
+    outline-offset: 4px;
   }
 }
 
@@ -650,3 +650,7 @@ html[data-page-scrolled='true'] .site-header::after {
   --tw-prose-links: var(--color-cyan-400);
   --tw-prose-headings: var(--color-gray-100);
 }
+
+.skip-link { position: fixed; top: 0.5rem; left: 0.5rem; z-index: 100; padding: 0.75rem 1rem; background: white; color: #001925; transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }
+#main-content { scroll-margin-top: 6rem; }

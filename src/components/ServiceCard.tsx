@@ -29,10 +29,15 @@ export function ServiceCard({
     >
       <div className="service-card relative h-full min-h-[300px] overflow-hidden border border-gray-200 shadow-md transition-all duration-300 group-hover:border-cyan-400 group-hover:shadow-xl dark:border-gray-700 dark:group-hover:border-cyan-500">
         {image && (
-          <div
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+          <img
+            src={imagePresets.card(image)}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            width="600"
+            height="400"
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
             style={{
-              backgroundImage: `url(${imagePresets.card(image)})`,
               ...(viewTransitionName ? { viewTransitionName: `${viewTransitionName}-bg` } : {}),
             }}
           />

@@ -29,7 +29,7 @@ A custom design starts with the property: grade, sun, views, access, equipment, 
 
 Before we sketch a single line, we ask: How will you use this pool?
 
-Some families want a lap pool for serious swimming. Others want a shallow play area for young kids with a deeper zone for adults. Many want both—plus a hot tub, a sun shelf for lounging, and a waterfall for ambiance.
+Some families want a lap pool for serious swimming. Others want a shallow play area for young kids with a deeper zone for adults. Many want both, plus a hot tub, a sun shelf for lounging, and a waterfall for ambiance.
 
 Cookie-cutter pools force you to adapt your life to the pool. Custom pools adapt to your life.
 

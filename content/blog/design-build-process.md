@@ -72,7 +72,7 @@ More important than measurements is understanding:
 
 **The Follow-Up**
 
-Within a week, we provide a preliminary scope and rough investment range. This isn't a formal proposal—it's a reality check. Does what's possible align with what you're hoping to invest?
+Within a week, we provide a preliminary scope and rough investment range. This isn't a formal proposal, it's a reality check. Does what's possible align with what you're hoping to invest?
 
 If yes, we move to design.
 
@@ -150,7 +150,7 @@ Most projects require permits:
 - Plumbing permits for water features
 - Grading permits for earthwork
 
-We handle permit applications and coordinate inspections. Utah municipalities have different requirements—we know them.
+We handle permit applications and coordinate inspections. Utah municipalities have different requirements, we know them.
 
 **Material Ordering**
 

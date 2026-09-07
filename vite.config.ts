@@ -1,3 +1,4 @@
+import { readdirSync } from 'node:fs'
 import { defineConfig } from 'vite'
 import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import viteReact from '@vitejs/plugin-react'
@@ -18,6 +19,14 @@ export default defineConfig({
     }),
     tailwindcss(),
     tanstackStart({
+      pages: [
+        ...readdirSync(new URL('./public/images/', import.meta.url)).map((file) => ({
+          path: `/images/${file}`,
+          prerender: { enabled: false },
+          sitemap: { exclude: true },
+        })),
+        { path: '/contact-form.html', prerender: { enabled: false }, sitemap: { exclude: true } },
+      ],
       prerender: {
         enabled: true,
         crawlLinks: true,

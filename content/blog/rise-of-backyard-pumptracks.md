@@ -8,11 +8,11 @@ imageAlt: "Kids riding bikes on custom backyard pumptrack"
 tags: ["Pumptracks", "Active Living", "Family Recreation"]
 ---
 
-Something's happening in backyards across Northern Utah. Between the pools and the patios, families are building pumptracks—and they're changing how kids (and adults) spend their time at home.
+Something's happening in backyards across Northern Utah. Between the pools and the patios, families are building pumptracks, and they're changing how kids (and adults) spend their time at home.
 
 ## What Exactly Is a Pumptrack?
 
-A pumptrack is a continuous loop of rollers and berms designed to be ridden without pedaling. Riders generate momentum by "pumping"—using their body weight to push down into the troughs and lift through the peaks.
+A pumptrack is a continuous loop of rollers and berms designed to be ridden without pedaling. Riders generate momentum by "pumping", using their body weight to push down into the troughs and lift through the peaks.
 
 Think of it as a roller coaster you power yourself.
 

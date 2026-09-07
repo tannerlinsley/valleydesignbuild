@@ -30,7 +30,7 @@ Custom playhouses approach the problem differently.
 When we design a playhouse, we start with questions:
 
 **Who will use this?**
-A structure for toddlers differs entirely from one designed for pre-teens. Often, we design for a range—challenging enough for older kids while safe for younger ones.
+A structure for toddlers differs entirely from one designed for pre-teens. Often, we design for a range, challenging enough for older kids while safe for younger ones.
 
 **What kind of play matters?**
 - Active climbing and movement
@@ -40,7 +40,7 @@ A structure for toddlers differs entirely from one designed for pre-teens. Often
 - Multi-purpose flexibility
 
 **What inspires this child?**
-Ships, castles, treehouses, log cabins, space stations—the theme drives design decisions that make the structure feel like more than a playground.
+Ships, castles, treehouses, log cabins, space stations, the theme drives design decisions that make the structure feel like more than a playground.
 
 **How will this evolve?**
 Kids grow fast. A structure that works for a 5-year-old should still engage a 12-year-old, perhaps with modifications or additions along the way.
@@ -114,7 +114,7 @@ Sometimes the best solution combines tree support with ground-based structure, t
 Custom doesn't mean unsafe. Our structures meet or exceed playground safety standards:
 
 **Fall Zones**
-Proper surfacing under and around climbing elements—rubber mulch, engineered wood fiber, or poured rubber surfaces.
+Proper surfacing under and around climbing elements, rubber mulch, engineered wood fiber, or poured rubber surfaces.
 
 **Guardrails and Barriers**
 Appropriate protection at heights, with attention to spacing that prevents entrapment.
@@ -142,7 +142,7 @@ Detailed plans including materials, features, and site integration.
 Typically 2-4 weeks depending on complexity, with structures built to last generations.
 
 **First Play**
-The moment it all becomes real—watching kids discover their new space.
+The moment it all becomes real, watching kids discover their new space.
 
 ## Integration with Property
 
@@ -173,4 +173,4 @@ The investment in quality pays dividends for decades.
 
 ## Starting Your Project
 
-Ready to create something special? Contact Valley Design Build for a consultation. Let's build the playhouse you wished you'd had—for the kids who'll actually have it.
+Ready to create something special? Contact Valley Design Build for a consultation. Let's build the playhouse you wished you'd had, for the kids who'll actually have it.

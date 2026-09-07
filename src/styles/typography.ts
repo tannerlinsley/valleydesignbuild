@@ -1,6 +1,3 @@
-// Typography constants for consistent styling across the site
-// Headings: Outfit - lightweight, modern geometric display font
-// Body: Inter - clean sans-serif
-
+// PT Sans Narrow is defined in app.css for headings and body text.
 export const headingFont = 'font-heading'
 export const bodyFont = 'font-body'

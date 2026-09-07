@@ -85,15 +85,6 @@ function About() {
     },
   ]
 
-  const milestones = [
-    { year: '2015', event: 'Valley Design Build founded in Farr West, Utah' },
-    { year: '2016', event: 'Completed first residential pumptrack project' },
-    { year: '2018', event: 'Expanded to include custom pool construction' },
-    { year: '2020', event: 'Built first private backyard skatepark' },
-    { year: '2022', event: 'Added winterscape and ice rink services' },
-    { year: '2024', event: 'Serving families across an 80-mile radius' },
-  ]
-
   return (
     <div className={twMerge('min-h-screen bg-gray-50 dark:bg-navy-900', bodyFont)}>
       {/* Hero Section */}
@@ -209,56 +200,6 @@ function About() {
                   </div>
                 )
               })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline Section */}
-      <section className="py-20 bg-white dark:bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className={twMerge(
-                'text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white uppercase',
-                headingFont,
-              )}
-            >
-              Company Timeline
-            </h2>
-            <div className="relative">
-              <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-cyan-200 dark:bg-cyan-800 md:-translate-x-1/2" />
-              <div className="space-y-8">
-                {milestones.map((milestone, index) => (
-                  <div
-                    key={milestone.year}
-                    className={twMerge(
-                      'relative flex items-center gap-6',
-                      index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse',
-                    )}
-                  >
-                    <div
-                      className={twMerge(
-                        'hidden md:block flex-1 text-right',
-                        index % 2 !== 0 && 'text-left',
-                      )}
-                    >
-                      <span className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">
-                        {milestone.year}
-                      </span>
-                    </div>
-                    <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-cyan-600 rounded-full md:-translate-x-1/2 ring-4 ring-white dark:ring-gray-900" />
-                    <div className="flex-1 pl-12 md:pl-0">
-                      <span className="md:hidden text-lg font-bold text-cyan-600 dark:text-cyan-400 block mb-1">
-                        {milestone.year}
-                      </span>
-                      <p className="text-gray-700 dark:text-gray-300">
-                        {milestone.event}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { BUSINESS_LOCATION, SERVICE_RADIUS_MILES } from '~/data/location'
 import { useLeaflet } from '~/hooks/useLeaflet'
 
 interface ServiceAreaMapProps {
@@ -5,30 +6,34 @@ interface ServiceAreaMapProps {
 }
 
 // Farr West, UT coordinates
-const CENTER = { lat: 41.2061, lng: -112.0272 }
-const RADIUS_MILES = 80
+const CENTER = { lat: BUSINESS_LOCATION.latitude, lng: BUSINESS_LOCATION.longitude }
+const RADIUS_MILES = SERVICE_RADIUS_MILES
 
 export function ServiceAreaMap({ className = '' }: ServiceAreaMapProps) {
-  const { isLoaded, components } = useLeaflet()
-  const { MapContainer, TileLayer, Circle, Marker, Popup } = components
+  const { map, error } = useLeaflet()
 
   const radiusInMeters = RADIUS_MILES * 1609.344
 
-  if (!isLoaded) {
+  if (!map) {
     return (
       <div
         className={`w-full h-full min-h-96 rounded-lg overflow-hidden bg-gray-200 dark:bg-gray-700 flex items-center justify-center ${className}`}
       >
-        <div className="text-gray-500 dark:text-gray-400">Loading map...</div>
+        <div className="p-6 text-center text-gray-600 dark:text-gray-300" role="status">
+          {error ? <a href="https://maps.google.com/?q=3092+North+2000+West+Farr+West+Utah+84404" className="underline">Map could not load. View our location on Google Maps.</a> : 'Loading map...'}
+        </div>
       </div>
     )
   }
+
+  const { MapContainer, TileLayer, Circle, Marker, Popup } = map.components
 
   return (
     <div className={`relative z-0 w-full h-full min-h-96 rounded-lg overflow-hidden ${className}`}>
       <MapContainer
         center={[CENTER.lat, CENTER.lng]}
         zoom={7}
+        scrollWheelZoom={false}
         style={{ height: '100%', width: '100%', minHeight: '400px' }}
         className="rounded-lg"
       >
@@ -50,7 +55,7 @@ export function ServiceAreaMap({ className = '' }: ServiceAreaMapProps) {
         />
 
         {/* Center marker */}
-        <Marker position={[CENTER.lat, CENTER.lng]}>
+        <Marker icon={map.icon} position={[CENTER.lat, CENTER.lng]}>
           <Popup>
             <div className="text-center p-1">
               <strong className="text-gray-900">Valley Design Build</strong>

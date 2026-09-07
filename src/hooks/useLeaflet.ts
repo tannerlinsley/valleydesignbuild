@@ -1,58 +1,41 @@
 import { useEffect, useState } from 'react'
+import type { Icon } from 'leaflet'
+import type * as ReactLeaflet from 'react-leaflet'
+import markerIcon from 'leaflet/dist/images/marker-icon.png'
+import markerIconRetina from 'leaflet/dist/images/marker-icon-2x.png'
+import markerShadow from 'leaflet/dist/images/marker-shadow.png'
 
-let MapContainer: any
-let TileLayer: any
-let Circle: any
-let Marker: any
-let Popup: any
-
-export interface LeafletComponents {
-  MapContainer: any
-  TileLayer: any
-  Circle: any
-  Marker: any
-  Popup: any
-}
+type LeafletComponents = Pick<typeof ReactLeaflet, 'MapContainer' | 'TileLayer' | 'Circle' | 'Marker' | 'Popup'>
 
 export function useLeaflet() {
-  const [isLoaded, setIsLoaded] = useState(false)
+  const [map, setMap] = useState<{ components: LeafletComponents; icon: Icon } | null>(null)
+  const [error, setError] = useState(false)
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      Promise.all([
-        import('react-leaflet'),
-        import('leaflet'),
-        import('leaflet/dist/leaflet.css'),
-      ]).then(([reactLeaflet, L]) => {
-        MapContainer = reactLeaflet.MapContainer
-        TileLayer = reactLeaflet.TileLayer
-        Circle = reactLeaflet.Circle
-        Marker = reactLeaflet.Marker
-        Popup = reactLeaflet.Popup
-
-        delete (L.default.Icon.Default.prototype as any)._getIconUrl
-        L.default.Icon.Default.mergeOptions({
-          iconRetinaUrl:
-            'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
-          iconUrl:
-            'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
-          shadowUrl:
-            'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
-        })
-
-        setIsLoaded(true)
+    let active = true
+    Promise.all([
+      import('react-leaflet'),
+      import('leaflet'),
+      import('leaflet/dist/leaflet.css'),
+    ]).then(([components, leaflet]) => {
+      if (!active) return
+      setMap({
+        components,
+        icon: leaflet.icon({
+          iconUrl: markerIcon,
+          iconRetinaUrl: markerIconRetina,
+          shadowUrl: markerShadow,
+          iconSize: [25, 41],
+          iconAnchor: [12, 41],
+          popupAnchor: [1, -34],
+          shadowSize: [41, 41],
+        }),
       })
-    }
+    }).catch(() => {
+      if (active) setError(true)
+    })
+    return () => { active = false }
   }, [])
 
-  return {
-    isLoaded,
-    components: {
-      MapContainer,
-      TileLayer,
-      Circle,
-      Marker,
-      Popup,
-    } as LeafletComponents,
-  }
+  return { map, error }
 }

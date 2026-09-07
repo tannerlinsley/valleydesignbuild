@@ -22,7 +22,8 @@ export const Route = createFileRoute('/blog/$slug')({
   },
   head: ({ loaderData }) => {
     const post = loaderData?.post
-    const path = `/blog/${post?.slug}`
+    if (!post) return { meta: [{ title: 'Article not found | Valley Design Build' }, { name: 'robots', content: 'noindex' }] }
+    const path = `/blog/${post.slug}`
 
     return {
       meta: [
@@ -107,6 +108,7 @@ function BlogPost() {
               <span className="flex items-center gap-2">
                 <Calendar className="w-4 h-4" />
                 {new Date(post.date).toLocaleDateString('en-US', {
+                  timeZone: 'UTC',
                   year: 'numeric',
                   month: 'long',
                   day: 'numeric',

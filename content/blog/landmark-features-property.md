@@ -26,7 +26,7 @@ Not necessarily massive, but appropriately sized to command attention without ov
 The details reward close inspection. Materials are selected for beauty and durability. Execution reflects skill that can't be rushed.
 
 **Purpose**
-Beyond aesthetics, landmark features often serve functional roles—gathering places, wayfinding elements, conversation starters, or connection points between landscape zones.
+Beyond aesthetics, landmark features often serve functional roles, gathering places, wayfinding elements, conversation starters, or connection points between landscape zones.
 
 ## Types of Landmark Features
 
@@ -44,7 +44,7 @@ Custom-designed forms that spray, arc, and dance. Modern geometric shapes or org
 Vertical sheets of water falling down stone, steel, or glass. The sound can change the whole feel of a patio or entry.
 
 **Fire and Water Combinations**
-The impossible made real—fire burning on water surfaces, flames framed by falling sheets. The contrast creates hypnotic focal points.
+The impossible made real, fire burning on water surfaces, flames framed by falling sheets. The contrast creates hypnotic focal points.
 
 ### Architectural Elements
 
@@ -67,7 +67,7 @@ Entries that mark a real transition from public to private, frame a view, or mak
 Primal elements that gather people:
 
 **Fire Pits**
-Beyond the prefab ring—custom-formed basins, sunken fire circles, or elevated vessels that become gathering anchors.
+Beyond the prefab ring, custom-formed basins, sunken fire circles, or elevated vessels that become gathering anchors.
 
 **Fire Walls**
 Linear flames emerging from stone, concrete, or steel. Modern statements that define edges and create warmth.
@@ -80,20 +80,20 @@ Freestanding fire elements as artistic focal points. Custom metalwork, concrete 
 The ancient material, reimagined:
 
 **Boulder Compositions**
-Carefully selected and placed stones creating natural drama—accent boulders, specimen rocks, or arranged formations.
+Carefully selected and placed stones creating natural drama, accent boulders, specimen rocks, or arranged formations.
 
 **Stone Sculptures**
-Carved or constructed stone as art—totems, abstract forms, or representational pieces.
+Carved or constructed stone as art, totems, abstract forms, or representational pieces.
 
 **Dry-Stack Walls**
-Traditional technique at dramatic scale—curved walls, massive block construction, or intricate patterns.
+Traditional technique at dramatic scale, curved walls, massive block construction, or intricate patterns.
 
 ### Unique Installations
 
 Features that defy category:
 
 **Living Walls**
-Vertical gardens as art—patterned plantings, modular systems, or naturalistic vertical landscapes.
+Vertical gardens as art, patterned plantings, modular systems, or naturalistic vertical landscapes.
 
 **Artistic Lighting**
 Light as landmark: LED installations, fiber optic elements, or projection mapping that changes how the site feels after dark.
@@ -152,7 +152,7 @@ Should the feature be visible immediately, or appear as visitors move through th
 Most landmark features have a primary view, but people will see them from several angles. Those secondary views still matter.
 
 **Scale Relationships**
-A feature must balance with its surroundings—house, landscape, hardscape. Too small disappears; too large overwhelms.
+A feature must balance with its surroundings, house, landscape, hardscape. Too small disappears; too large overwhelms.
 
 **Lighting Requirements**
 Daytime presence differs from evening use. Lighting, reflection, flame, and shadow can make the feature work after dark.

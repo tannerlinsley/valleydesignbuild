@@ -1,7 +1,9 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { twMerge } from 'tailwind-merge'
-import { Instagram, Facebook, ExternalLink, Phone, Calendar } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { headingFont, bodyFont } from '~/styles/typography'
+import { SERVICES } from '~/data/services'
+import { imagePresets } from '~/utils/image'
 import { seo, canonicalLink } from '~/utils/seo'
 import { breadcrumbSchema, schemaToScript } from '~/utils/schema'
 
@@ -39,139 +41,33 @@ export const Route = createFileRoute('/gallery')({
 })
 
 function Gallery() {
+  const images = SERVICES.filter((service, index, services) =>
+    service.image && services.findIndex((item) => item.image === service.image) === index,
+  )
+
   return (
-    <div className={twMerge('min-h-screen bg-gray-50 dark:bg-navy-900', bodyFont)}>
-      {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-900 to-gray-800">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1
-              className={twMerge(
-                'text-4xl md:text-5xl font-bold text-white mb-6 uppercase',
-                headingFont,
-              )}
-            >
-              Our Projects
-            </h1>
-            <p className="text-xl text-gray-300 mb-8">
-              We post recent site work, finished builds, and in-progress details
-              on social. It is the easiest place to see what we are building
-              around Northern Utah.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:+18015107142"
-                className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-6 py-3 rounded-md font-semibold hover:bg-white/20 transition-all flex items-center justify-center gap-2"
-              >
-                <Phone className="w-5 h-5" />
-                Call (801) 510-7142
-              </a>
-              <Link
-                to="/contact"
-                className="bg-cyan-700 text-white px-6 py-3 rounded-md font-semibold hover:bg-cyan-600 transition-all flex items-center justify-center gap-2"
-              >
-                <Calendar className="w-5 h-5" />
-                Start Your Project
-              </Link>
-            </div>
-          </div>
+    <div className={twMerge('bg-[#f7faf8] text-gray-900 dark:bg-navy-950 dark:text-white', bodyFont)}>
+      <section className="container mx-auto px-5 py-12 md:px-10 lg:px-16">
+        <div className="mb-10 flex flex-wrap items-end justify-between gap-6">
+          <h1 className={twMerge('text-5xl font-bold uppercase md:text-6xl', headingFont)}>Project gallery</h1>
+          <Link to="/contact" className="inline-flex items-center gap-2 rounded-md bg-cyan-700 px-6 py-3 font-bold text-white hover:bg-cyan-800">Start your project <ArrowRight className="h-4 w-4" /></Link>
         </div>
-      </section>
-
-      {/* Social Media Links */}
-      <section className="py-20 bg-white dark:bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2
-              className={twMerge(
-                'text-2xl md:text-3xl font-bold text-center mb-4 text-gray-900 dark:text-white uppercase',
-                headingFont,
-              )}
-            >
-              Follow Us for Project Updates
-            </h2>
-            <p className="text-center text-gray-600 dark:text-gray-400 mb-12">
-              See our work in progress and completed projects on our social media pages.
-            </p>
-
-            <div className="grid sm:grid-cols-2 gap-6">
-              <a
-                href="https://www.facebook.com/ValleyDesignBuild"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group bg-gray-100 dark:bg-gray-800 rounded-xl p-8 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
-              >
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center">
-                    <Facebook className="w-7 h-7 text-white" />
-                  </div>
-                  <div>
-                    <h3 className={twMerge('text-xl font-bold text-gray-900 dark:text-white', headingFont)}>
-                      Facebook
-                    </h3>
-                    <p className="text-sm text-gray-500">@ValleyDesignBuild</p>
-                  </div>
-                </div>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Project photos, behind-the-scenes updates, and community news.
-                </p>
-                <span className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold group-hover:gap-3 transition-all">
-                  Visit Page
-                  <ExternalLink className="w-4 h-4" />
-                </span>
+        <div className="grid gap-x-7 gap-y-10 md:grid-cols-2">
+          {images.map((service, index) => (
+            <figure key={service.slug}>
+              <a href={service.image} aria-label={`View full photo: ${service.shortTitle}`} className="group block overflow-hidden bg-gray-200 dark:bg-navy-900">
+                <img src={imagePresets.gallery(service.image!)} alt={service.title} width="800" height="600" loading={index < 2 ? 'eager' : 'lazy'} decoding="async" className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
               </a>
-
-              <a
-                href="https://www.instagram.com/valley_design_build"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group bg-gray-100 dark:bg-gray-800 rounded-xl p-8 hover:bg-pink-50 dark:hover:bg-pink-900/20 transition-colors"
-              >
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 flex items-center justify-center">
-                    <Instagram className="w-7 h-7 text-white" />
-                  </div>
-                  <div>
-                    <h3 className={twMerge('text-xl font-bold text-gray-900 dark:text-white', headingFont)}>
-                      Instagram
-                    </h3>
-                    <p className="text-sm text-gray-500">@valley_design_build</p>
-                  </div>
-                </div>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Photos, reels, and stories showcasing our craftsmanship.
-                </p>
-                <span className="inline-flex items-center gap-2 text-pink-600 dark:text-pink-400 font-semibold group-hover:gap-3 transition-all">
-                  Visit Profile
-                  <ExternalLink className="w-4 h-4" />
-                </span>
-              </a>
-            </div>
-          </div>
+              <figcaption className="mt-3">
+                <Link to="/services/$slug" params={{ slug: service.slug }} className="inline-flex items-center gap-2 text-xl font-bold hover:text-cyan-700 dark:hover:text-cyan-300">{service.title} <ArrowRight className="h-4 w-4" /></Link>
+              </figcaption>
+            </figure>
+          ))}
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-16 bg-gray-100 dark:bg-gray-800">
-        <div className="container mx-auto px-4 text-center">
-          <h2
-            className={twMerge(
-              'text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white uppercase',
-              headingFont,
-            )}
-          >
-            Want to Talk Through a Project?
-          </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
-            Send us the site, the rough idea, and anything you already know you
-            want. We will help you figure out what is realistic.
-          </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 bg-cyan-700 text-white px-8 py-4 rounded-md font-bold hover:bg-cyan-600 transition-colors text-lg"
-          >
-            Get Your Free Consultation
-          </Link>
+        <div className="mt-14 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-gray-300 pt-8 dark:border-gray-700">
+          <h2 className="text-xl font-bold">More from the job site</h2>
+          <a href="https://www.instagram.com/valley_design_build" target="_blank" rel="noopener noreferrer" className="text-cyan-700 underline underline-offset-4 dark:text-cyan-300">Instagram</a>
+          <a href="https://www.facebook.com/ValleyDesignBuild" target="_blank" rel="noopener noreferrer" className="text-cyan-700 underline underline-offset-4 dark:text-cyan-300">Facebook</a>
         </div>
       </section>
     </div>

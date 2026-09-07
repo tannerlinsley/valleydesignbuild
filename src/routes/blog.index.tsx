@@ -127,7 +127,8 @@ function BlogIndex() {
                       <span className="flex items-center gap-1">
                         <Calendar className="w-4 h-4" />
                         {new Date(post.date).toLocaleDateString('en-US', {
-                          year: 'numeric',
+                          timeZone: 'UTC',
+                        year: 'numeric',
                           month: 'long',
                           day: 'numeric',
                         })}

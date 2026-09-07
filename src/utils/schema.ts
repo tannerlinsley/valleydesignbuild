@@ -1,3 +1,4 @@
+import { BUSINESS_LOCATION } from '~/data/location'
 import { SITE_URL, SITE_NAME } from './seo'
 
 const ORGANIZATION_ID = `${SITE_URL}/#organization`
@@ -12,10 +13,7 @@ const BUSINESS_INFO = {
     postalCode: '84404',
     addressCountry: 'US',
   },
-  geo: {
-    latitude: 41.2040,
-    longitude: -112.0830,
-  },
+  geo: BUSINESS_LOCATION,
 }
 
 export function localBusinessSchema() {
@@ -30,7 +28,6 @@ export function localBusinessSchema() {
     telephone: BUSINESS_INFO.telephone,
     email: BUSINESS_INFO.email,
     description: 'Custom pools, pumptracks, skateparks, treehouses, water features, ice rinks, outdoor living spaces, landscaping, and backyard builds for families across Northern Utah.',
-    foundingDate: '2018',
     address: {
       '@type': 'PostalAddress',
       ...BUSINESS_INFO.address,
@@ -62,27 +59,14 @@ export function localBusinessSchema() {
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '07:00',
-        closes: '18:00',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: 'Saturday',
         opens: '08:00',
-        closes: '14:00',
+        closes: '18:00',
       },
     ],
     sameAs: [
       'https://www.facebook.com/ValleyDesignBuild',
       'https://www.instagram.com/valley_design_build',
     ],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '5',
-      reviewCount: '47',
-      bestRating: '5',
-      worstRating: '1',
-    },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Custom Backyard Construction Services',
@@ -359,5 +343,5 @@ export function combineSchemas(...schemas: (object | null | undefined)[]) {
 
 export function schemaToScript(schema: object | object[] | null) {
   if (!schema) return null
-  return JSON.stringify(schema)
+  return JSON.stringify(schema).replace(/</g, '\\u003c')
 }

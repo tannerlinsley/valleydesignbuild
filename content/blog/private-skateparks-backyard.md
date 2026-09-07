@@ -20,7 +20,7 @@ The backyard skatepark movement has exploded for several reasons:
 Public parks have hours, crowds, and skill-level conflicts. Your backyard doesn't. Want to skate at 6 AM before work? Done. Need to practice the same trick 200 times? No one's waiting.
 
 **Customized to Your Riding**
-Public parks are designed for everyone, which means they're optimized for no one. A private park is built around how you actually ride—your favorite obstacles, your comfort zone, your progression goals.
+Public parks are designed for everyone, which means they're optimized for no one. A private park is built around how you actually ride, your favorite obstacles, your comfort zone, your progression goals.
 
 **Family Bonding**
 When the park is at home, skating becomes a family activity. Parents who never touched a board find themselves trying. Siblings push each other to learn. The backyard becomes a gathering place.
@@ -37,7 +37,7 @@ Private skateparks range from a single element to complete parks. Here's what's 
 
 ### Street Plaza Elements
 
-Street skating mimics urban environments—stairs, rails, ledges, gaps. These elements can be integrated into landscape design:
+Street skating mimics urban environments, stairs, rails, ledges, gaps. These elements can be integrated into landscape design:
 
 - **Ledges** - Concrete or granite blocks for grinds and slides
 - **Manual pads** - Low, flat surfaces for balance tricks
@@ -50,7 +50,7 @@ Street elements work well in smaller spaces and can disguise as landscape featur
 
 ### Transition Features
 
-Transition skating involves curved surfaces—bowls, ramps, and halfpipes:
+Transition skating involves curved surfaces, bowls, ramps, and halfpipes:
 
 - **Mini ramps** - 3-6 foot halfpipes, the most popular backyard feature
 - **Quarter pipes** - Single curved walls
@@ -120,7 +120,7 @@ For serious skating families investing in their property, concrete delivers the 
 Skateparks scale to available space:
 
 **Minimum Viable (500-800 sq ft):**
-A single element—mini ramp, bowl corner, or street section. Enough for focused practice on specific tricks.
+A single element, mini ramp, bowl corner, or street section. Enough for focused practice on specific tricks.
 
 **Small Park (800-1,500 sq ft):**
 Multiple elements or a complete mini ramp with landing area. Room for variety and flow.

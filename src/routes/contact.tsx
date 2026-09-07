@@ -78,7 +78,7 @@ function Contact() {
   return (
     <div className={twMerge('min-h-screen bg-gray-50 dark:bg-navy-900', bodyFont)}>
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-900 to-gray-800">
+      <section className="relative py-10 md:py-16 bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1
@@ -90,20 +90,19 @@ function Contact() {
               Tell Us What You Want to Build
             </h1>
             <p className="text-xl text-gray-300">
-              Send the rough idea, the address, and what you already know about
-              the site. We typically respond within 24 hours.
+              Tell us your idea and project city. You do not need finished plans.
             </p>
           </div>
         </div>
       </section>
 
       {/* Contact Content */}
-      <section className="py-20 bg-white dark:bg-gray-900">
+      <section className="py-10 md:py-16 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-5 gap-12">
               {/* Contact Info */}
-              <div className="lg:col-span-2 space-y-8">
+              <div className="order-2 lg:order-1 lg:col-span-2 space-y-8">
                 <div>
                   <h2
                     className={twMerge(
@@ -193,16 +192,8 @@ function Contact() {
               </div>
 
               {/* Contact Form */}
-              <div className="lg:col-span-3">
-                <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
-                  <h2
-                    className={twMerge(
-                      'text-2xl font-bold mb-6 text-gray-900 dark:text-white uppercase',
-                      headingFont,
-                    )}
-                  >
-                    Start Your Project
-                  </h2>
+              <div className="order-1 lg:order-2 lg:col-span-3">
+                <div className="bg-white dark:bg-gray-800 p-5 sm:p-8 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
                   <ContactForm />
                 </div>
               </div>
@@ -229,7 +220,7 @@ function Contact() {
             </p>
             <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2987.5!2d-112.0272!3d41.2061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s3092+N+2000+W%2C+Farr+West%2C+UT+84404!5e0!3m2!1sen!2sus!4v1234567890"
+                src="https://maps.google.com/maps?q=3092+N+2000+W,+Farr+West,+UT+84404&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

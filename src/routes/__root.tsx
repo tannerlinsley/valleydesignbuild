@@ -10,7 +10,7 @@ import { MotionController } from '~/components/MotionController'
 import { DefaultCatchBoundary } from '~/components/DefaultCatchBoundary'
 import { NotFound } from '~/components/NotFound'
 import appCss from '~/styles/app.css?url'
-import { seo, canonicalLink } from '~/utils/seo'
+import { seo } from '~/utils/seo'
 import { localBusinessSchema, schemaToScript } from '~/utils/schema'
 
 export const Route = createRootRoute({
@@ -51,7 +51,6 @@ export const Route = createRootRoute({
       { rel: 'icon', href: '/favicon.ico' },
       { rel: 'apple-touch-icon', href: '/logo192.png' },
       { rel: 'manifest', href: '/manifest.json' },
-      canonicalLink('/'),
     ],
   }),
   component: RootComponent,
@@ -64,8 +63,9 @@ function RootComponent() {
   return (
     <>
       <MotionController />
+      <a href="#main-content" className="skip-link">Skip to content</a>
       <Header />
-      <main style={{ viewTransitionName: 'main' }}>
+      <main id="main-content" tabIndex={-1} style={{ viewTransitionName: 'main' }}>
         <Outlet />
       </main>
       <Footer />
@@ -87,7 +87,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           }}
         />
 
-        {/* WebSite Schema for Sitelinks Search Box */}
+        {/* Website identity */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -96,11 +96,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
               '@type': 'WebSite',
               name: 'Valley Design Build',
               url: 'https://valleydesignbuild.com',
-              potentialAction: {
-                '@type': 'SearchAction',
-                target: 'https://valleydesignbuild.com/services?q={search_term_string}',
-                'query-input': 'required name=search_term_string',
-              },
+
             }),
           }}
         />

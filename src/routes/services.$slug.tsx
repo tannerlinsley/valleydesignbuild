@@ -8,7 +8,6 @@ import {
   CheckCircle,
   ChevronDown,
 } from 'lucide-react'
-import { useState } from 'react'
 import { headingFont, bodyFont } from '~/styles/typography'
 import { SERVICES } from '~/data/services'
 import { ContactForm } from '~/components/ContactForm'
@@ -38,7 +37,8 @@ export const Route = createFileRoute('/services/$slug')({
     }
   },
   head: ({ loaderData }) => {
-    const path = `/services/${loaderData?.slug}`
+    if (!loaderData) return { meta: [{ title: 'Service not found | Valley Design Build' }, { name: 'robots', content: 'noindex' }] }
+    const path = `/services/${loaderData.slug}`
     const keywords = [
       loaderData?.shortTitle?.toLowerCase(),
       'utah',
@@ -90,28 +90,13 @@ export const Route = createFileRoute('/services/$slug')({
 })
 
 function FAQItem({ question, answer }: { question: string; answer: string }) {
-  const [isOpen, setIsOpen] = useState(false)
-
   return (
-    <div className="border-b border-gray-200 dark:border-gray-700">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full py-4 flex items-center justify-between text-left"
-      >
-        <span className="font-semibold text-gray-900 dark:text-white pr-4">
-          {question}
-        </span>
-        <ChevronDown
-          className={twMerge(
-            'w-5 h-5 text-gray-500 transition-transform flex-shrink-0',
-            isOpen && 'rotate-180',
-          )}
-        />
-      </button>
-      {isOpen && (
-        <div className="pb-4 text-gray-600 dark:text-gray-300">{answer}</div>
-      )}
-    </div>
+    <details className="group border-b border-gray-200 dark:border-gray-700">
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 font-bold text-gray-900 dark:text-white">
+        {question}<ChevronDown className="h-5 w-5 shrink-0 transition-transform group-open:rotate-180" aria-hidden="true" />
+      </summary>
+      <p className="pb-4 leading-relaxed text-gray-600 dark:text-gray-300">{answer}</p>
+    </details>
   )
 }
 

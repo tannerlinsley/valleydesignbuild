@@ -1,3 +1,5 @@
+import { BUSINESS_LOCATION } from '~/data/location'
+
 const SITE_URL = 'https://valleydesignbuild.com'
 const SITE_NAME = 'Valley Design Build'
 const DEFAULT_IMAGE = `${SITE_URL}/images/pumptrack.jpg`
@@ -41,14 +43,10 @@ export const seo = ({
     { property: 'og:description', content: description },
     { property: 'og:url', content: canonicalUrl },
     { property: 'og:image', content: ogImage },
-    { property: 'og:image:width', content: '1200' },
-    { property: 'og:image:height', content: '630' },
     { property: 'og:locale', content: 'en_US' },
 
     // Twitter
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:site', content: '@valley_design_build' },
-    { name: 'twitter:creator', content: '@valley_design_build' },
     { name: 'twitter:title', content: title },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: ogImage },
@@ -56,8 +54,8 @@ export const seo = ({
     // Geo tags for local SEO
     { name: 'geo.region', content: 'US-UT' },
     { name: 'geo.placename', content: 'Farr West, Utah' },
-    { name: 'geo.position', content: '41.2040;-112.0830' },
-    { name: 'ICBM', content: '41.2040, -112.0830' },
+    { name: 'geo.position', content: `${BUSINESS_LOCATION.latitude};${BUSINESS_LOCATION.longitude}` },
+    { name: 'ICBM', content: `${BUSINESS_LOCATION.latitude}, ${BUSINESS_LOCATION.longitude}` },
   ]
 
   // Add keywords if provided

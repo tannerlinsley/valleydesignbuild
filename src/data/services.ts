@@ -109,7 +109,7 @@ That might be a boulder waterfall, a short stream, a fountain, a rain curtain, o
       {
         question: 'How much maintenance do water features require?',
         answer:
-          'Modern water features with proper filtration need minimal maintenance—occasional cleaning, pump checks, and seasonal winterization. We offer maintenance packages for hands-off ownership.',
+          'Modern water features with proper filtration need minimal maintenance, occasional cleaning, pump checks, and seasonal winterization. We offer maintenance packages for hands-off ownership.',
       },
       {
         question: 'Can water features run year-round in Utah?',
@@ -308,7 +308,7 @@ Some tracks are compact loops for young riders. Others are larger asphalt or con
           'Effective pump tracks can be built in spaces as small as 40x60 feet. Larger areas allow for more features and longer runs, but smaller tracks can still provide excellent riding.',
       },
       {
-        question: 'Asphalt or concrete—which is better?',
+        question: 'Asphalt or concrete, which is better?',
         answer:
           'Both work well. Asphalt is typically more cost-effective and can be easily modified. Concrete is more durable long-term and provides a smoother riding surface.',
       },
@@ -359,7 +359,7 @@ We build outdoor kitchens, bars, pavilions, pergolas, fire features, theaters, a
       {
         question: 'What appliances can go in an outdoor kitchen?',
         answer:
-          'Almost anything—grills, smokers, pizza ovens, refrigerators, ice makers, kegerators, sinks, and more. We help you select the right equipment for your cooking style.',
+          'Almost anything, grills, smokers, pizza ovens, refrigerators, ice makers, kegerators, sinks, and more. We help you select the right equipment for your cooking style.',
       },
       {
         question: 'Do outdoor theaters work in daylight?',
