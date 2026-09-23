@@ -13,6 +13,7 @@ import appCss from '~/styles/app.css?url'
 import { seo } from '~/utils/seo'
 import { localBusinessSchema, schemaToScript } from '~/utils/schema'
 import { brandAssetPath } from '~/utils/brandAssets'
+import { googleAnalyticsScript } from '~/utils/analytics'
 
 export const Route = createRootRoute({
   head: () => ({
@@ -83,6 +84,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
     <html lang="en" suppressHydrationWarning>
       <head>
         <HeadContent />
+        {import.meta.env.PROD && (
+          <script dangerouslySetInnerHTML={{ __html: googleAnalyticsScript }} />
+        )}
 
         {/* Enhanced LocalBusiness Schema Markup */}
         <script
