@@ -1,8 +1,8 @@
-import { Link, useRouter } from '@tanstack/react-router'
+import { Link, useRouter, type ErrorComponentProps } from '@tanstack/react-router'
 import { twMerge } from 'tailwind-merge'
 import { headingFont } from '~/styles/typography'
 
-export function DefaultCatchBoundary({ error }: { error: Error }) {
+export function DefaultCatchBoundary({ error }: ErrorComponentProps) {
   const router = useRouter()
 
   return (
@@ -17,7 +17,9 @@ export function DefaultCatchBoundary({ error }: { error: Error }) {
           Something went wrong
         </h1>
         <p className="text-stone-600 dark:text-stone-400 mb-6">
-          {error.message || 'An unexpected error occurred.'}
+          {error instanceof Error && error.message
+            ? error.message
+            : 'An unexpected error occurred.'}
         </p>
         <div className="flex gap-4 justify-center">
           <button
